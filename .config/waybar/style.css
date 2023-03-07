@@ -1,0 +1,122 @@
+/* 
+## Configuracion para WayBar
+## Autor:
+## Hector Ivan Vega Zamudio
+## mxhectorvega@gmail.com
+## https://github.com/mxhectorvega
+## Version:
+## v2.0: 20/11/2021
+*/
+
+* {
+    border: none;
+    border-radius: 7px;
+    font-family: "SF Compact Display", "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 12px;
+    min-height: 0;
+	  margin: 0;
+	  
+}
+
+window#waybar {
+    background: none;
+}
+
+window#waybar.hidden {
+    background: none;
+}
+
+window#waybar.empty {
+    background: none;
+}
+
+window#waybar.solo {
+    background: none;
+}
+
+
+#workspaces button {
+    background-color: rgba(0, 0, 0, 0.80);
+    color: #dddddd;
+    margin-right: 3px;
+    border-top: 1px solid #555555;
+    border-left: 1px solid #333333;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #222222;
+}
+
+#workspaces button.visible {
+    background-color: rgba(0, 0, 0, 0.80);
+    color: #dddddd;
+}
+
+#workspaces button.focused{
+    background-color: #5999bd;
+    color: #ffffff;
+}
+
+#workspaces button.urgent{
+    background-color: #5999bd;
+    color: #ffffff;
+}
+
+#workspaces button.persistent{
+    background-color: rgba(0, 0, 0, 0.80);
+    color: #dddddd;
+}
+
+#mode,
+#tray,
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#mode,
+#idle_inhibitor,
+#bluetooth,
+#language,
+#custom-grabar,
+#custom-portapapeles,
+#custom-pacman,
+#custom-layout,
+#custom-wf-recorder,
+#custom-darkmode,
+#custom-ayuda,
+#custom-menu,
+#mpd,
+#custom-power {
+    background-color: rgba(0, 0, 0, 0.80);
+    margin-right: 3px;
+    color: #dddddd;    padding: 0px 11px 0px 11px;
+    border-top: 1px solid #555555;
+    border-left: 1px solid #333333;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #222222;
+}
+
+#battery.critical:not(.charging) {
+    background-color: rgba(0, 0, 0, 0.80);
+    color: #dddddd;
+    animation-name: blink;
+    animation-duration: 0.9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+
+}
+
