@@ -1,0 +1,22 @@
+font=cantarell 11
+
+layer=overlay
+anchor=top-center
+background-color=#ffffffcc
+text-color=#444444
+width=360
+height=150
+padding=10
+margin=5
+progress-color= source #60606080
+icon-path=~/.icons
+max-icon-size=100
+
+border-size=1
+border-radius=10
+border-color=#555555
+
+default-timeout=5000
+
+[urgency=high]
+ignore-timeout=1

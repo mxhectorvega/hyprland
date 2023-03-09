@@ -10,36 +10,42 @@
 
 window {
 
-    border-radius: 3;
+    border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.80);
+    color: #444444;
+    margin-right: 3px;
+    border-top: 1px solid #555555;
+    border-left: 1px solid #333333;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #222222;
 }
 
 * {
     font-family: "SF Compact Display", "Font Awesome 5 Free";
     font-weight: 600;
     font-size: 12px;
-    color: #505050;
+    color: #444444;
 }
 
 #input {
-    border-radius: 3;
+    border-radius: 6px;
     background-color: rgba(255, 255, 255, 0.80);
     font-size: 12;
 }
 
 
 #outer-box {
-    border-radius: 3;
-    margin: 5;
+    border-radius: 6;
+    margin: 13px 13px;
 }
 
 #scroll label {
-    border-radius: 3;
-    margin: 1 1;
+    border-radius: 6;
+    margin: 5px ;
 }
 
 #entry:selected {
-    border-radius: 2;    
+    border-radius: 6;    
     background-color: #5999bd;
 }
 
