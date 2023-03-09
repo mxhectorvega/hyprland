@@ -50,28 +50,25 @@
     "custom/power" 
     ],
 
-    "wlr/workspaces": {
-          "on-click": "activate",
-//        "disable-scroll": true,
-//        "current-only": false,
-//        "all-outputs": false,
-//        "disable-markup": false, 
-        "format": "{icon}",
-        "format-icons": {
+  "wlr/workspaces": {
+    "all-outputs": true,
+    "active-only": false,
+    "on-click": "activate",
+    "format": "{icon}",
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1",
+    "format-icons": {
 //        "1": "<span color='#888888'></span>",
-//        "2": "<span color='#888888'></span>",
-//        "3": "<span color='#888888'></span>",
-//        "4": "<span color='#888888'></span>",
-//        "5": "<span color='#888888'></span>",
-        "focused": "<span color='#888888'></span>",
-        "default": "<span color='#888888'></span>" },
-        "persistent_workspaces": {
-        "1": [],
-        "2": [],
-        "3": [],
-        "4": [],
-        "5": [], }
-        },
+//        "2": "<span color='#888888'></span>",
+//        "3": "<span color='#888888'></span>",
+//        "4": "<span color='#888888'></span>",
+//        "5": "<span color='#888888'></span>",    
+      "urgent": "",
+      "active": "",
+      "default": ""
+    }
+  },
+
     "sway/mode": {
         "format": "{}"
     },

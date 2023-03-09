@@ -38,7 +38,7 @@ window#waybar.solo {
 
 #workspaces button {
     background-color: rgba(255, 255, 255, 0.80);
-    color: #dddddd;
+    color: #666666;
     margin-right: 3px;
     border-top: 1px solid #555555;
     border-left: 1px solid #333333;
@@ -47,23 +47,43 @@ window#waybar.solo {
 }
 
 #workspaces button.visible {
-background-color: rgba(255, 255, 255, 0.80);
-    color: #dddddd;
+    background-color: rgba(255, 255, 255, 0.80);
+    color: #666666;
+    margin-right: 3px;
+    border-top: 1px solid #555555;
+    border-left: 1px solid #333333;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #222222;
 }
 
 #workspaces button.focused{
     background-color: #5999bd;
-    color: #ffffff;
+    color: #111111;
+    margin-right: 3px;
+    border-top: 1px solid #555555;
+    border-left: 1px solid #333333;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #222222;
 }
 
 #workspaces button.urgent{
     background-color: #5999bd;
-    color: #ffffff;
+    color: #D75C42;
+    margin-right: 3px;
+    border-top: 1px solid #555555;
+    border-left: 1px solid #333333;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #222222;
 }
 
 #workspaces button.persistent{
     background-color: rgba(255, 255, 255, 0.80);
-    color: #444444;
+    color: #666666;
+    margin-right: 3px;
+    border-top: 1px solid #555555;
+    border-left: 1px solid #333333;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #222222;
 }
 
 #mode,
