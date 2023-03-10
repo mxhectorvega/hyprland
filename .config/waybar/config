@@ -40,6 +40,7 @@
     "modules-right": [
     "custom/wf-recorder", 
     "backlight",
+    "custom/forzar",
     "pulseaudio#mic", 
     "pulseaudio",  
     "bluetooth", 
@@ -99,10 +100,31 @@
     "battery#bat2": {
         "bat": "BAT2"
     },
-    "clock": {
-        // "timezone": "America/Mexico_City",
-        "tooltip-format": "<big>{calendar}</big>",
-        "format": "{:%a,  %d  de  %B   %H:%M}",
+        "clock": {
+        "format": "{:%H:%M}",
+        "format-alt": "{:%a, %d de %B}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+                    "mode"          : "month",
+                    "mode-mon-col"  : 3,
+                    "weeks-pos"     : "right",
+                    "on-scroll"     : 1,
+                    "on-click-right": "mode",
+                    "format": {
+                              "months":     "<span color='#ffead3'><b>{}</b></span>",
+                              "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                              // "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                              "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                              "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+                              }
+                    },
+        "actions":  {
+                    "on-click-right": "mode",
+                    "on-click-forward": "tz_up",
+                    "on-click-backward": "tz_down",
+                    "on-scroll-up": "shift_up",
+                    "on-scroll-down": "shift_down"
+                    }
     },
     "backlight": {
         "device": "intel_backlight",
@@ -113,13 +135,17 @@
         "tooltip-format": "Bluethooth"
     },
     "bluetooth": {
-          "format": "<span color='#69b2ce'>{icon}</span>",
-          "format-icons": {
-          "enabled": "",
-          "disabled": "" },
-          "on-click": "blueberry",
-          "tooltip-format": "Bluethooth"
-    },
+	"format": "<span color='#69b2ce'></span>  {status}",
+	"format-connected": "<span color='#69b2ce'></span>  {device_alias}",
+	"format-connected-battery": "<span color='#69b2ce'></span>  {device_alias} {device_battery_percentage}%",
+	// "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
+	"tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+	"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+	"on-click": "blueberry"
+     },
+
      "tray": {
         "icon-size": 15,
         "spacing": 15
@@ -128,12 +154,12 @@
     "interface": "wlp*",
     "format": "{ifname}",
     "format-wifi": "<span color='#8080ff'> </span>  {signalStrength}%",
-    "format-ethernet": "<span color='#8080ff'></span> {ifname}",
+    "format-ethernet": "<span color='#8080ff'></span> {ifname}",
     "format-disconnected": "", //An empty format will hide the module.
     "format-disconnected": "<span color='#8080ff'></span>",
     "tooltip-format": "{ifname}",
     "tooltip-format-wifi": "<span color='#8080ff'> </span> {essid} ({signalStrength}%) ",
-    "tooltip-format-ethernet": "<span color='#8080ff'> </span> {ifname}",
+    "tooltip-format-ethernet": "<span color='#8080ff'> </span> {ifname}",
     "tooltip-format-disconnected": "Desconectado",
     "max-length": 50,
     "on-click": "gnome-terminal -- nmtui"
@@ -183,7 +209,8 @@
         "format-icons": "",
         "on-click": "pkill wofi ; clipman pick -t wofi",
         "on-click-right": "clipman clear --all && exec notify-send -t 10000 -i $HOME/.config/mako/hypr.ico 'Clipboard' 'El historial del portapapeles se a borrado con exito.'",
-        "tooltip-format": "Bluethooth"
+        "tooltip":"true",
+        "tooltip-format":"Loco"	
         },      
     "temperature": {
         "thermal-zone": 1,
@@ -230,7 +257,7 @@
         "format-icons": "",
         "on-click": "sh $HOME/.config/waybar/custom/modo-obscuro",
         "on-click-right": "sh $HOME/.config/waybar/custom/modo-claro",
-        "tooltip-format-icon": "Click normal modo obscuro",
+        "tooltip-format": "Click normal modo obscuro",
         "tooltip": "true"
     },
         "custom/ayuda":{ 
@@ -240,34 +267,11 @@
         "tooltip-format": "Archivo de ayuda",
         "tooltip": "true"
     },
-    "sway/language": {
-    "format": "<span color='#8080ff'></span>  {short} {variant}",
-    "on-click": "swaymsg input '1:1:AT_Translated_Set_2_keyboard' xkb_switch_layout next"
-    }
-
-/*},
-
-{
-    "layer": "bottom", 
-    "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 25,
-    "margin-top": 0,
-    "margin-bottom": 5,
-    "margin-left": 5,
-    "margin-right": 5, 
-
-    "modules-center": [
-    ""
-    ],
-
-        "wlr/taskbar": {
-        "format": "{icon}",
-        "tooltip-format": "{title}",
-        "on-click": "activate",
-        "all-outputs": false,
-        "active-first": false,
-        "icon-size": 40,
-        "icon-theme": "Papirus-Dark",
-        "on-click-right": "minimize"
-    } */
+    "custom/forzar": {
+        "format":"<span color='#D75C42'>{icon}</span>",
+        "format-icons": "",
+        "on-click": "gnome-terminal -- hyprctl kill",
+        "tooltip-format": "Forzar cierre",
+        "tooltip": "true"
+       }
 }]
