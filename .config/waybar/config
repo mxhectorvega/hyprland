@@ -182,7 +182,7 @@
         "format": "<span color='#f0cc6f'>{icon}</span>",
         "format-icons": "",
         "on-click": "pkill wofi ; clipman pick -t wofi",
-        "on-click-right": "clipman clear --all && exec notify-send -t 10000 -i $HOME/.config/user.png 'Clipboard' 'El historial del portapapeles se a borrado con exito.'",
+        "on-click-right": "clipman clear --all && exec notify-send -t 10000 -i $HOME/.config/mako/hypr.ico 'Clipboard' 'El historial del portapapeles se a borrado con exito.'",
         "tooltip-format": "Bluethooth"
         },      
     "temperature": {
@@ -197,8 +197,8 @@
     "format": "<span color='#D75C42'>{icon}</span>",
     "format-icons": "",
     "tooltip-format": "loco",
-    "on-click": "wf-recorder -a -f $(xdg-user-dir VIDEOS)/$(date +'screencast_%Y-%m-%d_%H-%M-%S.mp4' ; exec notify-send -t 10000 -i $HOME/.config/user.png 'Screenrecorder' 'Se ha iniciado screenrecorder, presione click derecho sobre el mismo boton para cancelar')",
-    "on-click-right": "killall --signal SIGINT wf-recorder ; exec notify-send -t 10000 -i $HOME/.config/user.png 'Screenrecorder' 'La grabacion ha finalizado y se ha guardado en el directorio Videos'",
+    "on-click": "wf-recorder -a -f $(xdg-user-dir VIDEOS)/$(date +'screencast_%Y-%m-%d_%H-%M-%S.mp4' ; exec notify-send -t 10000 -i $HOME/.config/mako/hypr.ico 'Screenrecorder' 'Se ha iniciado screenrecorder, presione click derecho sobre el mismo boton para cancelar')",
+    "on-click-right": "killall --signal SIGINT wf-recorder ; exec notify-send -t 10000 -i $HOME/.config/mako/hypr.ico 'Screenrecorder' 'La grabacion ha finalizado y se ha guardado en el directorio Videos'",
     },
     "custom/layout":{ 
         "format":"📐", 
