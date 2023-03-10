@@ -19,6 +19,19 @@ cp $HOME/.config/mako/temas/claro $HOME/.config/mako/config
 rm -rf ${HOME}/.config/gtk-*
 
 cp -R $HOME/.themes/Colloid-Light/gtk-* ${HOME}/.config
+#cp -R $HOME/.themes/Colloid-Light/gtk-2* ${HOME}/.config
+#cp -R $HOME/.themes/Colloid-Light/gtk-3* ${HOME}/.config
+#cp -R $HOME/.themes/Colloid-Light/gtk-4* ${HOME}/.config
+
+gsettings set org.gnome.desktop.interface gtk-theme 'Colloid-Light'
+gsettings set org.gnome.desktop.interface icon-theme "Colloid-light"
+gsettings set org.gnome.desktop.interface font-name 'SF Compact Display SemiBold 9'
+gsettings set org.gnome.desktop.interface monospace-font-name 'Terminus 13'
+gsettings set org.gnome.desktop.interface document-font-name 'SF Compact Display SemiBold 9'
+gsettings set org.gnome.desktop.wm.preferences titlebar-font 'SF Compact Display SemiBold 9'
+gsettings set org.gnome.desktop.wm.preferences button-layout :
+gsettings set org.gnome.desktop.default-applications.terminal exec 'gnome-terminal'
+gsettings set org.gtk.Settings.FileChooser window-size '(800,500)'
 
 pkill -9 mako
 mako &
@@ -27,4 +40,5 @@ waybar &
 sleep 0.5
 notify-send --expire-time 3000 --icon $HOME/.config/mako/hypr.ico 'Tema claro' 'La configuracion se aplico satisfactoriamente'
 swaybg -i $HOME/.config/wall/claro.*
+
 
