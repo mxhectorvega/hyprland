@@ -5,7 +5,7 @@
 ## mxhectorvega@gmail.com
 ## https://github.com/mxhectorvega
 ## Version:
-## v2.0: 20/11/2021
+## v2.2: 11/03/2023
 */
 
 * {
@@ -16,7 +16,6 @@
     font-size: 12px;
     min-height: 0;
 	  margin: 0;
-	  
 }
 
 window#waybar {
@@ -38,7 +37,6 @@ window#waybar.solo {
 
 #workspaces button {
     background-color: rgba(255, 255, 255, 0.80);
-    color: #666666;
     margin-right: 3px;
     border-top: 1px solid #555555;
     border-left: 1px solid #333333;
@@ -46,19 +44,9 @@ window#waybar.solo {
     border-bottom: 1px solid #222222;
 }
 
-#workspaces button.visible {
-    background-color: rgba(255, 255, 255, 0.80);
-    color: #666666;
-    margin-right: 3px;
-    border-top: 1px solid #555555;
-    border-left: 1px solid #333333;
-    border-right: 1px solid #333333;
-    border-bottom: 1px solid #222222;
-}
-
-#workspaces button.focused{
-    background-color: #5999bd;
-    color: #111111;
+#workspaces button.active {
+    background-color: #69b2ce;
+    color: #ffffff;
     margin-right: 3px;
     border-top: 1px solid #555555;
     border-left: 1px solid #333333;
@@ -78,7 +66,6 @@ window#waybar.solo {
 
 #workspaces button.persistent{
     background-color: rgba(255, 255, 255, 0.80);
-    color: #666666;
     margin-right: 3px;
     border-top: 1px solid #555555;
     border-left: 1px solid #333333;
@@ -90,10 +77,7 @@ window#waybar.solo {
 #tray,
 #clock,
 #battery,
-#cpu,
-#memory,
 #disk,
-#temperature,
 #backlight,
 #network,
 #pulseaudio,
@@ -114,8 +98,9 @@ window#waybar.solo {
 #mpd,
 #custom-power {
     background-color: rgba(255, 255, 255, 0.80);
+    color: #444444;
     margin-right: 3px;
-    color: #444444;    padding: 0px 11px 0px 11px;
+    padding: 0px 11px 0px 11px;
     border-top: 1px solid #555555;
     border-left: 1px solid #333333;
     border-right: 1px solid #333333;
@@ -124,7 +109,6 @@ window#waybar.solo {
 
 #battery.critical:not(.charging) {
     background-color: rgba(255, 255, 255, 0.80);
-    color: #444444;
     animation-name: blink;
     animation-duration: 0.9s;
     animation-timing-function: linear;
@@ -139,5 +123,43 @@ window#waybar.solo {
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
 
+}
+
+#temperature
+{    
+    background-color: rgba(255, 255, 255, 0.80);
+    color: #444444;
+    border-radius: 7px 0px 0px 7px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 11px;
+    border-top: 1px solid #555555;
+    border-left: 1px solid #333333;
+    border-right: 0px solid #333333;
+    border-bottom: 1px solid #222222;
+}
+
+#cpu
+{    
+    background-color: rgba(255, 255, 255, 0.80);
+    border-radius: 0px 0px 0px 0px;
+    color: #444444;
+    padding: 0px 11px 0px 11px;
+    border-top: 1px solid #555555;
+    border-left: 0px solid #333333;
+    border-right: 0px solid #333333;
+    border-bottom: 1px solid #222222;
+}
+
+#memory
+{    
+    background-color: rgba(255, 255, 255, 0.80);
+    color: #444444;
+    border-radius: 0px 7px 7px 0px;
+    margin: 0px 3px 0px 0px;
+    padding: 0px 11px 0px 0px;
+    border-top: 1px solid #555555;
+    border-left: 0px solid #333333;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #222222;
 }
 

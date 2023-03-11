@@ -3,9 +3,9 @@
 ## Autor:
 ## Hector Ivan Vega Zamudio
 ## mxhectorvega@gmail.com
-## https://github.com/mxhectorvega
+## https://github.com/mxhectorvega/hyprland
 ## Version:
-## v2.0: 20/11/2021
+## v1.2: 11/03/2023
 */
 
 [{
@@ -25,10 +25,11 @@
     "cpu", 
     "memory", 
     "custom/pacman",
+    "idle_inhibitor",
     "sway/language",
     "custom/grabar", 
     "custom/darkmode",
-    "idle_inhibitor", 
+    "custom/forzar",
 /*    "custom/ayuda", */
     "sway/mode"
     ],
@@ -40,7 +41,6 @@
     "modules-right": [
     "custom/wf-recorder", 
     "backlight",
-    "custom/forzar",
     "pulseaudio#mic", 
     "pulseaudio",  
     "bluetooth", 
@@ -59,14 +59,14 @@
     "on-scroll-up": "hyprctl dispatch workspace e+1",
     "on-scroll-down": "hyprctl dispatch workspace e-1",
     "format-icons": {
-//        "1": "<span color='#888888'></span>",
-//        "2": "<span color='#888888'></span>",
-//        "3": "<span color='#888888'></span>",
-//        "4": "<span color='#888888'></span>",
-//        "5": "<span color='#888888'></span>",    
-      "urgent": "",
-      "active": "",
-      "default": ""
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",    
+//      "urgent": "",
+//      "active": "",
+//      "default": ""
     }
   },
 
@@ -154,12 +154,12 @@
     "interface": "wlp*",
     "format": "{ifname}",
     "format-wifi": "<span color='#8080ff'> </span>  {signalStrength}%",
-    "format-ethernet": "<span color='#8080ff'></span> {ifname}",
+    "format-ethernet": "<span color='#8080ff'></span>  {ifname}",
     "format-disconnected": "", //An empty format will hide the module.
     "format-disconnected": "<span color='#8080ff'></span>",
     "tooltip-format": "{ifname}",
-    "tooltip-format-wifi": "<span color='#8080ff'> </span> {essid} ({signalStrength}%) ",
-    "tooltip-format-ethernet": "<span color='#8080ff'> </span> {ifname}",
+    "tooltip-format-wifi": "<span color='#8080ff'> </span> {essid}  ({signalStrength}%)",
+    "tooltip-format-ethernet": "<span color='#8080ff'> </span>  {ifname}",
     "tooltip-format-disconnected": "Desconectado",
     "max-length": 50,
     "on-click": "gnome-terminal -- nmtui"
@@ -199,14 +199,14 @@
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
-            "activated": "<span color='#f0cc6f'></span>",
+            "activated": "<span color='#69b2ce'></span>",
             "deactivated": "<span color='#444444'></span>",
         "on-click": "gnome-terminal -- htop"
         }
       },
     "custom/portapapeles": {
-        "format": "<span color='#f0cc6f'>{icon}</span>",
-        "format-icons": "",
+        "format": "{icon}",
+        "format-icons": "<span color='#846246'></span>",
         "on-click": "pkill wofi ; clipman pick -t wofi",
         "on-click-right": "clipman clear --all && exec notify-send -t 10000 -i $HOME/.config/mako/hypr.ico 'Clipboard' 'El historial del portapapeles se a borrado con exito.'",
         "tooltip":"true",
@@ -221,7 +221,7 @@
         "on-click": "gnome-terminal -- htop"
         },
     "custom/grabar":{
-    "format": "<span color='#D75C42'>{icon}</span>",
+    "format": "<span color='#8080ff'>{icon}</span>",
     "format-icons": "",
     "tooltip-format": "loco",
     "on-click": "wf-recorder -a -f $(xdg-user-dir VIDEOS)/$(date +'screencast_%Y-%m-%d_%H-%M-%S.mp4' ; exec notify-send -t 10000 -i $HOME/.config/mako/hypr.ico 'Screenrecorder' 'Se ha iniciado screenrecorder, presione click derecho sobre el mismo boton para cancelar')",

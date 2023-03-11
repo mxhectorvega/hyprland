@@ -11,8 +11,8 @@
 window {
 
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.80);
-    color: #dddddd;
+    background-color: rgba(255, 255, 255, 0.80);
+    color: #444444;
     margin-right: 3px;
     border-top: 1px solid #555555;
     border-left: 1px solid #333333;
@@ -24,7 +24,7 @@ window {
     font-family: "SF Compact Display", "Font Awesome 5 Free";
     font-weight: 600;
     font-size: 12px;
-    color: #dddddd;
+    color: #444444;
 }
 
 #input {

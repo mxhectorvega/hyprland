@@ -7,9 +7,10 @@ loco=$(printf "Bloquear\nCerrar sesion\nApagar\nReiniciar\nSuspender\nHibernar\n
       --prompt Powermenu)
 
 if [[ $loco = "Bloquear" ]]; then
-	dm-tool lock
+	hyprctl dispatch dpms off
+	exec lockscreen
 elif [[ $loco = "Cerrar sesion" ]]; then
-	swaymsg exit
+	kill -9 -1
 elif [[ $loco = "Apagar" ]]; then
 	systemctl poweroff
 elif [[ $loco = "Reiniciar" ]]; then
