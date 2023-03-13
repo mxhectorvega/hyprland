@@ -140,7 +140,7 @@
     },
     "bluetooth": {
 	"format": "<span color='#69b2ce'></span>",
-	"format-off": "<span color='#69b2ce'></span>",
+	"format-off": "<span color='#666666'></span>",
 	"format-on": "<span color='#69b2ce'></span>",
 	"tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
 	"tooltip-format-connected": "Estado:\n{status}\n\nNombre del host:\n{controller_alias}\n\nDispositivos conectados:\t{num_connections}\n{device_alias}",
@@ -179,7 +179,7 @@
         "phone": "",
         "portable": "",
         "car": "",
-        "default": ["<span color='#333333'></span>", "<span color='#666666'></span>"]
+        "default": ["<span color='#666666'></span>", "<span color='#666666'></span>"]
     },
     "scroll-step": 1,
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
