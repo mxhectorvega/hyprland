@@ -190,7 +190,8 @@
         "format-source": "<span color='#8080ff'></span>",
         "format-source-muted": "​<span color='#D75C42'></span>",
         "tooltip-format": "Microfono",
-        "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
+        "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+        "on-click-right": "gnome-terminal -- pulsemixer"
     },
     "memory": {
     "interval": 30,
