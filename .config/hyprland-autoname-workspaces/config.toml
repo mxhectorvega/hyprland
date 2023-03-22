@@ -1,0 +1,43 @@
+[icons]
+# Añade tu asignación de iconos
+# use comillas dobles la clave y el valor
+# Tome el nombre de cada una las ventanas 
+# abiertas con 'hyprctl clients | grep class'
+
+"DEFAULT" = ""
+"gnome-terminal-server" = ""
+"Firefox" = ""
+"Microsoft-edge" = ""
+"org.pwmt.zathura" = ""
+"evince" = ""
+"org.gnome.Nautilus" = ""
+"thunar" = ""
+"Spotify" = ""
+"Gimp-2.10" = ""
+"libreoffice-writer" = ""
+"libreoffice-calc" = ""
+"libreoffice-impress" = ""
+"org.telegram.desktop" = ""
+"org.gnome.TextEditor" = ""
+"xdg-desktop-portal-gnome" = ""
+"YouTube" = ""
+"virt-manager" = ""
+"eog" = ""
+"com.obsproject.Studio" = ""
+"Steam" = ""
+"Whatsapp" = ""
+"Twitter" = ""
+"Tiktok" = ""
+"Instagram" = ""
+"Facebook" = ""
+
+
+#                             
+
+# Agregue sus aplicaciones que necesitan ser excluidas
+# La clave es la clase, el valor es el título.
+# Puede poner un título vacío para excluir en función de
+# solo nombre de clase 'nombre del software'
+
+[exclude]
+wofi = "Search"

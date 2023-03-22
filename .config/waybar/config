@@ -52,26 +52,23 @@
     ],
 
   "wlr/workspaces": {
-    "all-outputs": true,
-    "active-only": false,
-    "on-click": "activate",
-    "format": "{icon}",
-    "on-scroll-up": "hyprctl dispatch workspace e+1",
-    "on-scroll-down": "hyprctl dispatch workspace e-1",
-    "format-icons": {
-        "1": "",
-        "2": "",
-//      "3": "",
-        "3": "",
-//      "3": "",
-//      "4": "",
-        "4": "",
-//      "4": "",
-        "5": "",
-//      "urgent": "",
-//      "active": "",
-//      "default": ""
-    }
+      "disable-scroll": true,
+      "all-outputs": true,
+      "on-click": "activate",
+      "on-scroll-up": "hyprctl dispatch workspace e+1",
+      "on-scroll-down": "hyprctl dispatch workspace e-1",
+      "persistent_workspaces": {
+          "1": [],
+          "2": [],
+          "3": [],
+          "4": [],
+          "5": [],
+          "6": [],
+          "7": [],
+          "8": [],
+          "9": [],
+          "10": []
+      }
   },
 
     "sway/mode": {
@@ -85,7 +82,7 @@
     "custom/menu":{
 //   "format":"",
     "format":"", 
-    "on-click": "pkill -9 wofi ; wofi --no-actions --allow-images --show drun --width 400 --lines 6",
+    "on-click": "pkill -9 wofi;wofi --no-actions --allow-images --show drun --width 400 --lines 6",
     "tooltip-format": "Bluethooth",
     "tooltip": true
     },
@@ -161,8 +158,8 @@
     "format-disconnected": "", //An empty format will hide the module.
     "format-disconnected": "<span color='#8080ff'></span>",
     "tooltip-format": "{ifname}",
-    "tooltip-format-wifi": "<span color='#8080ff'></span>  {essid}  ({signalStrength}%)",
-    "tooltip-format-ethernet": "<span color='#8080ff'></span>  {ifname}",
+    "tooltip-format-wifi": "Conectado a:\n{essid}\n\nIntensidad de recepcion:\n{signalStrength}%\n\nIP local: \n{ipaddr}",
+    "tooltip-format-ethernet": "Ethernet\n{ifname}\n\nIP local: \n{ipaddr}",
     "tooltip-format-disconnected": "Desconectado",
     "max-length": 50,
     "on-click": "gnome-terminal -- nmtui"
@@ -211,7 +208,7 @@
       },
     "custom/portapapeles": {
         "format": "{icon}",
-        "format-icons": "<span color='#846246'></span>",
+        "format-icons": "<span color='#846246'></span>",
         "on-click": "pkill wofi ; clipman pick -t wofi",
         "on-click-right": "clipman clear --all && exec notify-send -t 10000 -i $HOME/.config/mako/hypr.ico 'Clipboard' 'El historial del portapapeles se a borrado con exito.'",
         "tooltip":"true",
@@ -249,7 +246,7 @@
     "custom/power":{ 
         "format":"<span color='#D75C42'>{icon}</span>",
         "format-icons": "",
-        "on-click": "pkill -9 wofi ; sh $HOME/.config/waybar/custom/power",
+        "on-click": "pkill -9 wofi;sh $HOME/.config/waybar/custom/power",
         "tooltip-format": "Bluethooth"
         },
     "cpu": {
