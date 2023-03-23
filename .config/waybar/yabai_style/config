@@ -246,7 +246,7 @@
     "custom/power":{ 
         "format":"<span color='#D75C42'>{icon}</span>",
         "format-icons": "",
-        "on-click": "pkill -9 wofi;sh $HOME/.config/waybar/custom/power",
+        "on-click": "pkill -9 wofi;sh $HOME/.config/waybar/yabai_style/scripts/power-menu",
         "tooltip-format": "Bluethooth"
         },
     "cpu": {
@@ -258,8 +258,8 @@
 	"custom/darkmode": {
 	"format": "{icon}",
 	"format-icons": ["",""],
-	"on-click": "sh $HOME/.config/waybar/custom/modo-obscuro",
-	"on-click-right": "sh $HOME/.config/waybar/custom/modo-claro"
+	"on-click": "sh $HOME/.config/waybar/yabai_style/scripts/modo-obscuro",
+	"on-click-right": "sh $HOME/.config/waybar/yabai_style/scripts/modo-claro"
   },
         "custom/ayuda":{ 
         "format": "<span color='#ff9942'>{icon}</span>",

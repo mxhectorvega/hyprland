@@ -1,12 +1,12 @@
 #!/bin/bash
 
-rm -rf $HOME/.config/waybar/style.css
 rm -rf $HOME/.config/wofi/style.css
+rm -rf $HOME/.config/waybar/yabai_style/style.css
 rm -rf $HOME/.config/mako/config
 
-cp $HOME/.config/waybar/temas/claro.css $HOME/.config/waybar/style.css
 cp $HOME/.config/wofi/temas/claro.css $HOME/.config/wofi/style.css
-cp $HOME/.config/mako/temas/claro $HOME/.config/mako/config
+cp $HOME/.config/waybar/yabai_style/temas/claro.css $HOME/.config/waybar/windows_style/style.css
+cp $HOME/.config/mako/temas/yabai_style/claro $HOME/.config/mako/config
 
 #sed -i "s/obscuro/claro/g" $HOME/.config/kitty/kitty.conf
 #sed -i "s/gris/claro/g" $HOME/.config/kitty/kitty.conf
@@ -36,9 +36,9 @@ gsettings set org.gtk.Settings.FileChooser window-size '(800,500)'
 pkill -9 mako
 mako &
 pkill -9 waybar
-waybar &
+waybar --config=$HOME/.config/waybar/yabai_style/config --style=$HOME/.config/waybar/yabai_style/style.css &
 sleep 0.5
-notify-send --expire-time 3000 --icon $HOME/.config/mako/hypr.ico 'Tema claro' 'La configuracion se aplico satisfactoriamente'
+notify-send --expire-time 3000 --icon $HOME/.config/mako/hypr.ico 'Tema claro' 'La configuración se aplico satisfactoriamente'
 swaybg -i $HOME/.config/wall/claro.*
 
 

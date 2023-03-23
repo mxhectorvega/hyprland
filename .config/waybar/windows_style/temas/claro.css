@@ -1,0 +1,190 @@
+/* 
+## Configuracion para WayBar
+## Autor:
+## Hector Ivan Vega Zamudio
+## mxhectorvega@gmail.com
+## https://github.com/mxhectorvega
+## Version:
+## v2.0: 20/11/2021
+*/
+
+* {
+    border: none;
+    font-family: "SF Compact Display", "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 12px;
+    min-height: 0;
+	  margin: 0;
+}
+
+#taskbar {
+	  margin: 0;
+    background: transparent;
+    border-top: 1px solid #555555;
+    border-radius: 0px;
+}
+
+window#waybar {
+    background-color: rgba(255, 255, 255, 0.60);
+    border-top: 1px solid #aaaaaa;
+    border-left: 0px solid #111111;
+    border-right: 0px solid #111111;
+    border-bottom: 0px solid #111111;
+}
+
+window#waybar.hidden {
+    border-top: 1px solid #999999;
+    color: #111111;
+}
+
+window#waybar.empty {
+    border-top: 1px solid #999999;
+    color: #111111;
+}
+
+window#waybar.solo {
+    color: #111111;
+}
+
+#workspaces button {
+    border-radius: 7px 7px 7px 7px;
+    margin: 7px 2px 7px 2px;
+    padding: 0px 7px 0px 7px;
+    color: #111111;
+}
+
+#workspaces button.visible {
+    color: #444444;
+}
+
+#workspaces button.active {
+    background-color: rgba(11, 11, 11, 0.50);
+    border-top: 1px solid #222222;
+    border-left: 1px solid #444444;
+    border-right: 1px solid #444444;
+    border-bottom: 0px solid #222222;
+    color: #dddddd;
+}
+
+#workspaces button.urgent {
+    color: #D75C42;
+}
+
+#workspaces button.persistent {
+    color: #444444;
+}
+
+#custom-menu {
+    background-color: rgba(11, 11, 11, 0.50);
+    border-radius: 20px 20px 20px 20px;
+    color: #bbbbbb;
+    border-top: 0px solid #808080;
+    border-left: 1px solid #505050;
+    border-right: 1px solid #505050;
+    border-bottom: 1px solid #202020;
+    margin: 8px 8px 8px 0px;
+    padding: 0px 12px 0px 12px;
+    font-weight: 400;
+    font-size: 11px;
+}
+
+#clock {
+    color: #111111;
+    border-top: 0px solid #222222;
+    border-left: 0px solid #333333;
+    border-right: 0px solid #333333;
+    border-bottom: 0px solid #222222;
+    padding: 0px 5px 0px 5px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+#mode,
+#tray,
+#battery,
+#disk,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#mode,
+#idle_inhibitor,
+#bluetooth,
+#language,
+#custom-grabar,
+#custom-portapapeles,
+#custom-pacman,
+#custom-layout,
+#custom-forzar,
+#custom-wf-recorder,
+#custom-darkmode,
+#custom-ayuda,
+#mpd,
+#custom-power {
+    color: #000000;
+    border-top: 0px solid #222222;
+    border-left: 0px solid #333333;
+    border-right: 0px solid #333333;
+    border-bottom: 0px solid #222222;
+    padding: 0px 5px 0px 5px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#battery.critical:not(.charging) {
+    background-color: rgba(0, 0, 0, 0.80);
+    animation-name: blink;
+    animation-duration: 0.9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}
+
+#temperature
+{
+    color: #000000;
+    border-radius: 7px 0px 0px 7px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 11px;
+    padding: 0px 11px 0px 11px;
+    border-top: 0px solid #555555;
+    border-left: 0px solid #333333;
+    border-right: 0px solid #333333;
+    border-bottom: 0px solid #222222;
+
+}
+
+#cpu
+{    
+
+    color: #000000;
+    border-radius: 0px 0px 0px 0px;
+    padding: 0px 11px 0px 11px;
+    padding: 0px 11px 0px 11px;
+    border-top: 0px solid #555555;
+    border-left: 0px solid #333333;
+    border-right: 0px solid #333333;
+    border-bottom: 0px solid #222222;
+}
+
+#memory
+{   
+
+    color: #000000;
+    border-radius: 0px 7px 7px 0px;
+    margin: 0px 3px 0px 0px;
+    padding: 0px 11px 0px 0px;
+    padding: 0px 11px 0px 11px;
+    border-top: 0px solid #555555;
+    border-left: 0px solid #333333;
+    border-right: 0px solid #333333;
+    border-bottom: 0px solid #222222;
+}

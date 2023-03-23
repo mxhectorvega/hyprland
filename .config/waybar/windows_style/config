@@ -1,0 +1,295 @@
+/* 
+## Configuracion para Waybar
+## Autor:
+## Hector Ivan Vega Zamudio
+## mxhectorvega@gmail.com
+## https://github.com/mxhectorvega/hyprland
+## Version:
+## v1.2: 11/03/2023
+*/
+
+[{
+    "layer": "bottom", 
+    "position": "bottom", // Waybar position (top|bottom|left|right)
+      
+    "height": 45,
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "margin-left": 0,
+    "margin-right": 0, 
+
+    "modules-left": [
+    ],
+    
+    "modules-center": [
+    "custom/menu",
+    "wlr/workspaces"
+/*   "wlr/taskbar", */
+    ],
+    
+    "modules-right": [
+ /*   "temperature", 
+    "cpu", 
+    "memory", 
+    "custom/pacman",
+    "idle_inhibitor",
+    "sway/language",
+    "custom/grabar", 
+    "custom/ayuda", 
+    "sway/mode",
+    "custom/forzar",
+    "custom/wf-recorder", */ 
+    "tray",
+    "custom/portapapeles",
+    "backlight",
+    "pulseaudio#mic", 
+    "pulseaudio",
+    "custom/darkmode",
+    "bluetooth",
+    "network",
+    "battery",
+    "clock"
+/*    "custom/power" */ 
+    ],
+
+  "wlr/workspaces": {
+      "disable-scroll": true,
+      "all-outputs": true,
+      "on-click": "activate",
+      "on-scroll-up": "hyprctl dispatch workspace e+1",
+      "on-scroll-down": "hyprctl dispatch workspace e-1",
+      "persistent_workspaces": {
+          "1": [],
+          "2": [],
+          "3": [],
+          "4": [],
+          "5": [],
+          "6": [],
+          "7": [],
+          "8": [],
+          "9": [],
+          "10": []
+      }
+  },
+
+    "sway/mode": {
+        "format": "{}"
+    },
+    "sway/window": {
+        "max-length": 20,
+        "format":" {}",
+        "tooltip": false
+    },
+    "custom/menu":{
+//   "format":"",
+    "format":"🔍    Buscar...", 
+    "on-click": "pkill -9 wofi;wofi --no-actions --allow-images --show drun --width 400 --lines 6",
+    "tooltip-format": "Bluethooth",
+    "tooltip": true
+    },
+    "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 10
+        },
+        "format": "{icon}  {capacity}%",
+        "format-charging": "<span color='#8080ff'> </span> {capacity}%",
+        "format-plugged": "<span color='#444444'> </span> {capacity}%",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["<span color='#D75C42'></span>", "<span color='#f0cc6f'></span>", "<span color='#8fb15d'></span>", "<span color='#8fb15d'></span>", "<span color='#8fb15d'></span>"]
+    },
+    "battery#bat2": {
+        "bat": "BAT2"
+    },
+        "clock": {
+        "format": "     {:%H:%M\n%D}",
+        "format-alt": "{:%a, %d de %B}",
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "calendar": {
+                    "mode"          : "month",
+                    "mode-mon-col"  : 3,
+                    "on-scroll"     : 1,
+                    "on-click-right": "mode",
+                    "format": {
+                             "months":     "<span color='#ffead3'><b>{}</b></span>",
+                              "days":       "<span color='#dddddd'><b>{}</b></span>",
+                              "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                              "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                              "today":      "<span color='#D75C42'><b><u>{}</u></b></span>"
+                              }
+                    },
+        "actions":  {
+                    "on-click-right": "mode",
+                    "on-click-forward": "tz_up",
+                    "on-click-backward": "tz_down",
+                    "on-scroll-up": "shift_up",
+                    "on-scroll-down": "shift_down"
+                    }
+    },
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "<span color='#8080ff'>{icon}</span>  {percent}%",
+        "on-scroll-down": "exec brightnessctl -m set 5%-",
+        "on-scroll-up": "exec brightnessctl -m set +5%",
+        "format-icons": ["",""],
+        "tooltip-format": "Bluethooth"
+    },
+    "bluetooth": {
+	"format": "",
+	"format-off": "",
+	"format-on": "",
+	"tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+	"tooltip-format-connected": "Estado:\n{status}\n\nNombre del host:\n{controller_alias}\n\nDispositivos conectados:\t{num_connections}\n{device_alias}",
+	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+	"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+	"on-click": "blueberry"
+     },
+
+     "tray": {
+        "icon-size": 15,
+        "spacing": 10
+    },
+    "network": {
+    "interface": "wlp*",
+    "format": "{ifname}",
+    "format-wifi": "",
+    "format-ethernet": "<span color='#8080ff'></span>  {ifname}",
+    "format-disconnected": "", //An empty format will hide the module.
+    "format-disconnected": "<span color='#8080ff'></span>",
+    "tooltip-format": "{ifname}",
+    "tooltip-format-wifi": "Conectado a:\n{essid}\n\nIntensidad de recepcion:\n{signalStrength}%\n\nIP local: \n{ipaddr}",
+    "tooltip-format-ethernet": "Ethernet\n{ifname}\n\nIP local: \n{ipaddr}",
+    "tooltip-format-disconnected": "Desconectado",
+    "max-length": 50,
+    "on-click": "gnome-terminal -- nmtui"
+    },
+    "pulseaudio": {
+    "format": "{icon}",
+    "format-bluetooth": "{icon}",
+    "format-muted": "<span color='#D75C42'></span>",
+    "format-icons": {
+        "*": "",
+        "headphones": "",
+        "handsfree": "",
+        "headset": "",
+        "phone": "",
+        "portable": "",
+        "car": "",
+        "default": ["", ""]
+    },
+    "scroll-step": 1,
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click-right": "gnome-terminal -- pulsemixer",
+    "tooltip-format": "Vol: {volume}%"
+    },
+    "pulseaudio#mic": {
+        "format": "{format_source}",
+        "format-source": "",
+        "format-source-muted": "​<span color='#D75C42'></span>",
+        "tooltip-format": "Microfono",
+        "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+        "on-click-right": "gnome-terminal -- pulsemixer",
+        "tooltip-format": "Mic: {volume}%"
+    },
+    "memory": {
+    "interval": 30,
+    "format": "<span color='#8fb15d'>{icon}</span>  {}%",
+    "format-icons": "",
+    "max-length": 10,
+    "on-click": "gnome-terminal -- htop",
+    "tooltip-format": "Consumo:\t\t\t{used:0.1f}G\n\nDisponible:\t\t\t{avail:0.1f}G\n\nInstalada:\t\t\t{total:0.1f}G"
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "<span color='#69b2ce'></span>",
+            "deactivated": "<span color='#444444'></span>",
+        "on-click": "gnome-terminal -- htop"
+        }
+      },
+    "custom/portapapeles": {
+        "format": "{icon}",
+        "format-icons": "",
+        "on-click": "pkill wofi ; clipman pick -t wofi",
+        "on-click-right": "clipman clear --all && exec notify-send -t 10000 -i $HOME/.config/mako/hypr.ico 'Clipboard' 'El historial del portapapeles se a borrado con exito.'",
+        "tooltip":"true",
+        "tooltip-format": "Portapapeles"
+        },      
+    "temperature": {
+        "thermal-zone": 1,
+        "hwmon-path": "/sys/class/hwmon/hwmon0/temp1_input",
+        "critical-threshold": 75,
+        "format-critical": "<span color='#D75C42'></span>  {temperatureC}°C",
+        "format": "<span color='#8fb15d'></span>  {temperatureC}°C",
+        "on-click": "gnome-terminal -- htop"
+        },
+    "custom/grabar":{
+    "format": "<span color='#8080ff'>{icon}</span>",
+    "format-icons": "",
+    "on-click-right": "killall --signal SIGINT wf-recorder ; exec notify-send -t 10000 -i $HOME/.config/mako/hypr.ico 'Screenrecorder' 'La grabacion ha finalizado y se ha guardado en el directorio Videos'",
+    "on-click": "wf-recorder -a -f $(xdg-user-dir VIDEOS)/$(date +'screencast_%Y-%m-%d_%H-%M-%S.mp4' ; exec notify-send -t 10000 -i $HOME/.config/mako/hypr.ico 'Screenrecorder' 'Se ha iniciado screenrecorder, presione click derecho sobre el mismo boton para cancelar')",
+    "return-type": "json",
+    },
+    "custom/layout":{ 
+        "format":"", 
+        "on-click": "swaymsg floating toggle",
+        "on-click-right": "swaymsg layout toggle split"
+        },        
+    "custom/pacman": {
+        "format": "<span color='#846246'>{icon}</span>  {}",
+        "format-icons": "",
+        "interval": 3600,                     // every hour
+        "exec": "checkupdates | wc -l",       // # of updates
+        "exec-if": "exit 0",                  // always run; consider advanced run conditions
+        "on-click": "gnome-terminal -- sudo pacman -Syu; pkill -SIGRTMIN+8 waybar", // update system
+        "signal": 8
+        },
+    "custom/power":{ 
+        "format":"<span color='#D75C42'>{icon}</span>",
+        "format-icons": "",
+        "on-click": "pkill -9 wofi;sh $HOME/.config/waybar/windows_style/scripts/power-menu",
+        "tooltip-format": "Bluethooth"
+        },
+    "cpu": {
+        "format": "<span color='#8fb15d'>{icon}</span>  {usage}%",
+        "format-icons": "",
+        "on-click": "gnome-terminal -- htop"
+    },
+
+	"custom/darkmode": {
+	"format": "{icon}",
+	"format-icons": ["",""],
+	"on-click": "sh $HOME/.config/waybar/windows_style/scripts/modo-obscuro",
+	"on-click-right": "sh $HOME/.config/waybar/windows_style/scripts/modo-claro"
+  },
+        "custom/ayuda":{ 
+        "format": "<span color='#ff9942'>{icon}</span>",
+        "format-icons": "",
+        "on-click": "zathura $HOME/.config/ayuda_sway_mxhectorvega.pdf &",
+        "tooltip-format": "Archivo de ayuda",
+        "tooltip": "true"
+    },
+    "custom/forzar": {
+        "format":"<span color='#D75C42'>{icon}</span>",
+        "format-icons": "",
+        "on-click": "gnome-terminal -- hyprctl kill",
+        "tooltip-format": "Forzar cierre",
+        "tooltip": "true"
+       },
+
+        "wlr/taskbar": {
+        "format": "{icon}",
+        "tooltip-format": "{title}",
+        "all-outputs": false,
+        "active-first": false,
+        "icon-size": 30,
+        "icon-theme": "Colloid-dark",
+        "on-click": "minimize",
+        "on-click-right": "activate",
+        "on-click-middle": "close"
+
+    }
+
+}]

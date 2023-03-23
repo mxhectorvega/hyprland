@@ -9,7 +9,7 @@ loco=$(printf "Bloquear\nCerrar sesion\nApagar\nReiniciar\nSuspender\nHibernar\n
 if [[ $loco = "Bloquear" ]]; then
 	hyprctl dispatch dpms off
 	exec lockscreen
-elif [[ $loco = "Cerrar sesion" ]]; then
+elif [[ $loco = "Cerrar sesión" ]]; then
 	kill -9 -1
 elif [[ $loco = "Apagar" ]]; then
 	systemctl poweroff
@@ -19,7 +19,7 @@ elif [[ $loco = "Suspender" ]]; then
 	systemctl suspend
 elif [[ $loco = "Hibernar" ]]; then
 	systemctl hibernate
-elif [[ $loco = "Suspencion hibrida" ]]; then
+elif [[ $loco = "Suspensión híbrida" ]]; then
 	systemctl hybrid-sleep
 elif [[ $loco = "Suspender y luego hibernar" ]]; then
 	systemctl suspend-then-hibernate
