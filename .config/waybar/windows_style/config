@@ -22,6 +22,7 @@
     ],
     
     "modules-center": [
+    "custom/power",
     "custom/menu",
     "wlr/workspaces"
 /*   "wlr/taskbar", */
@@ -49,7 +50,6 @@
     "network",
     "battery",
     "clock"
-/*    "custom/power" */ 
     ],
 
   "wlr/workspaces": {
@@ -247,8 +247,7 @@
         "signal": 8
         },
     "custom/power":{ 
-        "format":"<span color='#D75C42'>{icon}</span>",
-        "format-icons": "",
+        "format": "    ",
         "on-click": "pkill -9 wofi;sh $HOME/.config/waybar/windows_style/scripts/power-menu",
         "tooltip-format": "Bluethooth"
         },

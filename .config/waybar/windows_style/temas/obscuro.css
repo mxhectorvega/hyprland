@@ -25,7 +25,7 @@
 }
 
 window#waybar {
-    background-color: rgba(0, 0, 0, 0.80);
+    background-color: rgba(0, 0, 0, 0.60);
     border-top: 1px solid #111111;
     border-left: 0px solid #111111;
     border-right: 0px solid #111111;
@@ -50,6 +50,11 @@ window#waybar.solo {
     border-radius: 7px 7px 7px 7px;
     margin: 7px 2px 7px 2px;
     padding: 0px 7px 0px 7px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-top: 1px solid #222222;
+    border-left: 1px solid #171717;
+    border-right: 1px solid #171717;
+    border-bottom: 0px solid #222222;
     color: #dddddd;
 }
 
@@ -58,7 +63,7 @@ window#waybar.solo {
 }
 
 #workspaces button.active {
-    background-color: rgba(255, 255, 255, 0.10);
+    background-color: rgba(255, 255, 255, 0.15);
     border-top: 1px solid #444444;
     border-left: 1px solid #333333;
     border-right: 1px solid #333333;
@@ -75,7 +80,7 @@ window#waybar.solo {
 }
 
 #custom-menu {
-    background-color: rgba(255, 255, 255, 0.10);
+    background-color: rgba(255, 255, 255, 0.15);
     border-radius: 20px 20px 20px 20px;
     color: #dddddd;
     border-top: 0px solid #222222;
@@ -99,6 +104,20 @@ window#waybar.solo {
     font-weight: 600;
 }
 
+
+#custom-power {
+    background-image: url('/home/vega/.config/waybar/windows_style/linux.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    border-top: 0px solid #222222;
+    border-left: 0px solid #444444;
+    border-right: 0px solid #444444;
+    border-bottom: 0px solid #222222;
+    padding: 0px 7px 0px 7px;
+    margin: 0px 10px 0px 10px;
+}
+
 #mode,
 #tray,
 #battery,
@@ -119,8 +138,8 @@ window#waybar.solo {
 #custom-wf-recorder,
 #custom-darkmode,
 #custom-ayuda,
-#mpd,
-#custom-power {
+#mpd 
+{
     color: #dddddd;
     border-top: 0px solid #222222;
     border-left: 0px solid #333333;

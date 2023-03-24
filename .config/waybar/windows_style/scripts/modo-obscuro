@@ -18,10 +18,10 @@ cp $HOME/.config/mako/temas/windows_style/obscuro $HOME/.config/mako/config
 
 rm -rf ${HOME}/.config/gtk-*
 
-cp -R $HOME/.themes/Colloid-Dark/gtk-* ${HOME}/.config
+#cp -R $HOME/.themes/Colloid-Dark/gtk-* ${HOME}/.config
 #cp -R $HOME/.themes/Colloid-Dark/gtk-2* ${HOME}/.config
 #cp -R $HOME/.themes/Colloid-Dark/gtk-3* ${HOME}/.config
-#cp -R $HOME/.themes/Colloid-Dark/gtk-4* ${HOME}/.config
+cp -R $HOME/.themes/Colloid-Dark/gtk-4* ${HOME}/.config
 
 gsettings set org.gnome.desktop.interface gtk-theme 'Colloid-Dark'
 gsettings set org.gnome.desktop.interface icon-theme "Colloid-dark"
