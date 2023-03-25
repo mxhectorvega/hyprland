@@ -104,8 +104,7 @@
         "bat": "BAT2"
     },
         "clock": {
-        "format": "     {:%H:%M\n%D}",
-        "format-alt": "{:%a, %d de %B}",
+        "format": "    {:%H:%M\n%d/%m/%y}",
         "tooltip-format": "<tt>{calendar}</tt>",
         "calendar": {
                     "mode"          : "month",
