@@ -33,7 +33,6 @@
     "cpu", 
     "memory", 
     "custom/pacman",
-    "idle_inhibitor",
     "sway/language",
     "custom/grabar", 
     "custom/ayuda", 
@@ -41,6 +40,7 @@
     "custom/forzar",
     "custom/wf-recorder", */ 
     "tray",
+    "idle_inhibitor",
     "custom/portapapeles",
     "backlight",
     "pulseaudio#mic", 
@@ -200,14 +200,14 @@
     "on-click": "gnome-terminal -- htop",
     "tooltip-format": "Consumo:\t\t\t{used:0.1f}G\n\nDisponible:\t\t\t{avail:0.1f}G\n\nInstalada:\t\t\t{total:0.1f}G"
     },
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "<span color='#69b2ce'></span>",
-            "deactivated": "<span color='#444444'></span>",
-        "on-click": "gnome-terminal -- htop"
+"idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+        "activated": "<span color='#D75C42'></span>",
+        "deactivated": "",
+        "tooltip-format":"Caffeine {status}"
         }
-      },
+},
     "custom/portapapeles": {
         "format": "{icon}",
         "format-icons": "",

@@ -4,7 +4,7 @@
 # Tome el nombre de cada una las ventanas 
 # abiertas con 'hyprctl clients | grep class'
 
-"DEFAULT" = ""
+"DEFAULT" = ""
 "gnome-terminal-server" = ""
 "Firefox" = ""
 "Microsoft-edge" = ""

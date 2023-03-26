@@ -1,26 +1,67 @@
-#!/bin/bash
+#! /usr/bin/env bash
 
-loco=$(printf "Bloquear\nCerrar sesion\nApagar\nReiniciar\nSuspender\nHibernar\nSuspencion hibrida\nSuspender y luego hibernar" | wofi \
+pkill -9 wofi
+
+chmod +x $HOME/.config/waybar/yabai_style/scripts/power-menu
+
+show_menu() {
+     bloquear="		Bloquear"
+    suspender="		Suspender"
+    reiniciar="		Reiniciar"
+     hibernar="	Hibernar"
+       apagar="		Apagar"
+       cerrar="	Cerrar sesión"
+
+    opciones="$bloquear\n$cerrar\n$reiniciar\n$apagar\n$suspender\n$hibernar"
+
+    seleccionar="$(echo -e "$opciones" | $wofi)"
+
+    case $seleccionar in
+        "" | $divider)
+            echo "Opción no seleccionada"
+            ;;
+        $bloquear)
+            $dm
+            ;;
+        $suspender)
+            $($bloquear) && sleep 1; systemctl suspend
+            ;;
+        $cerrar)
+            loginctl terminate-session $XDG_SESSION_ID
+            ;;
+        $reiniciar)
+            systemctl reboot
+            ;;
+        $apagar)
+            systemctl poweroff
+            ;;
+        $hibernar)
+            $($bloquear) && sleep 1; systemctl hibernate
+            ;;
+        *)
+            uptime
+            ;;
+    esac
+}
+
+show_icon() {
+    echo "Loco"
+}
+
+
+dm="swaylock -f --screenshots --clock --indicator-idle-visible --inside-color 282a36 --inside-clear-color 282a36 --inside-ver-color 282a36 --inside-wrong-color 282a36 --key-hl-color bd93f9 --line-color 282a36 --line-clear-color 282a36 --line-ver-color 282a36 --line-wrong-color 282a36 --ring-color 282a36 --ring-clear-color 282a36 --ring-ver-color 282a36 --ring-wrong-color 282a36 --separator-color bd93f9 --text-color bd93f9 --text-clear-color bd93f9 --text-ver-color bd93f9 --text-caps-lock-color bd93f9 --text-wrong-color ff5555 --effect-blur 4x2 --text-clear Cleared --text-caps-lock Maj --text-ver Checking --text-wrong Cheh --bs-hl-color bd93f9 --fade-in 0.5"
+
+wofi="wofi \
       --dmenu \
       --width 250 \
-      --lines 8 \
-      --prompt Powermenu)
+      --lines 7 \
+      --prompt PowerMenu"
 
-if [[ $loco = "Bloquear" ]]; then
-	hyprctl dispatch dpms off
-	exec lockscreen
-elif [[ $loco = "Cerrar sesión" ]]; then
-	kill -9 -1
-elif [[ $loco = "Apagar" ]]; then
-	systemctl poweroff
-elif [[ $loco = "Reiniciar" ]]; then
-	systemctl reboot
-elif [[ $loco = "Suspender" ]]; then
-	systemctl suspend
-elif [[ $loco = "Hibernar" ]]; then
-	systemctl hibernate
-elif [[ $loco = "Suspensión híbrida" ]]; then
-	systemctl hybrid-sleep
-elif [[ $loco = "Suspender y luego hibernar" ]]; then
-	systemctl suspend-then-hibernate
-fi
+case "$1" in
+    --show)
+        show_icon
+        ;;
+    *)
+        show_menu
+        ;;
+esac

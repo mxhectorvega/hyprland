@@ -20,13 +20,13 @@
 #taskbar {
 	  margin: 0;
     background: transparent;
-    border-top: 1px solid #555555;
+    border-top: 1px solid #222222;
     border-radius: 0px;
 }
 
 window#waybar {
-    background-color: rgba(255, 255, 255, 0.60);
-    border-top: 1px solid #aaaaaa;
+    background-color: rgba(0, 0, 0, 0.60);
+    border-top: 1px solid #111111;
     border-left: 0px solid #111111;
     border-right: 0px solid #111111;
     border-bottom: 0px solid #111111;
@@ -34,41 +34,41 @@ window#waybar {
 
 window#waybar.hidden {
     border-top: 1px solid #999999;
-    color: #111111;
+    color: #dddddd;
 }
 
 window#waybar.empty {
     border-top: 1px solid #999999;
-    color: #111111;
+    color: #dddddd;
 }
 
 window#waybar.solo {
-    color: #111111;
+    color: #dddddd;
 }
 
 #workspaces button {
     border-radius: 7px 7px 7px 7px;
     margin: 7px 2px 7px 2px;
     padding: 0px 7px 0px 7px;
-    background-color: rgba(11, 11, 11, 0.10);
-    border-top: 1px solid #bbbbbb;
-    border-left: 1px solid #aaaaaa;
-    border-right: 1px solid #aaaaaa;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-top: 1px solid #222222;
+    border-left: 1px solid #171717;
+    border-right: 1px solid #171717;
     border-bottom: 0px solid #222222;
-    color: #111111;
+    color: #dddddd;
 }
 
 #workspaces button.visible {
-    color: #444444;
+    color: #dddddd;
 }
 
 #workspaces button.active {
-    background-color: rgba(11, 11, 11, 0.50);
-    border-top: 1px solid #bbbbbb;
-    border-left: 1px solid #aaaaaa;
-    border-right: 1px solid #aaaaaa;
-    border-bottom: 0px solid #222222;
-    color: #dddddd;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-top: 1px solid #444444;
+    border-left: 1px solid #333333;
+    border-right: 1px solid #333333;
+    border-bottom: 0px solid #444444;
+    color: #ffffff;
 }
 
 #workspaces button.urgent {
@@ -76,17 +76,17 @@ window#waybar.solo {
 }
 
 #workspaces button.persistent {
-    color: #444444;
+    color: #dddddd;
 }
 
 #custom-menu {
-    background-color: rgba(11, 11, 11, 0.50);
+    background-color: rgba(255, 255, 255, 0.15);
     border-radius: 20px 20px 20px 20px;
-    color: #bbbbbb;
-    border-top: 0px solid #808080;
-    border-left: 1px solid #505050;
-    border-right: 1px solid #505050;
-    border-bottom: 1px solid #202020;
+    color: #dddddd;
+    border-top: 0px solid #222222;
+    border-left: 1px solid #333333;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #444444;
     margin: 8px 8px 8px 0px;
     padding: 0px 12px 0px 12px;
     font-weight: 400;
@@ -94,15 +94,16 @@ window#waybar.solo {
 }
 
 #clock {
-    color: #111111;
+    color: #dddddd;
     border-top: 0px solid #222222;
-    border-left: 0px solid #333333;
-    border-right: 0px solid #333333;
+    border-left: 0px solid #444444;
+    border-right: 0px solid #444444;
     border-bottom: 0px solid #222222;
     padding: 0px 5px 0px 5px;
     font-size: 11px;
     font-weight: 600;
 }
+
 
 #custom-power {
     background-image: url('/home/vega/.config/waybar/windows_style/linux.svg');
@@ -114,7 +115,7 @@ window#waybar.solo {
     border-right: 0px solid #444444;
     border-bottom: 0px solid #222222;
     padding: 0px 7px 0px 7px;
-    margin: 0px 10px 0px 10px;
+    margin: 0px 12px 0px 10px;
 }
 
 #mode,
@@ -137,14 +138,15 @@ window#waybar.solo {
 #custom-wf-recorder,
 #custom-darkmode,
 #custom-ayuda,
-#mpd {
-    color: #000000;
+#mpd 
+{
+    color: #dddddd;
     border-top: 0px solid #222222;
     border-left: 0px solid #333333;
     border-right: 0px solid #333333;
     border-bottom: 0px solid #222222;
     padding: 0px 5px 0px 5px;
-    font-weight: 400;
+    font-weight: 100;
     font-size: 12px;
 }
 
@@ -167,7 +169,7 @@ window#waybar.solo {
 
 #temperature
 {
-    color: #000000;
+    color: #dddddd;
     border-radius: 7px 0px 0px 7px;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 11px;
@@ -182,7 +184,7 @@ window#waybar.solo {
 #cpu
 {    
 
-    color: #000000;
+    color: #dddddd;
     border-radius: 0px 0px 0px 0px;
     padding: 0px 11px 0px 11px;
     padding: 0px 11px 0px 11px;
@@ -195,7 +197,7 @@ window#waybar.solo {
 #memory
 {   
 
-    color: #000000;
+    color: #dddddd;
     border-radius: 0px 7px 7px 0px;
     margin: 0px 3px 0px 0px;
     padding: 0px 11px 0px 0px;
