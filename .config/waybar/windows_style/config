@@ -19,6 +19,7 @@
     "margin-right": 0, 
 
     "modules-left": [
+    "custom/clima"
     ],
     
     "modules-center": [
@@ -40,8 +41,8 @@
     "tray",
     "idle_inhibitor",
     "custom/pacman",
-    "custom/portapapeles",
     "backlight",
+    "custom/portapapeles",
     "pulseaudio#mic", 
     "pulseaudio",
     "custom/grabar", 
@@ -240,7 +241,7 @@
         "interval": 3600,
         "exec": "checkupdates | wc -l",
         "exec-if": "exit 0",
-        "on-click": "gnome-terminal -- sh -c 'sudo pacman -Syu;flatpak update -y;exec bash'",
+        "on-click": "gnome-terminal -- sh -c 'sudo pacman -Syu;flatpak update;exec bash'",
         "signal": 8
         },
     "custom/power":{ 
@@ -274,7 +275,14 @@
         "tooltip-format": "Forzar cierre",
         "tooltip": "true"
        },
-
+/* cambia tu ciudad o localidad en la linea EXEC para ver correctamente el modulo del clima*/
+    "custom/clima": {
+    "exec": "sh $HOME/.config/waybar/windows_style/scripts/clima Veracruz",
+    "return-type": "json",
+    "format": "{}",
+    "tooltip": "true",
+    "interval": "1800"
+},
         "wlr/taskbar": {
         "format": "{icon}",
         "tooltip-format": "{title}",

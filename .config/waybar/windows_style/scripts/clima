@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+link=$(curl -s "https://wttr.in/$1?format=4")
+ciudad=$(echo "$link" | awk '{print $1}')
+condiciones=$(echo "$link" | awk '{print $2,"   "$3,"    "$4}')
+
+echo "{\"text\":\"$ciudad\n$condiciones\", \"tooltip\":\"$ciudad\n$condiciones\"}"
+
+

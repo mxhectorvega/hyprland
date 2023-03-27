@@ -201,8 +201,8 @@
 "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
-        "activated": "<span color='#D75C42'></span>",
-        "deactivated": "",
+        "activated": "<span color='#D75C42'></span>",
+        "deactivated": "",
         "tooltip-format":"Caffeine {status}"
         }
 },
@@ -240,7 +240,7 @@
         "interval": 3600,
         "exec": "checkupdates | wc -l",
         "exec-if": "exit 0",
-        "on-click": "gnome-terminal -- sh -c 'sudo pacman -Syu;flatpak update -y;exec bash'",
+        "on-click": "gnome-terminal -- sh -c 'sudo pacman -Syu;flatpak update;exec bash'",
         "signal": 8
         },
     "custom/power":{ 
