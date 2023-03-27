@@ -9,46 +9,47 @@
 */
 
 [{
-    "layer": "top", 
-    "position": "top", // Waybar position (top|bottom|left|right)
-
-    "height": 25,
-    "margin-top": 5,
+    "layer": "bottom", 
+    "position": "bottom", // Waybar position (top|bottom|left|right)
+      
+    "height": 45,
+    "margin-top": 0,
     "margin-bottom": 0,
-    "margin-left": 5,
-    "margin-right": 5, 
+    "margin-left": 0,
+    "margin-right": 0, 
 
     "modules-left": [
-    "custom/menu",
-    "battery", 
-    "temperature", 
-    "cpu", 
-    "memory", 
-    "custom/pacman",
-    "idle_inhibitor",
-    "sway/language",
-    "custom/grabar", 
-    "custom/darkmode",
-/*    "custom/ayuda", */
-    "sway/mode"
     ],
     
     "modules-center": [
+    "custom/power",
+    "custom/menu",
     "wlr/workspaces"
+/*   "wlr/taskbar", */
     ],
     
     "modules-right": [
-        "custom/forzar",
-    "custom/wf-recorder", 
+ /*   "temperature", 
+    "cpu", 
+    "memory", 
+    "sway/language",
+    "custom/ayuda", 
+    "sway/mode",
+    "custom/forzar",
+    "custom/wf-recorder", */ 
+    "tray",
+    "idle_inhibitor",
+    "custom/pacman",
+    "custom/portapapeles",
     "backlight",
     "pulseaudio#mic", 
-    "pulseaudio",  
-    "bluetooth", 
+    "pulseaudio",
+    "custom/grabar", 
+    "custom/darkmode",
+    "bluetooth",
     "network",
-    "custom/portapapeles", 
-    "clock",
-    "tray",
-    "custom/power" 
+    "battery",
+    "clock"
     ],
 
   "wlr/workspaces": {
@@ -81,7 +82,7 @@
     },
     "custom/menu":{
 //   "format":"",
-    "format":"", 
+    "format":"🔍    Buscar...", 
     "on-click": "pkill -9 wofi;wofi --no-actions --allow-images --show drun --width 400 --lines 6",
     "tooltip-format": "Bluethooth",
     "tooltip": true
@@ -103,8 +104,7 @@
         "bat": "BAT2"
     },
         "clock": {
-        "format": "{:%H:%M}",
-        "format-alt": "{:%a, %d de %B}",
+        "format": "    {:%H:%M\n%d/%m/%y}",
         "tooltip-format": "<tt>{calendar}</tt>",
         "calendar": {
                     "mode"          : "month",
@@ -136,27 +136,25 @@
         "tooltip-format": "Bluethooth"
     },
     "bluetooth": {
-	"format": "<span color='#69b2ce'></span>",
-	"format-off": "<span color='#666666'></span>",
-	"format-on": "<span color='#69b2ce'></span>",
-	"tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
-	"tooltip-format-connected": "Estado:\n{status}\n\nNombre del host:\n{controller_alias}\n\nDispositivos conectados:\t{num_connections}\n{device_alias}",
-	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-	"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+	"format": "",
+	"format-off": "",
+	"format-on": "", 
+	"tooltip-format": "Estado:\n{status}\n\nNombre del host:\n{controller_alias}\n\nDispositivos conectados:\t{num_connections}\n{device_alias}",
+	"tooltip-format-enumerate-connected": "",
 	"on-click": "blueberry"
      },
 
      "tray": {
         "icon-size": 15,
-        "spacing": 15
+        "spacing": 10
     },
     "network": {
     "interface": "wlp*",
     "format": "{ifname}",
-    "format-wifi": "<span color='#8080ff'></span>  {signalStrength}%",
-    "format-ethernet": "<span color='#8080ff'></span>  {ifname}",
+    "format-wifi": "",
+    "format-ethernet": "",
     "format-disconnected": "", //An empty format will hide the module.
-    "format-disconnected": "<span color='#8080ff'></span>",
+    "format-disconnected": "<span color='#D75C42'></span>",
     "tooltip-format": "{ifname}",
     "tooltip-format-wifi": "Conectado a:\n{essid}\n\nIntensidad de recepcion:\n{signalStrength}%\n\nIP local: \n{ipaddr}",
     "tooltip-format-ethernet": "Ethernet\n{ifname}\n\nIP local: \n{ipaddr}",
@@ -165,8 +163,8 @@
     "on-click": "gnome-terminal -- nmtui"
     },
     "pulseaudio": {
-    "format": "{icon}  {volume}%",
-    "format-bluetooth": "{icon}  {volume}%",
+    "format": "{icon}",
+    "format-bluetooth": "{icon}",
     "format-muted": "<span color='#D75C42'></span>",
     "format-icons": {
         "*": "",
@@ -176,19 +174,21 @@
         "phone": "",
         "portable": "",
         "car": "",
-        "default": ["<span color='#666666'></span>", "<span color='#666666'></span>"]
+        "default": ["", ""]
     },
     "scroll-step": 1,
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-    "on-click-right": "gnome-terminal -- pulsemixer"
+    "on-click-right": "gnome-terminal -- pulsemixer",
+    "tooltip-format": "Vol: {volume}%"
     },
     "pulseaudio#mic": {
         "format": "{format_source}",
-        "format-source": "<span color='#8080ff'></span>",
+        "format-source": "",
         "format-source-muted": "​<span color='#D75C42'></span>",
         "tooltip-format": "Microfono",
         "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
-        "on-click-right": "gnome-terminal -- pulsemixer"
+        "on-click-right": "gnome-terminal -- pulsemixer",
+        "tooltip-format": "Mic: {volume}%"
     },
     "memory": {
     "interval": 30,
@@ -208,11 +208,11 @@
 },
     "custom/portapapeles": {
         "format": "{icon}",
-        "format-icons": "<span color='#846246'></span>",
+        "format-icons": "",
         "on-click": "pkill wofi ; clipman pick -t wofi",
         "on-click-right": "clipman clear --all && exec notify-send -t 10000 -i $HOME/.config/mako/hypr.ico 'Clipboard' 'El historial del portapapeles se a borrado con exito.'",
         "tooltip":"true",
-        "tooltip-format":"Loco"	
+        "tooltip-format": "Portapapeles"
         },      
     "temperature": {
         "thermal-zone": 1,
@@ -223,7 +223,7 @@
         "on-click": "gnome-terminal -- htop"
         },
     "custom/grabar":{
-    "format": "<span color='#8080ff'>{icon}</span>",
+    "format": "{icon}",
     "format-icons": "",
     "on-click-right": "killall --signal SIGINT wf-recorder ; exec notify-send -t 10000 -i $HOME/.config/mako/hypr.ico 'Screenrecorder' 'La grabacion ha finalizado y se ha guardado en el directorio Videos'",
     "on-click": "wf-recorder -a -f $(xdg-user-dir VIDEOS)/$(date +'screencast_%Y-%m-%d_%H-%M-%S.mp4' ; exec notify-send -t 10000 -i $HOME/.config/mako/hypr.ico 'Screenrecorder' 'Se ha iniciado screenrecorder, presione click derecho sobre el mismo boton para cancelar')",
@@ -235,18 +235,17 @@
         "on-click-right": "swaymsg layout toggle split"
         },        
     "custom/pacman": {
-        "format": "<span color='#846246'>{icon}</span>  {}",
+        "format": "{icon} ({})",
         "format-icons": "",
-        "interval": 3600,                     // every hour
-        "exec": "checkupdates | wc -l",       // # of updates
-        "exec-if": "exit 0",                  // always run; consider advanced run conditions
-        "on-click": "gnome-terminal -- sudo pacman -Syu; pkill -SIGRTMIN+8 waybar", // update system
+        "interval": 3600,
+        "exec": "checkupdates | wc -l",
+        "exec-if": "exit 0",
+        "on-click": "gnome-terminal -- sh -c 'sudo pacman -Syu;flatpak update -y;exec bash'",
         "signal": 8
         },
     "custom/power":{ 
-        "format":"<span color='#D75C42'>{icon}</span>",
-        "format-icons": "",
-        "on-click": "pkill -9 wofi;sh $HOME/.config/waybar/yabai_style/scripts/power-menu",
+        "format": "    ",
+        "on-click": "pkill -9 wofi;sh $HOME/.config/waybar/windows_style/scripts/power-menu",
         "tooltip-format": "Bluethooth"
         },
     "cpu": {
@@ -258,8 +257,8 @@
 	"custom/darkmode": {
 	"format": "{icon}",
 	"format-icons": ["",""],
-	"on-click": "sh $HOME/.config/waybar/yabai_style/scripts/modo-obscuro",
-	"on-click-right": "sh $HOME/.config/waybar/yabai_style/scripts/modo-claro"
+	"on-click": "sh $HOME/.config/waybar/windows_style/scripts/modo-obscuro",
+	"on-click-right": "sh $HOME/.config/waybar/windows_style/scripts/modo-claro"
   },
         "custom/ayuda":{ 
         "format": "<span color='#ff9942'>{icon}</span>",
@@ -274,5 +273,19 @@
         "on-click": "gnome-terminal -- hyprctl kill",
         "tooltip-format": "Forzar cierre",
         "tooltip": "true"
-       }
+       },
+
+        "wlr/taskbar": {
+        "format": "{icon}",
+        "tooltip-format": "{title}",
+        "all-outputs": false,
+        "active-first": false,
+        "icon-size": 30,
+        "icon-theme": "Colloid-dark",
+        "on-click": "minimize",
+        "on-click-right": "activate",
+        "on-click-middle": "close"
+
+    }
+
 }]

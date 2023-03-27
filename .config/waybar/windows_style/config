@@ -32,19 +32,19 @@
  /*   "temperature", 
     "cpu", 
     "memory", 
-    "custom/pacman",
     "sway/language",
-    "custom/grabar", 
     "custom/ayuda", 
     "sway/mode",
     "custom/forzar",
     "custom/wf-recorder", */ 
     "tray",
     "idle_inhibitor",
+    "custom/pacman",
     "custom/portapapeles",
     "backlight",
     "pulseaudio#mic", 
     "pulseaudio",
+    "custom/grabar", 
     "custom/darkmode",
     "bluetooth",
     "network",
@@ -104,7 +104,7 @@
         "bat": "BAT2"
     },
         "clock": {
-        "format": "    {:%H:%M\n%d/%m/%y}",
+        "format": "     {:%H:%M\n%d/%m/%y}",
         "tooltip-format": "<tt>{calendar}</tt>",
         "calendar": {
                     "mode"          : "month",
@@ -138,11 +138,9 @@
     "bluetooth": {
 	"format": "",
 	"format-off": "",
-	"format-on": "",
-	"tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
-	"tooltip-format-connected": "Estado:\n{status}\n\nNombre del host:\n{controller_alias}\n\nDispositivos conectados:\t{num_connections}\n{device_alias}",
-	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-	"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+	"format-on": "", 
+	"tooltip-format": "Estado:\n{status}\n\nNombre del host:\n{controller_alias}\n\nDispositivos conectados:\t{num_connections}\n{device_alias}",
+	"tooltip-format-enumerate-connected": "",
 	"on-click": "blueberry"
      },
 
@@ -154,9 +152,9 @@
     "interface": "wlp*",
     "format": "{ifname}",
     "format-wifi": "",
-    "format-ethernet": "<span color='#8080ff'></span>  {ifname}",
+    "format-ethernet": "",
     "format-disconnected": "", //An empty format will hide the module.
-    "format-disconnected": "<span color='#8080ff'></span>",
+    "format-disconnected": "<span color='#D75C42'></span>",
     "tooltip-format": "{ifname}",
     "tooltip-format-wifi": "Conectado a:\n{essid}\n\nIntensidad de recepcion:\n{signalStrength}%\n\nIP local: \n{ipaddr}",
     "tooltip-format-ethernet": "Ethernet\n{ifname}\n\nIP local: \n{ipaddr}",
@@ -203,8 +201,8 @@
 "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
-        "activated": "<span color='#D75C42'></span>",
-        "deactivated": "",
+        "activated": "<span color='#D75C42'></span>",
+        "deactivated": "",
         "tooltip-format":"Caffeine {status}"
         }
 },
@@ -225,7 +223,7 @@
         "on-click": "gnome-terminal -- htop"
         },
     "custom/grabar":{
-    "format": "<span color='#8080ff'>{icon}</span>",
+    "format": "{icon}",
     "format-icons": "",
     "on-click-right": "killall --signal SIGINT wf-recorder ; exec notify-send -t 10000 -i $HOME/.config/mako/hypr.ico 'Screenrecorder' 'La grabacion ha finalizado y se ha guardado en el directorio Videos'",
     "on-click": "wf-recorder -a -f $(xdg-user-dir VIDEOS)/$(date +'screencast_%Y-%m-%d_%H-%M-%S.mp4' ; exec notify-send -t 10000 -i $HOME/.config/mako/hypr.ico 'Screenrecorder' 'Se ha iniciado screenrecorder, presione click derecho sobre el mismo boton para cancelar')",
@@ -237,12 +235,12 @@
         "on-click-right": "swaymsg layout toggle split"
         },        
     "custom/pacman": {
-        "format": "<span color='#846246'>{icon}</span>  {}",
+        "format": "{icon} ({})",
         "format-icons": "",
-        "interval": 3600,                     // every hour
-        "exec": "checkupdates | wc -l",       // # of updates
-        "exec-if": "exit 0",                  // always run; consider advanced run conditions
-        "on-click": "gnome-terminal -- sudo pacman -Syu; pkill -SIGRTMIN+8 waybar", // update system
+        "interval": 3600,
+        "exec": "checkupdates | wc -l",
+        "exec-if": "exit 0",
+        "on-click": "gnome-terminal -- sh -c 'sudo pacman -Syu;flatpak update -y;exec bash'",
         "signal": 8
         },
     "custom/power":{ 
