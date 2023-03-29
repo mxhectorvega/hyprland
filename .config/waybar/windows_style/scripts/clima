@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-link=$(curl -s "https://wttr.in/$1?format=4")
-ciudad=$(echo "$link" | awk '{print $1}')
-condiciones=$(echo "$link" | awk '{print $2,"   "$3,"    "$4}')
+link=$(curl -s "https://es.wttr.in/$1?format=%l:+%c+%C+%t+%w\n")
+icono=$(echo "$link" | awk '{print $2}')
+condicion=$(echo "$link" | awk '{print $3, $4}')
+temperatura=$(echo "$link" | awk '{print $5, $6}')
+completo=$(echo "$link")
 
-echo "{\"text\":\"$ciudad\n$condiciones\", \"tooltip\":\"$ciudad\n$condiciones\"}"
-
-
+echo "{\"text\":\"$temperatura\n$condicion\", \"alt\":\"$icono\", \"tooltip\":\"$completo\"}"

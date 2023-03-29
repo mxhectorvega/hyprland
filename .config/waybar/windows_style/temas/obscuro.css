@@ -102,9 +102,18 @@ window#waybar.solo {
     border-bottom: 0px solid #222222;
     padding: 0px 5px 0px 5px;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
+#custom-grande {
+    color: #dddddd;
+    border-top: 0px solid #222222;
+    border-left: 0px solid #444444;
+    border-right: 0px solid #444444;
+    border-bottom: 0px solid #222222;
+    padding: 0px 5px 0px 5px;
+    font-size: 22px;
+}
 
 #custom-power {
     background-image: url('/home/vega/.config/waybar/windows_style/linux.svg');

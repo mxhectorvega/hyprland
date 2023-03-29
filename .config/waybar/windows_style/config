@@ -9,7 +9,7 @@
 */
 
 [{
-    "layer": "bottom", 
+    "layer": "top", // Siempre visible o enviar al fondo? (top|bottom)
     "position": "bottom", // Waybar position (top|bottom|left|right)
       
     "height": 45,
@@ -19,6 +19,7 @@
     "margin-right": 0, 
 
     "modules-left": [
+    "custom/grande",
     "custom/clima"
     ],
     
@@ -26,7 +27,7 @@
     "custom/power",
     "custom/menu",
     "wlr/workspaces"
-/*   "wlr/taskbar", */
+ /*    "wlr/taskbar" */
     ],
     
     "modules-right": [
@@ -82,11 +83,9 @@
         "tooltip": false
     },
     "custom/menu":{
-//   "format":"",
     "format":"🔍    Buscar...", 
-    "on-click": "pkill -9 wofi;wofi --no-actions --allow-images --show drun --width 400 --lines 6",
-    "tooltip-format": "Bluethooth",
-    "tooltip": true
+    "on-click": "pkill wofi;wofi -p Buscar... --no-actions --allow-images --show drun -n -i -I -W 400 -H 300",
+    "tooltip": "false"
     },
     "battery": {
         "states": {
@@ -212,8 +211,7 @@
         "format-icons": "",
         "on-click": "pkill wofi ; clipman pick -t wofi",
         "on-click-right": "clipman clear --all && exec notify-send -t 10000 -i $HOME/.config/mako/hypr.ico 'Clipboard' 'El historial del portapapeles se a borrado con exito.'",
-        "tooltip":"true",
-        "tooltip-format": "Portapapeles"
+        "tooltip": "false"
         },      
     "temperature": {
         "thermal-zone": 1,
@@ -247,7 +245,7 @@
     "custom/power":{ 
         "format": "    ",
         "on-click": "pkill -9 wofi;sh $HOME/.config/waybar/windows_style/scripts/power-menu",
-        "tooltip-format": "Bluethooth"
+        "tooltip": "false"
         },
     "cpu": {
         "format": "<span color='#8fb15d'>{icon}</span>  {usage}%",
@@ -275,25 +273,30 @@
         "tooltip-format": "Forzar cierre",
         "tooltip": "true"
        },
+
 /* cambia tu ciudad o localidad en la linea EXEC para ver correctamente el modulo del clima*/
     "custom/clima": {
     "exec": "sh $HOME/.config/waybar/windows_style/scripts/clima Veracruz",
     "return-type": "json",
     "format": "{}",
-    "tooltip": "true",
+    "tooltip": "false",
+    "interval": "1800"
+},
+    "custom/grande": {
+    "exec": "sh $HOME/.config/waybar/windows_style/scripts/clima Veracruz",
+    "return-type": "json",
+    "format": "{alt}",
+    "tooltip": "false",
     "interval": "1800"
 },
         "wlr/taskbar": {
         "format": "{icon}",
-        "tooltip-format": "{title}",
+        "tooltip-ormat": "{title}",
         "all-outputs": false,
         "active-first": false,
         "icon-size": 30,
         "icon-theme": "Colloid-dark",
-        "on-click": "minimize",
-        "on-click-right": "activate",
-        "on-click-middle": "close"
-
+        "on-click": "minimize-raise"
     }
 
 }]

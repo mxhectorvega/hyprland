@@ -1,7 +1,5 @@
 #! /usr/bin/env bash
-
 pkill -9 wofi
-
 chmod +x $HOME/.config/waybar/yabai_style/scripts/power-menu
 
 show_menu() {
@@ -51,11 +49,7 @@ show_icon() {
 
 dm="swaylock -f --screenshots --clock --indicator-idle-visible --inside-color 282a36 --inside-clear-color 282a36 --inside-ver-color 282a36 --inside-wrong-color 282a36 --key-hl-color bd93f9 --line-color 282a36 --line-clear-color 282a36 --line-ver-color 282a36 --line-wrong-color 282a36 --ring-color 282a36 --ring-clear-color 282a36 --ring-ver-color 282a36 --ring-wrong-color 282a36 --separator-color bd93f9 --text-color bd93f9 --text-clear-color bd93f9 --text-ver-color bd93f9 --text-caps-lock-color bd93f9 --text-wrong-color ff5555 --effect-blur 4x2 --text-clear Cleared --text-caps-lock Maj --text-ver Checking --text-wrong Cheh --bs-hl-color bd93f9 --fade-in 0.5"
 
-wofi="wofi \
-      --dmenu \
-      --width 250 \
-      --lines 7 \
-      --prompt PowerMenu"
+wofi="wofi -p Selecciona... --no-actions --allow-images --show dmenu -n -i -I -W 250 -H 320"
 
 case "$1" in
     --show)
