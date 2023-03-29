@@ -280,14 +280,14 @@
     "return-type": "json",
     "format": "{}",
     "tooltip": "false",
-    "interval": "1800"
+    "interval": "900"
 },
     "custom/grande": {
     "exec": "sh $HOME/.config/waybar/windows_style/scripts/clima Veracruz",
     "return-type": "json",
     "format": "{alt}",
     "tooltip": "false",
-    "interval": "1800"
+    "interval": "900"
 },
         "wlr/taskbar": {
         "format": "{icon}",
