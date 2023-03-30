@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+texto=$(echo " <b>AYUDA</b> \
+\n Breve descripción de los tajos del teclado mas usados en esta config \
+\n\n <b>ATAJO \t\t\t\t\t\t\t DESCRIPCIÓN</b> \
+\n win+enter \
+\t\t\t\t\t\t Abrir terminal \
+\n win+d \
+\t\t\t\t\t\t\t Menú de aplicaciones \
+\n win+e \
+\t\t\t\t\t\t\t Explorador de archivos \
+\n win+shift+s \
+\t\t\t\t\t Captura de pantalla \
+\n win+(algún numero) \
+\t\t Cambiar de espacio de trabajo \
+\n win+shift+(algún numero) \
+\t Mover ventana activa a espacio de trabajo \
+\n\n <b>NOTA:</b> El icono del pingüino es para abrir el menú de apagado, si \
+\n necesitas ayuda contactame <u>mxhectorvega.ml</u>")
+
+echo "{\"text\":\"\", \"tooltip\":\"$texto\"}"

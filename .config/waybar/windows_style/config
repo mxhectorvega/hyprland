@@ -35,11 +35,11 @@
     "cpu", 
     "memory", 
     "sway/language",
-    "custom/ayuda", 
     "sway/mode",
     "custom/forzar",
     "custom/wf-recorder", */ 
     "tray",
+    "custom/ayuda", 
     "idle_inhibitor",
     "custom/pacman",
     "backlight",
@@ -260,11 +260,11 @@
 	"on-click-right": "sh $HOME/.config/waybar/windows_style/scripts/modo-claro"
   },
         "custom/ayuda":{ 
-        "format": "<span color='#ff9942'>{icon}</span>",
-        "format-icons": "",
-        "on-click": "zathura $HOME/.config/ayuda_sway_mxhectorvega.pdf &",
-        "tooltip-format": "Archivo de ayuda",
-        "tooltip": "true"
+        "exec": "sh $HOME/.config/waybar/windows_style/scripts/ayuda",
+        "return-type": "json",
+        "format": "{}",
+        "tooltip-format": "{tooltip}"
+
     },
     "custom/forzar": {
         "format":"<span color='#D75C42'>{icon}</span>",
