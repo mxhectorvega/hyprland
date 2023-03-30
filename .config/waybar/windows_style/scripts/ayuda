@@ -5,6 +5,8 @@ texto=$(echo " <b>AYUDA</b> \
 \n\n <b>ATAJO \t\t\t\t\t\t\t DESCRIPCIÓN</b> \
 \n win+enter \
 \t\t\t\t\t\t Abrir terminal \
+\n win+q \
+\t\t\t\t\t\t\t Cerrar ventana activa \
 \n win+d \
 \t\t\t\t\t\t\t Menú de aplicaciones \
 \n win+e \

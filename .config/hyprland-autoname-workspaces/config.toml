@@ -40,4 +40,4 @@
 # solo nombre de clase 'nombre del software'
 
 [exclude]
-wofi = "Search"
+wofi = "*"
