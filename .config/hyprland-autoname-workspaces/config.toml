@@ -1,11 +1,18 @@
-[icons]
+# Configuracion para Hyprland Autoname Workspaces
+# https://github.com/mxhectorvega/hyprland
+# Version: v1.0 01/04/2023
+
 # Añade tu asignación de iconos
 # use comillas dobles la clave y el valor
 # Tome el nombre de cada una las ventanas 
 # abiertas con 'hyprctl clients | grep class'
 
+[icons]
+
 "DEFAULT" = ""
 "gnome-terminal-server" = ""
+"foot" = ""
+"kitty" = ""
 "Firefox" = ""
 "Microsoft-edge" = ""
 "org.pwmt.zathura" = ""
@@ -17,7 +24,7 @@
 "libreoffice-writer" = ""
 "libreoffice-calc" = ""
 "libreoffice-impress" = ""
-"org.telegram.desktop" = ""
+"org.telegram.desktop" = ""
 "org.gnome.TextEditor" = ""
 "xdg-desktop-portal-gnome" = ""
 "YouTube" = ""
@@ -30,7 +37,12 @@
 "Tiktok" = ""
 "Instagram" = ""
 "Facebook" = ""
-
+"VSCodium" = ""
+"pamac-manager" = ""
+"Steam" = ""
+"mcpelauncher-client" = ""
+"Imagen en Imagen" = ""
+"Netflix" = ""
 
 #                             
 

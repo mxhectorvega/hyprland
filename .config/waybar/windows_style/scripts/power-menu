@@ -1,5 +1,7 @@
 #! /usr/bin/env bash
+
 pkill -9 wofi
+
 chmod +x $HOME/.config/waybar/yabai_style/scripts/power-menu
 
 show_menu() {

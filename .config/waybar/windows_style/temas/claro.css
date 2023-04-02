@@ -93,14 +93,24 @@ window#waybar.solo {
     font-size: 10px;
 }
 
-#clock,
+#clock {
+    color: #111111;
+    border-top: 0px solid #222222;
+    border-left: 0px solid #333333;
+    border-right: 0px solid #333333;
+    border-bottom: 0px solid #222222;
+    padding: 0px 5px 0px 5px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
 #custom-clima {
     color: #111111;
     border-top: 0px solid #222222;
     border-left: 0px solid #333333;
     border-right: 0px solid #333333;
     border-bottom: 0px solid #222222;
-    padding: 0px 5px 0px 0px;
+    padding: 0px 0px 0px 0px;
     font-size: 12px;
     font-weight: 500;
 }
@@ -119,7 +129,7 @@ window#waybar.solo {
     background-image: url('/home/vega/.config/waybar/windows_style/linux.svg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%; 
+    background-size: 120%; 
     border-top: 0px solid #222222;
     border-left: 0px solid #444444;
     border-right: 0px solid #444444;

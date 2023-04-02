@@ -1,11 +1,10 @@
 /* 
-## Configuracion para Waybar
-## Autor:
-## Hector Ivan Vega Zamudio
-## mxhectorvega@gmail.com
-## https://github.com/mxhectorvega/hyprland
-## Version:
-## v1.2: 11/03/2023
+# Configuracion para Waybar Windows Style
+# https://github.com/mxhectorvega/hyprland
+# Version: v1.5 01/04/2023
+
+NOTA: Si va a ocupar gnome terminal en lugar de kitty, solo reemplaze "kitty -e" por "gnome-terminal --"
+
 */
 
 [{
@@ -94,8 +93,8 @@
             "critical": 10
         },
         "format": "{icon}  {capacity}%",
-        "format-charging": "<span color='#8080ff'> </span> {capacity}%",
-        "format-plugged": "<span color='#444444'> </span> {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": ["<span color='#D75C42'></span>", "<span color='#f0cc6f'></span>", "<span color='#8fb15d'></span>", "<span color='#8fb15d'></span>", "<span color='#8fb15d'></span>"]
@@ -129,11 +128,10 @@
     },
     "backlight": {
         "device": "intel_backlight",
-        "format": "<span color='#8080ff'>{icon}</span>  {percent}%",
+        "format": "{icon}  {percent}%",
         "on-scroll-down": "exec brightnessctl -m set 5%-",
         "on-scroll-up": "exec brightnessctl -m set +5%",
-        "format-icons": ["",""],
-        "tooltip-format": "Bluethooth"
+        "format-icons": ["",""]
     },
     "bluetooth": {
 	"format": "",
@@ -154,15 +152,16 @@
     "format-wifi": "",
     "format-ethernet": "",
     "format-disconnected": "", //An empty format will hide the module.
-    "format-disconnected": "<span color='#D75C42'></span>",
+    "format-disconnected": "",
     "tooltip-format": "{ifname}",
     "tooltip-format-wifi": "Conectado a:\n{essid}\n\nIntensidad de recepcion:\n{signalStrength}%\n\nIP local: \n{ipaddr}",
     "tooltip-format-ethernet": "Ethernet\n{ifname}\n\nIP local: \n{ipaddr}",
     "tooltip-format-disconnected": "Desconectado",
     "max-length": 50,
-    "on-click": "gnome-terminal -- nmtui"
+    "on-click": "kitty -e nmtui"
     },
     "pulseaudio": {
+    "scroll-step": "5",
     "format": "{icon}",
     "format-bluetooth": "{icon}",
     "format-muted": "<span color='#D75C42'></span>",
@@ -178,7 +177,7 @@
     },
     "scroll-step": 1,
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-    "on-click-right": "gnome-terminal -- pulsemixer",
+    "on-click-right": "kitty -e pulsemixer",
     "tooltip-format": "Vol: {volume}%"
     },
     "pulseaudio#mic": {
@@ -187,15 +186,15 @@
         "format-source-muted": "​<span color='#D75C42'></span>",
         "tooltip-format": "Microfono",
         "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
-        "on-click-right": "gnome-terminal -- pulsemixer",
+        "on-click-right": "kitty -e pulsemixer",
         "tooltip-format": "Mic: {volume}%"
     },
     "memory": {
     "interval": 30,
-    "format": "<span color='#8fb15d'>{icon}</span>  {}%",
+    "format": "{icon}  {}%",
     "format-icons": "",
     "max-length": 10,
-    "on-click": "gnome-terminal -- htop",
+    "on-click": "kitty -e htop",
     "tooltip-format": "Consumo:\t\t\t{used:0.1f}G\n\nDisponible:\t\t\t{avail:0.1f}G\n\nInstalada:\t\t\t{total:0.1f}G"
     },
 "idle_inhibitor": {
@@ -218,8 +217,8 @@
         "hwmon-path": "/sys/class/hwmon/hwmon0/temp1_input",
         "critical-threshold": 75,
         "format-critical": "<span color='#D75C42'></span>  {temperatureC}°C",
-        "format": "<span color='#8fb15d'></span>  {temperatureC}°C",
-        "on-click": "gnome-terminal -- htop"
+        "format": "  {temperatureC}°C",
+        "on-click": "kitty -e htop"
         },
     "custom/grabar":{
     "format": "{icon}",
@@ -234,13 +233,14 @@
         "on-click-right": "swaymsg layout toggle split"
         },        
     "custom/pacman": {
-        "format": "{icon} ({})",
-        "format-icons": "",
-        "interval": 3600,
-        "exec": "checkupdates | wc -l",
+        "format": " ({})",
+        "interval": "1800",
+/*        "exec": "checkupdates | wc -l", */
+        "exec": "pamac checkupdates -a -q | wc -l",
         "exec-if": "exit 0",
-        "on-click": "gnome-terminal -- sh -c 'sudo pacman -Syu;flatpak update;exec bash'",
-        "signal": 8
+/*        "on-click": "kitty -e sh -c 'sudo pacman -Syu;flatpak update;exec bash'", */
+        "on-click": "pamac-manager", 
+        "tooltip": "false"
         },
     "custom/power":{ 
         "format": "    ",
@@ -250,7 +250,7 @@
     "cpu": {
         "format": "<span color='#8fb15d'>{icon}</span>  {usage}%",
         "format-icons": "",
-        "on-click": "gnome-terminal -- htop"
+        "on-click": "kitty -e htop"
     },
 
 	"custom/darkmode": {
@@ -269,7 +269,7 @@
     "custom/forzar": {
         "format":"<span color='#D75C42'>{icon}</span>",
         "format-icons": "",
-        "on-click": "gnome-terminal -- hyprctl kill",
+        "on-click": "kitty -e hyprctl kill",
         "tooltip-format": "Forzar cierre",
         "tooltip": "true"
        },
