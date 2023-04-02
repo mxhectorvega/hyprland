@@ -1,6 +1,6 @@
-# Configuracion para Hyprland Autoname Workspaces
+# Configuración para Hyprland Autoname Workspaces
 # https://github.com/mxhectorvega/hyprland
-# Version: v1.0 01/04/2023
+# Versión: v1.2: 01/04/2023
 
 # Añade tu asignación de iconos
 # use comillas dobles la clave y el valor
@@ -8,7 +8,6 @@
 # abiertas con 'hyprctl clients | grep class'
 
 [icons]
-
 "DEFAULT" = ""
 "gnome-terminal-server" = ""
 "foot" = ""
@@ -43,8 +42,10 @@
 "mcpelauncher-client" = ""
 "Imagen en Imagen" = ""
 "Netflix" = ""
+"io.bassi.Amberol" = ""
+"mpv" = ""
 
-#                             
+#                              
 
 # Agregue sus aplicaciones que necesitan ser excluidas
 # La clave es la clase, el valor es el título.
@@ -52,4 +53,4 @@
 # solo nombre de clase 'nombre del software'
 
 [exclude]
-wofi = "*"
+"wofi" = "*"

@@ -98,7 +98,7 @@
         "format-plugged": "<span color='#444444'> </span> {capacity}%",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
-        "format-icons": ["<span color='#D75C42'></span>", "<span color='#f0cc6f'></span>", "<span color='#8fb15d'></span>", "<span color='#8fb15d'></span>", "<span color='#8fb15d'></span>"]
+        "format-icons": ["<span color='#FF0000'></span>", "<span color='#f0cc6f'></span>", "<span color='#8fb15d'></span>", "<span color='#8fb15d'></span>", "<span color='#8fb15d'></span>"]
     },
     "battery#bat2": {
         "bat": "BAT2"
@@ -116,7 +116,7 @@
                               "days":       "<span color='#dddddd'><b>{}</b></span>",
                               "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
                               "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
-                              "today":      "<span color='#D75C42'><b><u>{}</u></b></span>"
+                              "today":      "<span color='#FF0000'><b><u>{}</u></b></span>"
                               }
                     },
         "actions":  {
@@ -154,7 +154,7 @@
     "format-wifi": "",
     "format-ethernet": "",
     "format-disconnected": "", //An empty format will hide the module.
-    "format-disconnected": "<span color='#D75C42'></span>",
+    "format-disconnected": "<span color='#FF0000'></span>",
     "tooltip-format": "{ifname}",
     "tooltip-format-wifi": "Conectado a:\n{essid}\n\nIntensidad de recepcion:\n{signalStrength}%\n\nIP local: \n{ipaddr}",
     "tooltip-format-ethernet": "Ethernet\n{ifname}\n\nIP local: \n{ipaddr}",
@@ -165,7 +165,7 @@
     "pulseaudio": {
     "format": "{icon}",
     "format-bluetooth": "{icon}",
-    "format-muted": "<span color='#D75C42'></span>",
+    "format-muted": "<span color='#FF0000'></span>",
     "format-icons": {
         "*": "",
         "headphones": "",
@@ -184,7 +184,7 @@
     "pulseaudio#mic": {
         "format": "{format_source}",
         "format-source": "",
-        "format-source-muted": "​<span color='#D75C42'></span>",
+        "format-source-muted": "​<span color='#FF0000'></span>",
         "tooltip-format": "Microfono",
         "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
         "on-click-right": "gnome-terminal -- pulsemixer",
@@ -201,7 +201,7 @@
 "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
-        "activated": "<span color='#D75C42'></span>",
+        "activated": "<span color='#FF0000'></span>",
         "deactivated": "",
         "tooltip-format":"Caffeine {status}"
         }
@@ -218,7 +218,7 @@
         "thermal-zone": 1,
         "hwmon-path": "/sys/class/hwmon/hwmon0/temp1_input",
         "critical-threshold": 75,
-        "format-critical": "<span color='#D75C42'></span>  {temperatureC}°C",
+        "format-critical": "<span color='#FF0000'></span>  {temperatureC}°C",
         "format": "<span color='#8fb15d'></span>  {temperatureC}°C",
         "on-click": "gnome-terminal -- htop"
         },
@@ -268,7 +268,7 @@
         "tooltip": "true"
     },
     "custom/forzar": {
-        "format":"<span color='#D75C42'>{icon}</span>",
+        "format":"<span color='#FF0000'>{icon}</span>",
         "format-icons": "",
         "on-click": "gnome-terminal -- hyprctl kill",
         "tooltip-format": "Forzar cierre",

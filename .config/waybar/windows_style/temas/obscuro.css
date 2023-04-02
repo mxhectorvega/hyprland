@@ -24,11 +24,11 @@
 }
 
 window#waybar {
-    background-color: rgba(0, 0, 0, 0.60);
-    border-top: 1px solid #111111;
-    border-left: 0px solid #111111;
-    border-right: 0px solid #111111;
-    border-bottom: 0px solid #111111;
+    background-color: rgba(15, 15, 15, 0.70);
+    border-top: 1px solid #202020;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
 }
 
 window#waybar.hidden {

@@ -11,9 +11,9 @@ cp $HOME/.config/mako/temas/windows_style/claro $HOME/.config/mako/config
 sed -i "s/obscuro/claro/g" $HOME/.config/kitty/kitty.conf
 sed -i "s/gris/claro/g" $HOME/.config/kitty/kitty.conf
 
-sed -i "s/color=000000 dddddd/color=ffffff 505050/g" $HOME/.config/foot/foot.ini
+sed -i "s/color=0f0f0f dddddd/color=ffffff 505050/g" $HOME/.config/foot/foot.ini
 sed -i "s/foreground=dddddd/foreground=505050/g" $HOME/.config/foot/foot.ini
-sed -i "s/background=000000/background=ffffff/g" $HOME/.config/foot/foot.ini
+sed -i "s/background=0f0f0f/background=ffffff/g" $HOME/.config/foot/foot.ini
 sed -i "s/background=242424/background=ffffff/g" $HOME/.config/foot/foot.ini
 
 rm -rf ${HOME}/.config/gtk-*
@@ -28,10 +28,9 @@ gsettings set org.gnome.desktop.interface icon-theme "Colloid-light"
 gsettings set org.gnome.desktop.interface font-name 'SF Compact Display SemiBold 9'
 gsettings set org.gnome.desktop.interface monospace-font-name 'SF Mono 10'
 gsettings set org.gnome.desktop.interface document-font-name 'SF Compact Display SemiBold 9'
-gsettings set org.gnome.desktop.wm.preferences titlebar-font 'SF Compact Display SemiBold 9'
-gsettings set org.gnome.desktop.wm.preferences button-layout :
-gsettings set org.gnome.desktop.default-applications.terminal exec 'kitty'
-gsettings set org.gtk.Settings.FileChooser window-size '(800,500)'
+#gsettings set org.gnome.desktop.wm.preferences titlebar-font 'SF Compact Display SemiBold 9'
+#gsettings set org.gnome.desktop.wm.preferences button-layout : ''
+#gsettings set org.gnome.desktop.default-applications.terminal exec 'kitty'
 
 pkill -9 mako
 mako &

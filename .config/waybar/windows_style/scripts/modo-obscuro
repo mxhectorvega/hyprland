@@ -11,10 +11,10 @@ cp $HOME/.config/mako/temas/windows_style/obscuro $HOME/.config/mako/config
 sed -i "s/claro/obscuro/g" $HOME/.config/kitty/kitty.conf
 sed -i "s/gris/obscuro/g" $HOME/.config/kitty/kitty.conf
 
-sed -i "s/color=ffffff 505050/color=000000 dddddd/g" $HOME/.config/foot/foot.ini
+sed -i "s/color=ffffff 505050/color=0f0f0f dddddd/g" $HOME/.config/foot/foot.ini
 sed -i "s/foreground=505050/foreground=dddddd/g" $HOME/.config/foot/foot.ini
-sed -i "s/background=ffffff/background=000000/g" $HOME/.config/foot/foot.ini
-sed -i "s/background=242424/background=000000/g" $HOME/.config/foot/foot.ini
+sed -i "s/background=ffffff/background=0f0f0f/g" $HOME/.config/foot/foot.ini
+sed -i "s/background=242424/background=0f0f0f/g" $HOME/.config/foot/foot.ini
 
 rm -rf ${HOME}/.config/gtk-*
 
@@ -24,14 +24,14 @@ rm -rf ${HOME}/.config/gtk-*
 cp -R $HOME/.themes/Colloid-Dark/gtk-4* ${HOME}/.config
 
 gsettings set org.gnome.desktop.interface gtk-theme 'Colloid-Dark'
-gsettings set org.gnome.desktop.interface icon-theme "Colloid-dark"
+gsettings set org.gnome.desktop.interface icon-theme 'Colloid-dark'
+gsettings set org.gnome.desktop.interface cursor-theme 'Colloid-dark'
 gsettings set org.gnome.desktop.interface font-name 'SF Compact Display SemiBold 9'
 gsettings set org.gnome.desktop.interface monospace-font-name 'SF Mono 10'
 gsettings set org.gnome.desktop.interface document-font-name 'SF Compact Display SemiBold 9'
-gsettings set org.gnome.desktop.wm.preferences titlebar-font 'SF Compact Display SemiBold 9'
-gsettings set org.gnome.desktop.wm.preferences button-layout :
-gsettings set org.gnome.desktop.default-applications.terminal exec 'kitty'
-gsettings set org.gtk.Settings.FileChooser window-size '(800,500)'
+#gsettings set org.gnome.desktop.wm.preferences titlebar-font 'SF Compact Display SemiBold 9'
+#gsettings set org.gnome.desktop.wm.preferences button-layout : ''
+#gsettings set org.gnome.desktop.default-applications.terminal exec 'kitty'
 
 pkill -9 mako
 mako &

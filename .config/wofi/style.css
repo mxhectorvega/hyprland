@@ -1,19 +1,19 @@
 /* 
 ## Configuración para Wofi Menu
 ## https://github.com/mxhectorvega
-## Version: v2.0: 20/11/2021
+## Version: v2.0 01/04/2023
 */
 
 window {
 
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.60);
+    background-color: rgba(15, 15, 15, 0.70);
     color: #dddddd;
     margin-right: 3px;
-    border-top: 1px solid #555555;
-    border-left: 1px solid #333333;
-    border-right: 1px solid #333333;
-    border-bottom: 1px solid #222222;
+    border-top: 0px solid #555555;
+    border-left: 0px solid #333333;
+    border-right: 0px solid #333333;
+    border-bottom: 0px solid #222222;
 }
 
 * {
