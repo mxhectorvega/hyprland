@@ -2,9 +2,9 @@ font=SF Compact Display SemiBold 9
 
 layer=overlay
 anchor=bottom-right
-background-color=#0f0f0fcc
+background-color=#0f0f0fee
 text-color=#dddddd
-width=280
+width=240
 height=180
 padding=10
 margin=5

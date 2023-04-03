@@ -10,11 +10,15 @@ cp $HOME/.config/mako/temas/windows_style/claro $HOME/.config/mako/config
 
 sed -i "s/obscuro/claro/g" $HOME/.config/kitty/kitty.conf
 sed -i "s/gris/claro/g" $HOME/.config/kitty/kitty.conf
+sed -i "s/background_opacity       0.90/background_opacity       0.80/g" $HOME/.config/kitty/kitty.conf
 
 sed -i "s/color=0f0f0f dddddd/color=ffffff 505050/g" $HOME/.config/foot/foot.ini
 sed -i "s/foreground=dddddd/foreground=505050/g" $HOME/.config/foot/foot.ini
 sed -i "s/background=0f0f0f/background=ffffff/g" $HOME/.config/foot/foot.ini
 sed -i "s/background=242424/background=ffffff/g" $HOME/.config/foot/foot.ini
+sed -i "s/alpha=0.90/alpha=0.80/g" $HOME/.config/foot/foot.ini
+
+sed -i "s/windowrule=opacity 0.90/windowrule=opacity 0.85/g" $HOME/.config/hypr/hyprland.conf
 
 rm -rf ${HOME}/.config/gtk-*
 
