@@ -45,8 +45,6 @@
 "io.bassi.Amberol" = ""
 "mpv" = ""
 
-#                              
-
 # Agregue sus aplicaciones que necesitan ser excluidas
 # La clave es la clase, el valor es el título.
 # Puede poner un título vacío para excluir en función de
@@ -54,3 +52,5 @@
 
 [exclude]
 "wofi" = "*"
+
+#                              
