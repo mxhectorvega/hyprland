@@ -4,13 +4,13 @@ layer=overlay
 anchor=top-center
 background-color=#000000cc
 text-color=#dddddd
-width=280
+width=260
 height=180
 padding=10
 margin=5
 progress-color= source #60606080
 icon-path=~/.icons
-max-icon-size=100
+max-icon-size=80
 
 border-size=1
 border-radius=10
