@@ -57,8 +57,8 @@ NOTA: Si va a ocupar gnome terminal en lugar de kitty, solo reemplaze "kitty -e"
       "disable-scroll": true,
       "all-outputs": true,
       "on-click": "activate",
-      "on-scroll-up": "hyprctl dispatch workspace e+1",
-      "on-scroll-down": "hyprctl dispatch workspace e-1",
+/*      "on-scroll-up": "hyprctl dispatch workspace e+1",
+      "on-scroll-down": "hyprctl dispatch workspace e-1", */
       "persistent_workspaces": {
           "1": [],
           "2": [],
