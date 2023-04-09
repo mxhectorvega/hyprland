@@ -25,8 +25,8 @@ NOTA: Si va a ocupar gnome terminal en lugar de kitty, solo reemplaze "kitty -e"
     "modules-center": [
     "custom/power",
     "custom/menu",
-    "wlr/workspaces"
- /*    "wlr/taskbar" */
+/*    "wlr/workspaces" */
+    "wlr/taskbar"
     ],
     
     "modules-right": [
@@ -294,9 +294,12 @@ NOTA: Si va a ocupar gnome terminal en lugar de kitty, solo reemplaze "kitty -e"
         "tooltip-ormat": "{title}",
         "all-outputs": false,
         "active-first": false,
-        "icon-size": 30,
+        "icon-size": 33,
         "icon-theme": "Colloid-dark",
-        "on-click": "minimize-raise"
+        "on-click": "minimize-raise",
+        "ignore-list": [
+            "wofi"
+         ]
     }
 
 }]

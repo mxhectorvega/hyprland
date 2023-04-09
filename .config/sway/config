@@ -1,0 +1,397 @@
+## Configuracion para SwayWM
+## Autor:
+## Hector Ivan Vega Zamudio
+## mxhectorvega@gmail.com
+## https://github.com/mxhectorvega
+## Version:
+## v6.0: 17/06/2022
+
+## Status Bar:
+exec_always sh $HOME/.config/waybar/windows_style/scripts/modo-obscuro
+
+## Delara teclas super y altinput * xkCozetteb_numlock enable
+set $mod Mod4
+set $alt Mod1
+
+## Declarar wallpapers bloqueo y escritorio
+set $block-wall ~/.config/wall/obscuro.*
+set $desktop-wall ~/.config/wall/obscuro.*
+
+## Declarar temas e iconos
+set $theme_gtk Colloid-Dark
+set $theme_icons WhiteSur-dark
+set $theme_sway obscuro
+
+
+## Declarar teclados, mismos que se podra cambiar con
+## clic derecho o izquierdo para alternar entre ambos.
+set $teclado1 latam
+set $teclado2 es
+
+## Declara gesror de archivos GUI
+set $filemanager thunar
+
+## Delara la terminal por defecto
+set $terminal kitty
+
+## Delara el editor de texto en terminal por defecto
+set $editor vim
+
+## Delara tipo y tamaño de texto
+set $font_terminal Terminus 8
+set $default_font SF Compact Display SemiBold 9
+set $font_notify "SF Compact Display Bold 9, SF Compact Display 9"
+
+## Delara los espacios entre ventanas
+set $gap_ext 5
+set $gap_int 5
+set $gap_top 5
+
+## Declara el lanzador de aplicaciones
+set $menu "pkill -9 wofi;wofi -p Buscar... --no-actions --allow-images --show drun -n -i -I -W 400 -H 300
+
+## Declara menu gestor de portapapeles
+set $menu_clipboard "pkill -9 wofi ; clipman pick -t wofi"
+
+## Limpiar menu portapales
+set $clean_clipboard clipman clear --all ; exec \
+    notify-send -t 10000 -i $HOME/.config/user.png \
+    "Clipboard" "El historial del portapapeles se a borrado con exito."
+   
+## Power menmu
+set $menu_power "pkill -9 wofi ; sh $HOME/.config/waybar/custom/power"
+
+## Pantalla de bloqueo
+set $lock_warning notify-send --expire-time 10000 --icon $HOME/.config/user.png 'SystemCtl' 'La pantalla se bloqueará en 20 segundos, mueva el cursor o siga en lo que estaba...'
+
+## Apariencia basica
+#smart_gaps inverse_outer
+titlebar_border_thickness 0
+titlebar_padding 4
+default_border pixel 0
+#gaps horizontal $gap_int
+#gaps vertical $gap_int
+#gaps inner $gap_int
+gaps outer $gap_int
+font $default_font
+#popup_during_fullscreen smart
+
+## Confuracion de teclado y velocidad de escritura
+## repeat_delay 300
+input type:keyboard {
+    xkb_layout $teclado1,$teclado2
+    xkb_numlock enabled
+}
+
+## Configuracion de trackpad o touchpad 
+## (habilita tab ligero a 1 dedo, menu contextual a 2 dedos y scroll click a 3 dedos)
+input type:touchpad {
+    events disabled_on_external_mouse 
+    dwt enabled
+    tap enabled
+    drag enabled
+    natural_scroll enabled
+    middle_emulation enabled
+}
+
+## Esta configuracion es para desactivar el monitor de a portatil cuando se cierra y 
+## dejar activo el monitor secundario
+## Declara el identificador del monitor de la laptop
+set $laptop eDP-1
+bindswitch --reload --locked lid:on output $laptop disable
+bindswitch --reload --locked lid:off output $laptop enable
+
+## Otput configuration general de todos los monitores
+## Configuracion de fondo de escritorio .config/wall.* delcarado en la linea 14 y 15.
+## output * bg #404040 lid_color
+output "*" {
+#    bg #202020 solid_color
+    background $desktop-wall fill
+    adaptive_sync on
+    scale_filter linear
+    subpixel none
+    render_bit_depth 8
+    scale 1.50
+## En caso de usar maquina virtual, coloque aqui la resolucion ejemplo: mode 800x600
+#    mode 8000x600
+}
+
+## Configuracion de 2 monitores
+## Podra identificar los monitores conectados con swaymsg -t get_outputs
+## la escala es 1 es de 100% (normal) y 1.5 es de 150%
+
+## Monitorprimario eDP-1 en caso de ser diferente podra 
+#output eDP-1 {
+#    pos 1920 1080
+#    scale 1
+#    transform 90
+#    mode 1366x720
+#}
+
+## Monitor secundario HDMI en caso de ser diferente podra 
+#output HDMI-A-1 {
+#    pos 0 0
+#    scale 1
+#   transform 90    
+#}
+
+## Atajos para rotar pantalla en el monitor activo
+bindsym $mod+$alt+Up output - transform 0
+bindsym $mod+$alt+Down output - transform 180
+bindsym $mod+$alt+Left output - transform 270
+bindsym $mod+$alt+Right output - transform 90
+
+## Transparencia
+for_window {
+[app_id="mousepad"]     opacity 0.90
+[app_id="geany"]        opacity 0.90
+[app_id="thunar"]       opacity 0.90
+[app_id="pcmanfm"]      opacity 0.90
+[app_id="qvidcap"]      opacity 1.0
+}
+
+## Configuracion de temas y fuentes (no tocar, la informacion es tomada de 
+## las primeras lineas en donde deobscuro lo temas manualmente)
+set $gnome-schema org.gnome.desktop.interface
+exec_always {
+    gsettings set $gnome-schema gtk-theme '$theme_gtk'
+    gsettings set $gnome-schema icon-theme '$theme_icons'
+    gsettings set $gnome-schema font-name '$default_font'
+    gsettings set $gnome-schema monospace-font-name '$font_terminal'
+    gsettings set $gnome-schema document-font-name '$default_font'
+    gsettings set org.gnome.desktop.wm.preferences titlebar-font '$default_font'
+    gsettings set org.gnome.desktop.wm.preferences button-layout :
+    gsettings set org.gnome.desktop.default-applications.terminal exec '$terminal'
+    gsettings set org.gtk.Settings.FileChooser window-size '(800,500)'
+}
+
+## Cerrar ventana actual
+bindsym $mod+q kill
+
+## La tecla super (windows) arrastra ventanas flotantes con 
+## el mouse o trackpad (clic izquierdo).
+floating_modifier $mod normal
+
+## Ocultar waybar
+bindsym $mod+x exec pkill -9 waybar
+
+## Mostrar waybar
+bindsym $mod+z exec waybar
+
+## Recargar configuracion
+bindsym $mod+Shift+c reload
+
+## Teclas de direccion al estilo VIM
+set $left h
+set $right l
+set $down j
+set $up k
+
+## Mover ventanas mosaico con teclas H,J,K,L
+bindsym $mod+$left focus left
+bindsym $mod+$right focus right
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+
+## Mover ventanas mosaico con teclas de direccion
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+## Mover ventanas flotantes con teclas H,J,K,L
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$up move down
+bindsym $mod+Shift+$down move up
+bindsym $mod+Shift+$right move right
+
+## Mover ventanas flotantes  con teclas teclas de direccion
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+## Redimencionar con teclas H,J,K,L
+bindsym $mod+Ctrl+$right resize shrink width 5 px or 5 ppt
+bindsym $mod+Ctrl+$down resize grow height 5 px or 5 ppt
+bindsym $mod+Ctrl+$up resize shrink height 5 px or 5 ppt
+bindsym $mod+Ctrl+$left resize grow width 5 px or 5 ppt
+
+## Redimencionar ventanas flotates con teclas de direccion
+bindsym $mod+Ctrl+Right resize shrink width 5 px or 5 ppt
+bindsym $mod+Ctrl+Up resize grow height 5 px or 5 ppt
+bindsym $mod+Ctrl+Down resize shrink height 5 px or 5 ppt
+bindsym $mod+Ctrl+Left resize grow width 5 px or 5 ppt
+
+## Puedes "dividir" el objeto actual de tu enfoque con
+## $mod+b o $mod+v, es para divisiones horizontales y verticales
+## $mod+Shift+minus, es para ocultar ventana activa
+## respectivamente.
+bindsym $mod+b splith
+bindsym $mod+v splitv
+bindsym $mod+s sticky toggle
+bindsym $mod+w layout tabbed
+bindsym $mod+Shift+e layout toggle split
+bindsym $mod+f fullscreen
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+space focus mode_toggle
+bindsym $mod+a focus parent
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
+
+## Cambiar a otro espacio de trabajo
+bindsym $mod+1 workspace number 1
+bindsym $mod+2 workspace number 2
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+bindsym $mod+5 workspace number 5
+
+## Mover ventanas a otro espacio de trabajo
+bindsym $mod+Shift+1 move container to workspace number 1
+bindsym $mod+Shift+2 move container to workspace number 2
+bindsym $mod+Shift+3 move container to workspace number 3
+bindsym $mod+Shift+4 move container to workspace number 4
+bindsym $mod+Shift+5 move container to workspace number 5
+
+## Apariencia y pocicion de ventanas:
+for_window {
+
+## Ventanas en las que nunca se apaga la pantalla
+[class="^.*"] inhibit_idle fullscreen
+[app_id="^.*"] inhibit_idle fullscreen
+
+## Gestores de archivos
+[app_id="org.gnome.Nautilus"] floating enable
+[app_id="org.kde.dolphin"] floating enable, resize set 800 600
+
+## Dialogos
+## General
+[window_role="pop-up"] floating enable
+[window_role="bubble"] floating enable
+[window_role="dialog"] floating enable
+[window_type="dialog"] floating enable
+
+## Audio
+[app_id="pavucontrol"] floating enable
+
+## Contraseñas
+[app_id="pinentry-qt"] floating enable
+[app_id="pinentry-gtk2"] floating enable
+
+## Menus
+[app_id="wofi"] floating enable, sticky enable, border none
+
+## Bandeja del sistema
+[title="nm-tray"] floating enable, sticky enable
+[title="nmtui-edit"] floating enable
+[title="Connection information"] floating enable
+[instance="bitwarden"] floating enable
+
+## Ventanas emergentes "Popup"
+[title="popupterm"] floating enable, resize set $termpopupwidth $termpopupheight
+[title="Progreso de las operaciones de archivo"] floating enable
+[app_id="xdg-desktop-portal-gtk"] floating enable
+[app_id="xdg-desktop-portal-gnome"] floating enable
+[app_id="xdg-desktop-portal-wrl"] floating enable
+[app_id=null] floating enable
+[class="tm"] floating enable
+
+## Lanzadores
+[title="fuzzyterm"] floating enable, sticky enable, resize set $fuzzytermwidth $fuzzytermheight
+
+## Transparencia para bordes
+[title="transterm"] border none
+
+## Utilidades
+## qt5ct
+[app_id="qt5ct"] floating enable, resize set 1100 900
+
+## Kvantum Manager
+[title="Kvantum Manager"] floating enable, resize set 1200 860
+}
+
+## Controles de volumen
+bindsym XF86AudioLowerVolume  exec pactl set-sink-volume @DEFAULT_SINK@ -1%
+bindsym XF86AudioRaiseVolume  exec pactl set-sink-volume @DEFAULT_SINK@ +1%
+bindsym XF86AudioMute         exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+## Cambiar de distribucion de teclado alterna
+bindsym $mod+Ctrl+space input 1:1:AT_Translated_Set_2_keyboard xkb_switch_layout next
+
+## Controles de brillo
+bindsym XF86MonBrightnessUp exec brightnessctl -m set +5%
+bindsym XF86MonBrightnessDown exec brightnessctl -m set 5%-
+
+## Controlar musica (incliyendo reproductores CLI y Spotify GUI).
+bindsym XF86AudioPlay         exec, playerctl play-pause, exec, dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PausePlay
+
+bindsym XF86AudioPause        exec, playerctl play-pause, exec, dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PausePlay
+
+bindsym XF86AudioNext         exec, playerctl next, exec, dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+
+bindsym XF86AudioPrev         exec, playerctl previous, exec, dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
+
+## Applicaciones ejecutables
+bindsym $mod+Return           exec $terminal
+bindsym $mod+d                exec $menu
+bindsym $mod+p                exec $menu_clipboard
+bindsym $mod+Shift+p          exec $clean_clipboard
+bindsym $mod+e                exec $filemanager
+bindsym $mod+backspace        exec $menu_power
+
+## Screenshots
+## Captura de pantalla fullscreen
+bindsym --release Print exec \
+    grim $(xdg-user-dir PICTURES)/$(date +'captura_%Y-%m-%d_%H-%M-%S.png') && exec notify-send -t 10000 -i $HOME/.config/user.png 'Screenshot' 'La captura de pantalla se ha guardado en el directorio Imagenes'
+
+## Captura de pantalla fullscreen + portapapeles.
+bindsym --release Ctrl+Print exec \
+    grim - | wl-copy && exec notify-send -t 10000 -i $HOME/.config/user.png 'Clipoard' 'La captura de pantalla se ha guardado en el portapapeles'
+
+## Seleccion (drag to select)
+bindsym --release Shift+Print exec \
+    grim -g "$(slurp)" $(xdg-user-dir PICTURES)/$(date +'recorte_%Y-%m-%d_%H-%M-%S.png') && exec notify-send -t 10000 -i $HOME/.config/user.png 'Screenshot' 'La captura de pantalla se ha guardado en el directorio Imagenes'
+
+## Seleccion (drag to select) + portapapeles.
+bindsym --release Ctrl+Shift+Print exec \
+    grim -g "$(slurp)" - | wl-copy && exec notify-send -t 10000 -i $HOME/.config/user.png 'Clipoard' 'La captura de pantalla se ha guardado en el portapapeles'
+
+## Autoarranque
+
+## Incluyendo temas
+include colors.$theme_sway
+
+#exec nm-applet --indicator
+
+exec export TERM="$terminal"
+exec export EDITOR="$editor"
+exec export WLR_NO_HARDWARE_CURSORS=1
+
+set $imp_vars "DISPLAY WAYLAND_DISPLAY SWAYSOCK SSH_AUTH_SOCK XDG_CURRENT_DESKTOP XDG_SESSION_TYPE"
+exec_always systemctl --user import-environment "$imp_vars"
+exec_always hash dbus-update-activation-environment 2>/dev/null && \
+    dbus-update-activation-environment --systemd "$imp_vars"
+
+## Gestor de portapapeles de AUR para waylad es el mas ligero que encontre, asi que no hagan de pedo.
+exec_always wl-paste -t text --watch clipman store --no-persist
+
+exec_always 'pkill mako; exec mako \
+    --background-color "$transparent" \
+    --margin "$gap_top" \
+    --font $font_notify \
+    --border-size 0 \
+    --width 360 \
+    --height 150 \
+    --padding 10 \
+    --border-radius 5 \
+    --border-color "$transparent" \
+    --text-color "$foreground" \
+    --anchor top-center \
+    --ignore-timeout 1 \
+    --default-timeout 5000'
+
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
+exec swayidle -w \
+    timeout 120 "$lock_warning" \
+    timeout 140 "dm-tool lock"
