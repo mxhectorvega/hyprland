@@ -19,7 +19,7 @@ set $desktop-wall ~/.config/wall/obscuro.*
 
 ## Declarar temas e iconos
 set $theme_gtk Colloid-Dark
-set $theme_icons WhiteSur-dark
+set $theme_icons Colloid-dark
 set $theme_sway obscuro
 
 
@@ -38,7 +38,7 @@ set $terminal kitty
 set $editor vim
 
 ## Delara tipo y tamaño de texto
-set $font_terminal Terminus 8
+set $font_terminal SF Mono 9
 set $default_font SF Compact Display SemiBold 9
 set $font_notify "SF Compact Display Bold 9, SF Compact Display 9"
 
@@ -59,7 +59,7 @@ set $clean_clipboard clipman clear --all ; exec \
     "Clipboard" "El historial del portapapeles se a borrado con exito."
    
 ## Power menmu
-set $menu_power "pkill -9 wofi ; sh $HOME/.config/waybar/custom/power"
+set $menu_power "pkill -9 wofi ; sh $HOME/.config/waybar/windows_style/scripts/power-menu"
 
 ## Pantalla de bloqueo
 set $lock_warning notify-send --expire-time 10000 --icon $HOME/.config/user.png 'SystemCtl' 'La pantalla se bloqueará en 20 segundos, mueva el cursor o siga en lo que estaba...'
@@ -340,24 +340,13 @@ bindsym $mod+e                exec $filemanager
 bindsym $mod+backspace        exec $menu_power
 
 ## Screenshots
-## Captura de pantalla fullscreen
-bindsym --release Print exec \
-    grim $(xdg-user-dir PICTURES)/$(date +'captura_%Y-%m-%d_%H-%M-%S.png') && exec notify-send -t 10000 -i $HOME/.config/user.png 'Screenshot' 'La captura de pantalla se ha guardado en el directorio Imagenes'
+## Captura de pantalla
+bindsym $mod+Shift+X exec grim $(xdg-user-dir PICTURES)/$(date +'captura_%Y-%m-%d_%H-%M-%S.png') | wl-copy && exec notify-send -t 10000 -i $HOME/.config/mako/hypr.ico 'Captura de pantalla' 'Guardada en capeta imagenes y en el portapapeles'
 
-## Captura de pantalla fullscreen + portapapeles.
-bindsym --release Ctrl+Print exec \
-    grim - | wl-copy && exec notify-send -t 10000 -i $HOME/.config/user.png 'Clipoard' 'La captura de pantalla se ha guardado en el portapapeles'
-
-## Seleccion (drag to select)
-bindsym --release Shift+Print exec \
-    grim -g "$(slurp)" $(xdg-user-dir PICTURES)/$(date +'recorte_%Y-%m-%d_%H-%M-%S.png') && exec notify-send -t 10000 -i $HOME/.config/user.png 'Screenshot' 'La captura de pantalla se ha guardado en el directorio Imagenes'
-
-## Seleccion (drag to select) + portapapeles.
-bindsym --release Ctrl+Shift+Print exec \
-    grim -g "$(slurp)" - | wl-copy && exec notify-send -t 10000 -i $HOME/.config/user.png 'Clipoard' 'La captura de pantalla se ha guardado en el portapapeles'
+## Captura de pantalla interactiva
+bindsym $mod+Shift+S exec grim -g "$(slurp)" $(xdg-user-dir PICTURES)/$(date +'recorte_%Y-%m-%d_%H-%M-%S.png') | wl-copy && exec notify-send -t 10000 -i $HOME/.config/mako/hypr.ico 'Recorte' 'Guardado en capeta imagenes y en el portapapeles'
 
 ## Autoarranque
-
 ## Incluyendo temas
 include colors.$theme_sway
 
@@ -373,25 +362,14 @@ exec_always hash dbus-update-activation-environment 2>/dev/null && \
     dbus-update-activation-environment --systemd "$imp_vars"
 
 ## Gestor de portapapeles de AUR para waylad es el mas ligero que encontre, asi que no hagan de pedo.
-exec_always wl-paste -t text --watch clipman store --no-persist
+exec_always wl-paste --type text --watch clipman store
+exec_always wl-paste --type image --watch cliphist store
 
-exec_always 'pkill mako; exec mako \
-    --background-color "$transparent" \
-    --margin "$gap_top" \
-    --font $font_notify \
-    --border-size 0 \
-    --width 360 \
-    --height 150 \
-    --padding 10 \
-    --border-radius 5 \
-    --border-color "$transparent" \
-    --text-color "$foreground" \
-    --anchor top-center \
-    --ignore-timeout 1 \
-    --default-timeout 5000'
+exec_always 'pkill mako; exec mako
 
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec /usr/bin/gnome-keyring-daemon --start
 
 exec swayidle -w \
     timeout 120 "$lock_warning" \
-    timeout 140 "dm-tool lock"
+    timeout 140 "swaylock"

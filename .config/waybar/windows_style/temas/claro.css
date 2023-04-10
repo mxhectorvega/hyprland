@@ -16,14 +16,21 @@
 	  margin: 0;
 }
 
-#taskbar {
+#taskbar,
+#taskbar button,
+#taskbar button.active,
+#taskbar button.minimized,
+#taskbar button.maximized,
+#taskbar button.fullscreen {
     background: transparent;
     border-top: 0px;
-    border-radius: 0px;
-    margin: 0px;
-    padding: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-radius: 9px 9px 9px 9px;
+    margin: 0px 0px 0px 0px; 
+    padding: 0px 5px 0px 5px;
 }
-
 
 window#waybar {
     background-color: rgba(255, 255, 255, 0.80);
@@ -89,10 +96,10 @@ window#waybar.solo {
     border-left: 1px solid #505050;
     border-right: 1px solid #505050;
     border-bottom: 1px solid #202020;
-    margin: 7px 8px 7px 0px;
-    padding: 0px 12px 0px 12px;
-    font-weight: 600;
-    font-size: 10px;
+    margin: 6px 0px 6px 0px;
+    padding: 0px 80px 0px 10px;
+    font-weight: 400;
+    font-size: 12px;
 }
 
 #clock {
@@ -101,7 +108,7 @@ window#waybar.solo {
     border-left: 0px solid #333333;
     border-right: 0px solid #333333;
     border-bottom: 0px solid #222222;
-    padding: 0px 5px 0px 5px;
+    padding: 0px 10px 0px 10px;
     font-size: 12px;
     font-weight: 500;
 }
@@ -123,6 +130,7 @@ window#waybar.solo {
     border-left: 0px solid #333333;
     border-right: 0px solid #333333;
     border-bottom: 0px solid #222222;
+    margin: 0px 0px 0px 8px;
     padding: 0px 0px 0px 5px;
     font-size: 22px;
 }
@@ -166,8 +174,8 @@ window#waybar.solo {
     border-left: 0px solid #333333;
     border-right: 0px solid #333333;
     border-bottom: 0px solid #222222;
-    padding: 0px 4px 0px 4px;
-    font-weight: 400;
+    padding: 0px 5px 0px 5px;
+    font-weight: 600;
     font-size: 11px;
 }
 

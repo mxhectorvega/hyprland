@@ -1,0 +1,17 @@
+# Font settings
+font=SF Compact Display SemiBold
+font-size=35
+
+# Settings
+ignore-empty-password
+disable-caps-lock-text
+indicator-caps-lock
+
+show-keyboard-layout
+show-failed-attempts
+
+indicator-radius=75
+indicator-thickness=15
+
+# Colors
+color=555555aa

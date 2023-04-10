@@ -23,9 +23,10 @@ NOTA: Si va a ocupar gnome terminal en lugar de kitty, solo reemplaze "kitty -e"
     ],
     
     "modules-center": [
+/*    "sway/workspaces", */
+/*    "wlr/workspaces", */
     "custom/power",
     "custom/menu",
-/*    "wlr/workspaces" */
     "wlr/taskbar"
     ],
     
@@ -82,7 +83,7 @@ NOTA: Si va a ocupar gnome terminal en lugar de kitty, solo reemplaze "kitty -e"
         "tooltip": false
     },
     "custom/menu":{
-    "format":"🔍    Buscar...", 
+    "format":"🔍    Buscar", 
     "on-click": "pkill wofi;wofi -p Buscar... --no-actions --allow-images --show drun -n -i -I -W 400 -H 300",
     "tooltip": "false"
     },

@@ -11,8 +11,10 @@ texto=$(echo " <b>AYUDA</b> \
 \t\t\t\t\t\t\t Menú de aplicaciones \
 \n win+e \
 \t\t\t\t\t\t\t Explorador de archivos \
-\n win+shift+s \
+\n win+shift+x \
 \t\t\t\t\t Captura de pantalla \
+\n win+shift+s \
+\t\t\t\t\t Captura de pantalla interactiva \
 \n win+(algún numero) \
 \t\t Cambiar de espacio de trabajo \
 \n win+shift+(algún numero) \
