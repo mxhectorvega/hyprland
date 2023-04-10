@@ -341,10 +341,10 @@ bindsym $mod+backspace        exec $menu_power
 
 ## Screenshots
 ## Captura de pantalla
-bindsym $mod+Shift+X exec grim $(xdg-user-dir PICTURES)/$(date +'captura_%Y-%m-%d_%H-%M-%S.png') | wl-copy && exec notify-send -t 10000 -i $HOME/.config/mako/hypr.ico 'Captura de pantalla' 'Guardada en capeta imagenes y en el portapapeles'
+bindsym $mod+Shift+X exec grim -l 0 - - | wl-copy && wl-paste > $(xdg-user-dir PICTURES)/$(date +'captura_%Y-%m-%d_%H-%M-%S.png');notify-send -t 10000 -i $HOME/.config/mako/hypr.ico 'Captura de pantalla' 'Guardada en capeta imagenes y en el portapapeles'
 
 ## Captura de pantalla interactiva
-bindsym $mod+Shift+S exec grim -g "$(slurp)" $(xdg-user-dir PICTURES)/$(date +'recorte_%Y-%m-%d_%H-%M-%S.png') | wl-copy && exec notify-send -t 10000 -i $HOME/.config/mako/hypr.ico 'Recorte' 'Guardado en capeta imagenes y en el portapapeles'
+bindsym $mod+Shift+S exec slurp | grim -l 0 -g - - | wl-copy && wl-paste > $(xdg-user-dir PICTURES)/$(date +'recorte_%Y-%m-%d_%H-%M-%S.png');notify-send -t 10000 -i $HOME/.config/mako/hypr.ico 'Recorte' 'Guardado en capeta imagenes y en el portapapeles'
 
 ## Autoarranque
 ## Incluyendo temas
