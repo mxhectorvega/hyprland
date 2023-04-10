@@ -111,7 +111,7 @@ output "*" {
     scale_filter linear
     subpixel none
     render_bit_depth 8
-    scale 1.50
+    scale 1.25
 ## En caso de usar maquina virtual, coloque aqui la resolucion ejemplo: mode 800x600
 #    mode 8000x600
 }
