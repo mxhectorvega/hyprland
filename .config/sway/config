@@ -111,7 +111,8 @@ output "*" {
     scale_filter linear
     subpixel none
     render_bit_depth 8
-    scale 1.25
+    max_render_time 16
+    scale 1.00
 ## En caso de usar maquina virtual, coloque aqui la resolucion ejemplo: mode 800x600
 #    mode 8000x600
 }
@@ -373,3 +374,4 @@ exec /usr/bin/gnome-keyring-daemon --start
 exec swayidle -w \
     timeout 120 "$lock_warning" \
     timeout 140 "swaylock"
+
