@@ -1,0 +1,119 @@
+18:30:00.191: Platform: Wayland
+18:30:00.191: CPU Name: AMD 4700S 8-Core Processor Desktop Kit
+18:30:00.191: CPU Speed: 3999.257MHz
+18:30:00.191: Physical Cores: 8, Logical Cores: 16
+18:30:00.191: Physical Memory: 15950MB Total, 5250MB Free
+18:30:00.191: Kernel Version: Linux 6.2.10-arch1-1
+18:30:00.191: Distribution: "Arch Linux" Unknown
+18:30:00.192: Session Type: wayland
+18:30:00.193: Qt Version: 6.4.3 (runtime), 6.4.2 (compiled)
+18:30:00.193: Portable mode: false
+18:30:00.228: OBS 29.0.2-2 (linux)
+18:30:00.228: ---------------------------------
+18:30:00.229: ---------------------------------
+18:30:00.229: audio settings reset:
+18:30:00.229: 	samples per sec: 48000
+18:30:00.229: 	speakers:        2
+18:30:00.229: 	max buffering:   960 milliseconds
+18:30:00.229: 	buffering type:  dynamically increasing
+18:30:00.230: ---------------------------------
+18:30:00.230: Initializing OpenGL...
+18:30:00.230: Using EGL/Wayland
+18:30:00.263: Initialized EGL 1.5
+18:30:00.278: Loading up OpenGL on adapter AMD AMD Radeon RX 550 / 550 Series (polaris12, LLVM 15.0.7, DRM 3.49, 6.2.10-arch1-1)
+18:30:00.278: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 23.0.2, shading language 4.60
+18:30:00.301: ---------------------------------
+18:30:00.301: video settings reset:
+18:30:00.301: 	base resolution:   1360x768
+18:30:00.301: 	output resolution: 1360x768
+18:30:00.301: 	downscale filter:  Bicubic
+18:30:00.301: 	fps:               30/1
+18:30:00.301: 	format:            NV12
+18:30:00.301: 	YUV mode:          Rec. 709/Full
+18:30:00.301: NV12 texture support not available
+18:30:00.301: P010 texture support not available
+18:30:00.303: Audio monitoring device:
+18:30:00.303: 	name: Monitor of Audio Interno Estéreo analógico
+18:30:00.303: 	id: alsa_output.pci-0000_00_14.2.3.analog-stereo.monitor
+18:30:00.303: ---------------------------------
+18:30:00.310: Failed to load 'en-US' text for module: 'decklink-captions.so'
+18:30:00.318: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+18:30:00.326: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+18:30:00.326: Failed to initialize module 'decklink.so'
+18:30:00.329: os_dlopen(/usr//lib/obs-plugins/frontend-tools.so->/usr//lib/obs-plugins/frontend-tools.so): libluajit-5.1.so.2: no se puede abrir el fichero del objeto compartido: No existe el fichero o el directorio
+18:30:00.329: 
+18:30:00.332: os_dlopen(/usr//lib/obs-plugins/frontend-tools.so->/usr//lib/obs-plugins/frontend-tools.so): libluajit-5.1.so.2: no se puede abrir el fichero del objeto compartido: No existe el fichero o el directorio
+18:30:00.332: 
+18:30:00.332: Module '/usr//lib/obs-plugins/frontend-tools.so' not loaded
+18:30:00.371: [pipewire] Available captures:
+18:30:00.371: [pipewire]     - Desktop capture
+18:30:00.391: v4l2loopback not installed, virtual camera disabled
+18:30:00.405: LIBVA_DRIVER_NAME variable is set, this could prevent FFmpeg VAAPI from working correctly
+18:30:00.413: VAAPI: API version 1.18
+18:30:00.413: FFmpeg VAAPI H264 encoding supported
+18:30:00.487: Failed to load 'es-ES' text for module: 'linux-pipewire-audio.so'
+18:30:00.487: ---------------------------------
+18:30:00.487:   Loaded Modules:
+18:30:00.487:     linux-pipewire-audio.so
+18:30:00.487:     text-freetype2.so
+18:30:00.487:     rtmp-services.so
+18:30:00.487:     obs-x264.so
+18:30:00.487:     obs-vst.so
+18:30:00.487:     obs-transitions.so
+18:30:00.487:     obs-outputs.so
+18:30:00.487:     obs-libfdk.so
+18:30:00.487:     obs-filters.so
+18:30:00.487:     obs-ffmpeg.so
+18:30:00.487:     linux-v4l2.so
+18:30:00.487:     linux-pulseaudio.so
+18:30:00.487:     linux-pipewire.so
+18:30:00.487:     linux-jack.so
+18:30:00.487:     linux-capture.so
+18:30:00.487:     linux-alsa.so
+18:30:00.487:     image-source.so
+18:30:00.487:     decklink-output-ui.so
+18:30:00.487:     decklink-captions.so
+18:30:00.487: ---------------------------------
+18:30:00.487: ==== Startup complete ===============================================
+18:30:00.506: All scene data cleared
+18:30:00.506: ------------------------------------------------
+18:30:00.512: [pipewire] Created stream 0x55a3ab8ae710
+18:30:00.513: [pipewire] Created stream 0x55a3ab8b1a90
+18:30:00.514: PipeWire initialized
+18:30:00.515: Switched to scene 'Escena'
+18:30:00.515: ------------------------------------------------
+18:30:00.515: Loaded scenes:
+18:30:00.515: - scene 'Escena':
+18:30:00.515:     - source: 'Captura de pantalla (PipeWire)' (pipewire-desktop-capture-source)
+18:30:00.515:     - source: 'Application Audio Capture (PipeWire)' (pipewire_audio_application_capture)
+18:30:00.515:     - source: 'Audio Input Capture (PipeWire)' (pipewire_audio_input_capture)
+18:30:00.515: ------------------------------------------------
+18:30:00.516: [pipewire] Created app capture sink 67 with 2 channels and position FL,FR
+18:30:00.525: [pipewire] 0x55a3ab8b1a90 Got format: rate 48000 - channels 2 - format 8
+18:30:00.528: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Application Audio Capture (PipeWire))
+18:30:00.528: 
+18:30:00.550: [pipewire] Screencast session created
+18:31:13.969: [pipewire] Asking for desktop
+18:31:13.973: [pipewire] desktop selected, setting up screencast
+18:31:13.975: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+18:31:13.975: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+18:31:13.975: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+18:31:13.975: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+18:31:14.029: [pipewire] Server version: 0.3.68
+18:31:14.029: [pipewire] Library version: 0.3.68
+18:31:14.029: [pipewire] Header version: 0.3.66
+18:31:14.029: [pipewire] Created stream 0x55a3ac6064b0
+18:31:14.029: [pipewire] Stream 0x55a3ac6064b0 state: "connecting" (error: none)
+18:31:14.029: [pipewire] Playing stream 0x55a3ac6064b0
+18:31:14.030: [pipewire] Stream 0x55a3ac6064b0 state: "paused" (error: none)
+18:31:14.032: [pipewire] Negotiated format:
+18:31:14.032: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+18:31:14.032: [pipewire]     Modifier: 0
+18:31:14.032: [pipewire]     Size: 1360x768
+18:31:14.032: [pipewire]     Framerate: 0/1
+18:31:14.034: [pipewire] Negotiated format:
+18:31:14.034: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+18:31:14.034: [pipewire]     Modifier: 72057594037927935
+18:31:14.034: [pipewire]     Size: 1360x768
+18:31:14.034: [pipewire]     Framerate: 0/1
+18:31:14.034: [pipewire] Stream 0x55a3ac6064b0 state: "streaming" (error: none)
