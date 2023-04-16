@@ -1,0 +1,139 @@
+18:25:21.348: Platform: Wayland
+18:25:21.348: CPU Name: AMD 4700S 8-Core Processor Desktop Kit
+18:25:21.348: CPU Speed: 3600.363MHz
+18:25:21.348: Physical Cores: 8, Logical Cores: 16
+18:25:21.348: Physical Memory: 15950MB Total, 9861MB Free
+18:25:21.348: Kernel Version: Linux 6.2.11-arch1-1
+18:25:21.348: Distribution: "Arch Linux" Unknown
+18:25:21.348: Session Type: wayland
+18:25:21.350: Qt Version: 6.5.0 (runtime), 6.4.2 (compiled)
+18:25:21.350: Portable mode: false
+18:25:21.384: OBS 29.0.2-2 (linux)
+18:25:21.384: ---------------------------------
+18:25:21.384: ---------------------------------
+18:25:21.384: audio settings reset:
+18:25:21.384: 	samples per sec: 48000
+18:25:21.384: 	speakers:        2
+18:25:21.384: 	max buffering:   960 milliseconds
+18:25:21.384: 	buffering type:  dynamically increasing
+18:25:21.386: ---------------------------------
+18:25:21.386: Initializing OpenGL...
+18:25:21.386: Using EGL/Wayland
+18:25:21.418: Initialized EGL 1.5
+18:25:21.433: Loading up OpenGL on adapter AMD AMD Radeon RX 550 / 550 Series (polaris12, LLVM 15.0.7, DRM 3.49, 6.2.11-arch1-1)
+18:25:21.433: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 23.0.2, shading language 4.60
+18:25:21.456: ---------------------------------
+18:25:21.456: video settings reset:
+18:25:21.456: 	base resolution:   1360x768
+18:25:21.456: 	output resolution: 1360x768
+18:25:21.456: 	downscale filter:  Bicubic
+18:25:21.456: 	fps:               30/1
+18:25:21.456: 	format:            NV12
+18:25:21.456: 	YUV mode:          Rec. 709/Full
+18:25:21.457: NV12 texture support not available
+18:25:21.457: P010 texture support not available
+18:25:21.458: Audio monitoring device:
+18:25:21.458: 	name: Monitor of Audio Interno Estéreo analógico
+18:25:21.458: 	id: alsa_output.pci-0000_00_14.2.analog-stereo.monitor
+18:25:21.458: ---------------------------------
+18:25:21.466: Failed to load 'en-US' text for module: 'decklink-captions.so'
+18:25:21.474: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+18:25:21.481: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+18:25:21.481: Failed to initialize module 'decklink.so'
+18:25:21.599: [pipewire] Available captures:
+18:25:21.599: [pipewire]     - Desktop capture
+18:25:21.620: v4l2loopback not installed, virtual camera disabled
+18:25:21.643: VAAPI: API version 1.18
+18:25:21.645: FFmpeg VAAPI H264 encoding supported
+18:25:21.731: Failed to load 'es-ES' text for module: 'linux-pipewire-audio.so'
+18:25:21.732: ---------------------------------
+18:25:21.732:   Loaded Modules:
+18:25:21.732:     linux-pipewire-audio.so
+18:25:21.732:     text-freetype2.so
+18:25:21.732:     rtmp-services.so
+18:25:21.732:     obs-x264.so
+18:25:21.732:     obs-vst.so
+18:25:21.732:     obs-transitions.so
+18:25:21.732:     obs-outputs.so
+18:25:21.732:     obs-libfdk.so
+18:25:21.732:     obs-filters.so
+18:25:21.732:     obs-ffmpeg.so
+18:25:21.732:     linux-v4l2.so
+18:25:21.732:     linux-pulseaudio.so
+18:25:21.732:     linux-pipewire.so
+18:25:21.732:     linux-jack.so
+18:25:21.732:     linux-capture.so
+18:25:21.732:     linux-alsa.so
+18:25:21.732:     image-source.so
+18:25:21.732:     frontend-tools.so
+18:25:21.732:     decklink-output-ui.so
+18:25:21.732:     decklink-captions.so
+18:25:21.732: ---------------------------------
+18:25:21.732: ==== Startup complete ===============================================
+18:25:21.769: All scene data cleared
+18:25:21.769: ------------------------------------------------
+18:25:21.778: [pipewire] Created stream 0x565382c2eb40
+18:25:21.779: [pipewire] 0x565382c2eb40 streaming from 58
+18:25:21.780: pulse-am: Server name: 'PulseAudio (on PipeWire 0.3.69) 15.0.0'
+18:25:21.781: pulse-am: Audio format: s32le, 48000 Hz, 2 channels
+18:25:21.781: pulse-am: Started Monitoring in 'alsa_output.pci-0000_00_14.2.analog-stereo.monitor'
+18:25:21.782: User selected new VST plugin: '/home/vega/.vst/lsp-plugins/graph-equalizer-x16-stereo.so'
+18:25:21.782: os_dlopen(/home/vega/.vst/lsp-plugins/graph-equalizer-x16-stereo.so->/home/vega/.vst/lsp-plugins/graph-equalizer-x16-stereo.so): /home/vega/.vst/lsp-plugins/graph-equalizer-x16-stereo.so: no se puede abrir el fichero del objeto compartido: No existe el fichero o el directorio
+18:25:21.782: 
+18:25:21.782: Failed trying to load VST from '/home/vega/.vst/lsp-plugins/graph-equalizer-x16-stereo.so',error 2
+18:25:21.782: 
+18:25:21.782: VST Plug-in: Can't load effect!
+18:25:21.782: [pipewire] Created stream 0x565382bf7f90
+18:25:21.783: PipeWire initialized
+18:25:21.784: [pipewire] Created stream 0x565383116da0
+18:25:21.785: Switched to scene 'Escena'
+18:25:21.785: ------------------------------------------------
+18:25:21.785: Loaded scenes:
+18:25:21.785: - scene 'Escena':
+18:25:21.785:     - source: 'Pantalla' (pipewire-desktop-capture-source)
+18:25:21.785:     - source: 'Spotify' (pipewire_audio_application_capture)
+18:25:21.785:     - source: 'Minecraft' (pipewire_audio_application_capture)
+18:25:21.785:     - source: 'Microfono USB' (pipewire_audio_input_capture)
+18:25:21.785:         - monitoring: monitor only
+18:25:21.785:         - filter: 'Puerta anti-ruidos' (noise_gate_filter)
+18:25:21.785:         - filter: 'Eliminación de ruido' (noise_suppress_filter_v2)
+18:25:21.785:         - filter: 'Compresor' (compressor_filter)
+18:25:21.785:         - filter: 'Expansor' (expander_filter)
+18:25:21.785:         - filter: 'Limitador' (limiter_filter)
+18:25:21.785:         - filter: 'Ganancia' (gain_filter)
+18:25:21.785:         - filter: 'Ecualizador de 3 bandas' (basic_eq_filter)
+18:25:21.785:         - filter: 'Extensión VST 2.x' (vst_filter)
+18:25:21.785: ------------------------------------------------
+18:25:21.788: [pipewire] Created app capture sink 31 with 2 channels and position FL,FR
+18:25:21.790: [pipewire] Created app capture sink 88 with 2 channels and position FL,FR
+18:25:21.811: [pipewire] 0x565382c2eb40 Got format: rate 48000 - channels 1 - format 8
+18:25:21.821: [pipewire] 0x565382bf7f90 Got format: rate 48000 - channels 2 - format 8
+18:25:21.828: [pipewire] 0x565383116da0 Got format: rate 48000 - channels 2 - format 8
+18:25:21.833: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Spotify)
+18:25:21.833: 
+18:25:21.841: [pipewire] Screencast session created
+18:25:22.701: [pipewire] Asking for desktop
+18:25:22.704: [pipewire] desktop selected, setting up screencast
+18:25:22.706: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+18:25:22.706: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+18:25:22.706: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+18:25:22.706: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+18:25:22.707: [pipewire] Server version: 0.3.69
+18:25:22.707: [pipewire] Library version: 0.3.69
+18:25:22.707: [pipewire] Header version: 0.3.66
+18:25:22.707: [pipewire] Created stream 0x565383176310
+18:25:22.707: [pipewire] Stream 0x565383176310 state: "connecting" (error: none)
+18:25:22.707: [pipewire] Playing stream 0x565383176310
+18:25:22.707: [pipewire] Stream 0x565383176310 state: "paused" (error: none)
+18:25:22.711: [pipewire] Negotiated format:
+18:25:22.711: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+18:25:22.711: [pipewire]     Modifier: 0
+18:25:22.711: [pipewire]     Size: 1360x768
+18:25:22.711: [pipewire]     Framerate: 0/1
+18:25:22.712: [pipewire] Negotiated format:
+18:25:22.712: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+18:25:22.712: [pipewire]     Modifier: 72057594037927935
+18:25:22.712: [pipewire]     Size: 1360x768
+18:25:22.712: [pipewire]     Framerate: 0/1
+18:25:22.712: [pipewire] Stream 0x565383176310 state: "streaming" (error: none)
+18:25:43.679: User selected new VST plugin: '/home/vega/.vst/REAPER/Plugins/FX/reaeq.vst.so'

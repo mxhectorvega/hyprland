@@ -1,0 +1,138 @@
+18:13:52.690: Platform: Wayland
+18:13:52.690: CPU Name: AMD 4700S 8-Core Processor Desktop Kit
+18:13:52.690: CPU Speed: 4000.353MHz
+18:13:52.691: Physical Cores: 8, Logical Cores: 16
+18:13:52.691: Physical Memory: 15950MB Total, 11541MB Free
+18:13:52.691: Kernel Version: Linux 6.2.11-arch1-1
+18:13:52.691: Distribution: "Arch Linux" Unknown
+18:13:52.691: Session Type: wayland
+18:13:52.692: Qt Version: 6.5.0 (runtime), 6.4.2 (compiled)
+18:13:52.692: Portable mode: false
+18:13:52.727: OBS 29.0.2-2 (linux)
+18:13:52.727: ---------------------------------
+18:13:52.728: ---------------------------------
+18:13:52.728: audio settings reset:
+18:13:52.728: 	samples per sec: 48000
+18:13:52.728: 	speakers:        2
+18:13:52.728: 	max buffering:   960 milliseconds
+18:13:52.728: 	buffering type:  dynamically increasing
+18:13:52.729: ---------------------------------
+18:13:52.729: Initializing OpenGL...
+18:13:52.729: Using EGL/Wayland
+18:13:52.763: Initialized EGL 1.5
+18:13:52.778: Loading up OpenGL on adapter AMD AMD Radeon RX 550 / 550 Series (polaris12, LLVM 15.0.7, DRM 3.49, 6.2.11-arch1-1)
+18:13:52.778: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 23.0.2, shading language 4.60
+18:13:52.801: ---------------------------------
+18:13:52.801: video settings reset:
+18:13:52.801: 	base resolution:   1360x768
+18:13:52.801: 	output resolution: 1360x768
+18:13:52.801: 	downscale filter:  Bicubic
+18:13:52.801: 	fps:               30/1
+18:13:52.801: 	format:            NV12
+18:13:52.801: 	YUV mode:          Rec. 709/Full
+18:13:52.801: NV12 texture support not available
+18:13:52.801: P010 texture support not available
+18:13:52.802: Audio monitoring device:
+18:13:52.802: 	name: Monitor of Audio Interno Estéreo analógico
+18:13:52.802: 	id: alsa_output.pci-0000_00_14.2.analog-stereo.monitor
+18:13:52.803: ---------------------------------
+18:13:52.809: Failed to load 'en-US' text for module: 'decklink-captions.so'
+18:13:52.817: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+18:13:52.823: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+18:13:52.823: Failed to initialize module 'decklink.so'
+18:13:52.934: [pipewire] Available captures:
+18:13:52.934: [pipewire]     - Desktop capture
+18:13:52.954: v4l2loopback not installed, virtual camera disabled
+18:13:52.976: VAAPI: API version 1.18
+18:13:52.977: FFmpeg VAAPI H264 encoding supported
+18:13:53.048: Failed to load 'es-ES' text for module: 'linux-pipewire-audio.so'
+18:13:53.048: ---------------------------------
+18:13:53.048:   Loaded Modules:
+18:13:53.048:     linux-pipewire-audio.so
+18:13:53.048:     text-freetype2.so
+18:13:53.048:     rtmp-services.so
+18:13:53.048:     obs-x264.so
+18:13:53.048:     obs-vst.so
+18:13:53.048:     obs-transitions.so
+18:13:53.048:     obs-outputs.so
+18:13:53.048:     obs-libfdk.so
+18:13:53.048:     obs-filters.so
+18:13:53.048:     obs-ffmpeg.so
+18:13:53.048:     linux-v4l2.so
+18:13:53.048:     linux-pulseaudio.so
+18:13:53.048:     linux-pipewire.so
+18:13:53.048:     linux-jack.so
+18:13:53.048:     linux-capture.so
+18:13:53.048:     linux-alsa.so
+18:13:53.048:     image-source.so
+18:13:53.048:     frontend-tools.so
+18:13:53.048:     decklink-output-ui.so
+18:13:53.048:     decklink-captions.so
+18:13:53.048: ---------------------------------
+18:13:53.048: ==== Startup complete ===============================================
+18:13:53.070: All scene data cleared
+18:13:53.070: ------------------------------------------------
+18:13:53.076: [pipewire] Created stream 0x56202cd6b7d0
+18:13:53.077: [pipewire] 0x56202cd6b7d0 streaming from 56
+18:13:53.078: [pipewire] Created stream 0x56202dbe06b0
+18:13:53.079: PipeWire initialized
+18:13:53.079: [pipewire] Created stream 0x56202de757e0
+18:13:53.081: Switched to scene 'Escena'
+18:13:53.081: ------------------------------------------------
+18:13:53.081: Loaded scenes:
+18:13:53.081: - scene 'Escena':
+18:13:53.081:     - source: 'Pantalla' (pipewire-desktop-capture-source)
+18:13:53.081:     - source: 'Spotify' (pipewire_audio_application_capture)
+18:13:53.081:     - source: 'Minecraft' (pipewire_audio_application_capture)
+18:13:53.081:     - source: 'Microfono USB' (pipewire_audio_input_capture)
+18:13:53.081:         - filter: 'Puerta anti-ruidos' (noise_gate_filter)
+18:13:53.081:         - filter: 'Eliminación de ruido' (noise_suppress_filter_v2)
+18:13:53.081:         - filter: 'Compresor' (compressor_filter)
+18:13:53.081:         - filter: 'Expansor' (expander_filter)
+18:13:53.081:         - filter: 'Limitador' (limiter_filter)
+18:13:53.081:         - filter: 'Ganancia' (gain_filter)
+18:13:53.081:         - filter: 'Ecualizador de 3 bandas' (basic_eq_filter)
+18:13:53.081: ------------------------------------------------
+18:13:53.084: [pipewire] Created app capture sink 94 with 2 channels and position FL,FR
+18:13:53.084: [pipewire] Created app capture sink 79 with 2 channels and position FL,FR
+18:13:53.096: [pipewire] 0x56202dbe06b0 Got format: rate 48000 - channels 2 - format 8
+18:13:53.096: [pipewire] 0x56202dbe06b0 Got format: rate 48000 - channels 2 - format 8
+18:13:53.096: [pipewire] 0x56202de757e0 Got format: rate 48000 - channels 2 - format 8
+18:13:53.103: [pipewire] 0x56202cd6b7d0 Got format: rate 48000 - channels 2 - format 8
+18:13:53.112: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Spotify)
+18:13:53.112: 
+18:13:53.115: [pipewire] Screencast session created
+18:13:53.155: adding 42 milliseconds of audio buffering, total audio buffering is now 64 milliseconds (source: Microfono USB)
+18:13:53.155: 
+18:13:53.863: [pipewire] Asking for desktop
+18:13:53.867: [pipewire] desktop selected, setting up screencast
+18:13:53.869: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+18:13:53.869: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+18:13:53.869: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+18:13:53.869: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+18:13:53.870: [pipewire] Server version: 0.3.69
+18:13:53.870: [pipewire] Library version: 0.3.69
+18:13:53.870: [pipewire] Header version: 0.3.66
+18:13:53.870: [pipewire] Created stream 0x56202deba440
+18:13:53.870: [pipewire] Stream 0x56202deba440 state: "connecting" (error: none)
+18:13:53.870: [pipewire] Playing stream 0x56202deba440
+18:13:53.871: [pipewire] Stream 0x56202deba440 state: "paused" (error: none)
+18:13:53.875: [pipewire] Negotiated format:
+18:13:53.875: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+18:13:53.875: [pipewire]     Modifier: 0
+18:13:53.875: [pipewire]     Size: 1360x768
+18:13:53.875: [pipewire]     Framerate: 0/1
+18:13:53.875: [pipewire] Negotiated format:
+18:13:53.875: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+18:13:53.875: [pipewire]     Modifier: 72057594037927935
+18:13:53.875: [pipewire]     Size: 1360x768
+18:13:53.875: [pipewire]     Framerate: 0/1
+18:13:53.876: [pipewire] Stream 0x56202deba440 state: "streaming" (error: none)
+18:14:06.737: [pipewire] 0x56202cd6b7d0 streaming from 54
+18:14:06.751: [pipewire] 0x56202cd6b7d0 Got format: rate 48000 - channels 1 - format 8
+18:14:21.182: User added filter 'Extensión VST 2.x' (vst_filter) to source 'Microfono USB'
+18:14:26.868: User selected new VST plugin: '/home/vega/.vst/lsp-plugins/graph-equalizer-x16-stereo.so'
+18:14:49.377: pulse-am: Server name: 'PulseAudio (on PipeWire 0.3.69) 15.0.0'
+18:14:49.377: pulse-am: Audio format: s32le, 48000 Hz, 2 channels
+18:14:49.377: pulse-am: Started Monitoring in 'alsa_output.pci-0000_00_14.2.analog-stereo.monitor'
+18:14:49.377: User changed audio monitoring for source 'Microfono USB' to: monitor only

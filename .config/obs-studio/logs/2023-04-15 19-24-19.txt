@@ -1,0 +1,118 @@
+19:24:19.516: Platform: Wayland
+19:24:19.516: CPU Name: AMD 4700S 8-Core Processor Desktop Kit
+19:24:19.516: CPU Speed: 4002.131MHz
+19:24:19.517: Physical Cores: 8, Logical Cores: 16
+19:24:19.517: Physical Memory: 15950MB Total, 10267MB Free
+19:24:19.517: Kernel Version: Linux 6.2.11-arch1-1
+19:24:19.517: Distribution: "Arch Linux" Unknown
+19:24:19.517: Session Type: wayland
+19:24:19.519: Qt Version: 6.5.0 (runtime), 6.4.2 (compiled)
+19:24:19.519: Portable mode: false
+19:24:19.553: OBS 29.0.2-2 (linux)
+19:24:19.553: ---------------------------------
+19:24:19.554: ---------------------------------
+19:24:19.554: audio settings reset:
+19:24:19.554: 	samples per sec: 48000
+19:24:19.554: 	speakers:        2
+19:24:19.554: 	max buffering:   960 milliseconds
+19:24:19.554: 	buffering type:  dynamically increasing
+19:24:19.555: ---------------------------------
+19:24:19.555: Initializing OpenGL...
+19:24:19.555: Using EGL/Wayland
+19:24:19.590: Initialized EGL 1.5
+19:24:19.605: Loading up OpenGL on adapter AMD AMD Radeon RX 550 / 550 Series (polaris12, LLVM 15.0.7, DRM 3.49, 6.2.11-arch1-1)
+19:24:19.605: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 23.0.2, shading language 4.60
+19:24:19.628: ---------------------------------
+19:24:19.628: video settings reset:
+19:24:19.628: 	base resolution:   1360x768
+19:24:19.628: 	output resolution: 1360x768
+19:24:19.628: 	downscale filter:  Bicubic
+19:24:19.628: 	fps:               30/1
+19:24:19.628: 	format:            NV12
+19:24:19.628: 	YUV mode:          Rec. 709/Full
+19:24:19.628: NV12 texture support not available
+19:24:19.628: P010 texture support not available
+19:24:19.629: Audio monitoring device:
+19:24:19.629: 	name: Monitor of Audio Interno Estéreo analógico
+19:24:19.629: 	id: alsa_output.pci-0000_00_14.2.analog-stereo.monitor
+19:24:19.629: ---------------------------------
+19:24:19.636: Failed to load 'en-US' text for module: 'decklink-captions.so'
+19:24:19.643: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+19:24:19.650: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+19:24:19.650: Failed to initialize module 'decklink.so'
+19:24:19.761: [pipewire] Available captures:
+19:24:19.761: [pipewire]     - Desktop capture
+19:24:19.780: v4l2loopback not installed, virtual camera disabled
+19:24:19.802: VAAPI: API version 1.18
+19:24:19.804: FFmpeg VAAPI H264 encoding supported
+19:24:19.877: Failed to load 'es-ES' text for module: 'linux-pipewire-audio.so'
+19:24:19.877: ---------------------------------
+19:24:19.877:   Loaded Modules:
+19:24:19.877:     linux-pipewire-audio.so
+19:24:19.877:     text-freetype2.so
+19:24:19.877:     rtmp-services.so
+19:24:19.877:     obs-x264.so
+19:24:19.877:     obs-vst.so
+19:24:19.877:     obs-transitions.so
+19:24:19.877:     obs-outputs.so
+19:24:19.877:     obs-libfdk.so
+19:24:19.877:     obs-filters.so
+19:24:19.877:     obs-ffmpeg.so
+19:24:19.877:     linux-v4l2.so
+19:24:19.877:     linux-pulseaudio.so
+19:24:19.877:     linux-pipewire.so
+19:24:19.877:     linux-jack.so
+19:24:19.877:     linux-capture.so
+19:24:19.877:     linux-alsa.so
+19:24:19.877:     image-source.so
+19:24:19.877:     frontend-tools.so
+19:24:19.877:     decklink-output-ui.so
+19:24:19.877:     decklink-captions.so
+19:24:19.877: ---------------------------------
+19:24:19.877: ==== Startup complete ===============================================
+19:24:19.917: All scene data cleared
+19:24:19.917: ------------------------------------------------
+19:24:19.923: [pipewire] Created stream 0x55aa78230790
+19:24:19.924: PipeWire initialized
+19:24:19.925: [pipewire] Created stream 0x55aa790acc30
+19:24:19.926: [pipewire] Created stream 0x55aa78e7d9a0
+19:24:19.926: [pipewire] Created app capture sink 107 with 2 channels and position FL,FR
+19:24:19.927: [pipewire] 0x55aa78e7d9a0 streaming from 58
+19:24:19.928: pulse-am: Server name: 'PulseAudio (on PipeWire 0.3.69) 15.0.0'
+19:24:19.928: pulse-am: Audio format: s32le, 48000 Hz, 2 channels
+19:24:19.928: pulse-am: Started Monitoring in 'alsa_output.pci-0000_00_14.2.analog-stereo.monitor'
+19:24:19.929: User selected new VST plugin: '/home/vega/.vst/Bertom_EQCurveAnalyzer.vst3/Contents/x86_64-linux/Bertom_EQCurveAnalyzer.so'
+19:24:19.929: os_dlopen(/home/vega/.vst/Bertom_EQCurveAnalyzer.vst3/Contents/x86_64-linux/Bertom_EQCurveAnalyzer.so->/home/vega/.vst/Bertom_EQCurveAnalyzer.vst3/Contents/x86_64-linux/Bertom_EQCurveAnalyzer.so): /home/vega/.vst/Bertom_EQCurveAnalyzer.vst3/Contents/x86_64-linux/Bertom_EQCurveAnalyzer.so: no se puede abrir el fichero del objeto compartido: No existe el fichero o el directorio
+19:24:19.929: 
+19:24:19.929: Failed trying to load VST from '/home/vega/.vst/Bertom_EQCurveAnalyzer.vst3/Contents/x86_64-linux/Bertom_EQCurveAnalyzer.so',error 2
+19:24:19.929: 
+19:24:19.929: VST Plug-in: Can't load effect!
+19:24:19.930: Switched to scene 'Escena'
+19:24:19.930: ------------------------------------------------
+19:24:19.930: Loaded scenes:
+19:24:19.930: - scene 'Escena':
+19:24:19.930:     - source: 'Pantalla' (pipewire-desktop-capture-source)
+19:24:19.930:     - source: 'Spotify' (pipewire_audio_application_capture)
+19:24:19.930:     - source: 'Minecraft' (pipewire_audio_application_capture)
+19:24:19.930:     - source: 'Microfono USB' (pipewire_audio_input_capture)
+19:24:19.930:         - monitoring: monitor only
+19:24:19.930:         - filter: 'Puerta anti-ruidos' (noise_gate_filter)
+19:24:19.930:         - filter: 'Eliminación de ruido' (noise_suppress_filter_v2)
+19:24:19.930:         - filter: 'Compresor' (compressor_filter)
+19:24:19.930:         - filter: 'Expansor' (expander_filter)
+19:24:19.930:         - filter: 'Limitador' (limiter_filter)
+19:24:19.930:         - filter: 'Ganancia' (gain_filter)
+19:24:19.930:         - filter: 'Ecualizador de 3 bandas' (basic_eq_filter)
+19:24:19.930:         - filter: 'Extensión VST 2.x' (vst_filter)
+19:24:19.930: ------------------------------------------------
+19:24:19.970: [pipewire] Created app capture sink 92 with 2 channels and position FL,FR
+19:24:19.982: [pipewire] 0x55aa78e7d9a0 Got format: rate 48000 - channels 1 - format 8
+19:24:19.982: [pipewire] 0x55aa78e7d9a0 Got format: rate 48000 - channels 1 - format 8
+19:24:19.982: [pipewire] 0x55aa790acc30 Got format: rate 48000 - channels 2 - format 8
+19:24:19.982: [pipewire] 0x55aa78e7d9a0 Got format: rate 48000 - channels 1 - format 8
+19:24:19.982: [pipewire] 0x55aa790acc30 Got format: rate 48000 - channels 2 - format 8
+19:24:19.982: [pipewire] 0x55aa78230790 Got format: rate 48000 - channels 2 - format 8
+19:24:20.194: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Spotify)
+19:24:20.194: 
+19:24:44.925: [pipewire] Error creating screencast session: Se alcanzó el tiempo de expiración
+19:24:51.359: User selected new VST plugin: '/home/vega/.vst/yabridge/ReaPlugs/reaeq-standalone.so'
