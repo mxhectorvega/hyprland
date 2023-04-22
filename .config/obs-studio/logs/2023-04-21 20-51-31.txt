@@ -1,0 +1,229 @@
+20:51:31.877: Using EGL/X11
+20:51:31.878: CPU Name: AMD 4700S 8-Core Processor Desktop Kit
+20:51:31.878: CPU Speed: 3999.638MHz
+20:51:31.878: Physical Cores: 8, Logical Cores: 16
+20:51:31.878: Physical Memory: 15950MB Total, 12601MB Free
+20:51:31.878: Kernel Version: Linux 6.2.12-arch1-1
+20:51:31.878: Distribution: "Arch Linux" Unknown
+20:51:31.878: Session Type: x11
+20:51:31.878: Window System: X11.0, Vendor: The X.Org Foundation, Version: 1.21.1
+20:51:31.878: Qt Version: 6.5.0 (runtime), 6.4.2 (compiled)
+20:51:31.878: Portable mode: false
+20:51:31.913: OBS 29.0.2-2 (linux)
+20:51:31.913: ---------------------------------
+20:51:31.920: ---------------------------------
+20:51:31.920: audio settings reset:
+20:51:31.920: 	samples per sec: 48000
+20:51:31.920: 	speakers:        2
+20:51:31.920: 	max buffering:   960 milliseconds
+20:51:31.920: 	buffering type:  dynamically increasing
+20:51:31.922: ---------------------------------
+20:51:31.922: Initializing OpenGL...
+20:51:31.968: Loading up OpenGL on adapter AMD AMD Radeon RX 550 / 550 Series (polaris12, LLVM 15.0.7, DRM 3.49, 6.2.12-arch1-1)
+20:51:31.968: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 23.0.2, shading language 4.60
+20:51:31.990: ---------------------------------
+20:51:31.990: video settings reset:
+20:51:31.990: 	base resolution:   1360x768
+20:51:31.990: 	output resolution: 1360x768
+20:51:31.990: 	downscale filter:  Bicubic
+20:51:31.990: 	fps:               30/1
+20:51:31.990: 	format:            NV12
+20:51:31.990: 	YUV mode:          Rec. 709/Full
+20:51:31.990: NV12 texture support not available
+20:51:31.990: P010 texture support not available
+20:51:31.992: Audio monitoring device:
+20:51:31.992: 	name: Monitor of Baffin HDMI/DP Audio [Radeon RX 550 640SP / RX 560/560X] Estéreo digital (HDMI)
+20:51:31.992: 	id: alsa_output.pci-0000_03_00.1.hdmi-stereo.monitor
+20:51:31.992: ---------------------------------
+20:51:32.000: Failed to load 'en-US' text for module: 'decklink-captions.so'
+20:51:32.009: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+20:51:32.017: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+20:51:32.017: Failed to initialize module 'decklink.so'
+20:51:32.142: [pipewire] Available captures:
+20:51:32.142: [pipewire]     - Desktop capture
+20:51:32.142: [pipewire]     - Window capture
+20:51:32.165: v4l2loopback not installed, virtual camera disabled
+20:51:32.189: VAAPI: API version 1.18
+20:51:32.190: FFmpeg VAAPI H264 encoding supported
+20:51:32.280: Failed to load 'es-ES' text for module: 'linux-pipewire-audio.so'
+20:51:32.280: ---------------------------------
+20:51:32.280:   Loaded Modules:
+20:51:32.280:     linux-pipewire-audio.so
+20:51:32.280:     text-freetype2.so
+20:51:32.280:     rtmp-services.so
+20:51:32.280:     obs-x264.so
+20:51:32.280:     obs-vst.so
+20:51:32.280:     obs-transitions.so
+20:51:32.280:     obs-outputs.so
+20:51:32.280:     obs-libfdk.so
+20:51:32.280:     obs-filters.so
+20:51:32.280:     obs-ffmpeg.so
+20:51:32.280:     linux-v4l2.so
+20:51:32.280:     linux-pulseaudio.so
+20:51:32.280:     linux-pipewire.so
+20:51:32.280:     linux-jack.so
+20:51:32.280:     linux-capture.so
+20:51:32.280:     linux-alsa.so
+20:51:32.280:     image-source.so
+20:51:32.280:     frontend-tools.so
+20:51:32.280:     decklink-output-ui.so
+20:51:32.280:     decklink-captions.so
+20:51:32.280: ---------------------------------
+20:51:32.280: ==== Startup complete ===============================================
+20:51:32.326: All scene data cleared
+20:51:32.326: ------------------------------------------------
+20:51:32.333: [pipewire] Created stream 0x5557d2621570
+20:51:32.334: PipeWire initialized
+20:51:32.336: [pipewire] Created stream 0x5557d2881550
+20:51:32.337: [pipewire] Created app capture sink 79 with 2 channels and position FL,FR
+20:51:32.338: [pipewire] Created stream 0x5557d2857790
+20:51:32.341: [pipewire] Created app capture sink 81 with 2 channels and position FL,FR
+20:51:32.377: [pipewire] 0x5557d2857790 streaming from 47
+20:51:32.379: pulse-am: Server name: 'PulseAudio (on PipeWire 0.3.69) 15.0.0'
+20:51:32.380: pulse-am: Audio format: s32le, 48000 Hz, 2 channels
+20:51:32.380: pulse-am: Started Monitoring in 'alsa_output.pci-0000_03_00.1.hdmi-stereo.monitor'
+20:51:32.380: User selected new VST plugin: '/home/vega/.vst/lsp-plugins/graph-equalizer-x32-mono.so'
+20:51:32.387: xshm-input: Geometry 1360x768 @ 0,0
+20:51:32.388: Switched to scene 'Escena'
+20:51:32.389: ------------------------------------------------
+20:51:32.389: Loaded scenes:
+20:51:32.389: - scene 'Escena':
+20:51:32.389:     - source: 'Pantalla Wayland' (pipewire-desktop-capture-source)
+20:51:32.389:     - source: 'Pantalla XORG' (xshm_input)
+20:51:32.389:     - source: 'Spotify' (pipewire_audio_application_capture)
+20:51:32.389:     - source: 'Minecraft' (pipewire_audio_application_capture)
+20:51:32.389:     - source: 'Microfono USB' (pipewire_audio_input_capture)
+20:51:32.389:         - monitoring: monitor and output
+20:51:32.389:         - filter: 'Eliminación de ruido' (noise_suppress_filter_v2)
+20:51:32.389:         - filter: 'Compresor' (compressor_filter)
+20:51:32.389:         - filter: 'Extensión VST 2.x' (vst_filter)
+20:51:32.389: ------------------------------------------------
+20:51:32.393: [pipewire] 0x5557d2881550 Got format: rate 48000 - channels 2 - format 8
+20:51:32.393: [pipewire] 0x5557d2621570 Got format: rate 48000 - channels 2 - format 8
+20:51:32.409: [pipewire] 0x5557d2857790 Got format: rate 48000 - channels 1 - format 8
+20:51:32.411: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Spotify)
+20:51:32.411: 
+20:51:32.428: [pipewire] Screencast session created
+20:51:32.440: [pipewire] Asking for desktop
+20:51:32.454: adding 42 milliseconds of audio buffering, total audio buffering is now 64 milliseconds (source: Microfono USB)
+20:51:32.454: 
+20:51:32.457: [pipewire] desktop selected, setting up screencast
+20:51:32.458: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+20:51:32.458: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+20:51:32.458: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+20:51:32.458: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+20:51:32.459: [pipewire] Server version: 0.3.69
+20:51:32.459: [pipewire] Library version: 0.3.69
+20:51:32.459: [pipewire] Header version: 0.3.66
+20:51:32.459: [pipewire] Created stream 0x5557d2c44430
+20:51:32.459: [pipewire] Stream 0x5557d2c44430 state: "connecting" (error: none)
+20:51:32.459: [pipewire] Playing stream 0x5557d2c44430
+20:51:32.460: [pipewire] Stream 0x5557d2c44430 state: "paused" (error: none)
+20:51:32.461: [pipewire] Negotiated format:
+20:51:32.461: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+20:51:32.461: [pipewire]     Size: 1360x768
+20:51:32.461: [pipewire]     Framerate: 0/1
+20:51:32.493: [pipewire] Stream 0x5557d2c44430 state: "streaming" (error: none)
+20:51:56.873: User removed filter 'Compresor' (compressor_filter) from source 'Microfono USB'
+20:55:53.917: User added filter 'Compresor' (compressor_filter) to source 'Microfono USB'
+21:00:22.812: User added filter 'Puerta anti-ruidos' (noise_gate_filter) to source 'Microfono USB'
+21:02:04.276: User added filter 'Limitador' (limiter_filter) to source 'Microfono USB'
+21:04:09.971: User added filter 'Ecualizador de 3 bandas' (basic_eq_filter) to source 'Microfono USB'
+21:07:57.701: User removed filter 'Ecualizador de 3 bandas' (basic_eq_filter) from source 'Microfono USB'
+21:09:20.073: User removed filter 'Eliminación de ruido' (noise_suppress_filter_v2) from source 'Microfono USB'
+21:09:22.113: User removed filter 'Puerta anti-ruidos' (noise_gate_filter) from source 'Microfono USB'
+21:09:24.081: User removed filter 'Compresor' (compressor_filter) from source 'Microfono USB'
+21:09:27.705: User removed filter 'Limitador' (limiter_filter) from source 'Microfono USB'
+21:09:30.649: User removed filter 'Extensión VST 2.x' (vst_filter) from source 'Microfono USB'
+21:09:39.369: User added filter 'Puerta anti-ruidos' (noise_gate_filter) to source 'Microfono USB'
+21:09:52.785: User added filter 'Eliminación de ruido' (noise_suppress_filter_v2) to source 'Microfono USB'
+21:10:07.601: User added filter 'Extensión VST 2.x' (vst_filter) to source 'Microfono USB'
+21:10:14.620: User renamed filter 'Extensión VST 2.x' on source 'Microfono USB' to 'Ecualizador VST'
+21:10:35.303: User selected new VST plugin: '/home/vega/.vst/lsp-plugins/gate-mono.so'
+21:11:04.247: User selected new VST plugin: '/home/vega/.vst/lsp-plugins/ab-tester-x2-mono.so'
+21:11:16.471: User selected new VST plugin: '/home/vega/.vst/lsp-plugins/art-delay-mono.so'
+21:11:26.495: User selected new VST plugin: '/home/vega/.vst/lsp-plugins/crossover-mono.so'
+21:12:06.903: User selected new VST plugin: '/home/vega/.vst/lsp-plugins/dyna-processor-mono.so'
+21:13:17.131: User selected new VST plugin: '/home/vega/.vst/lsp-plugins/trigger-mono.so'
+21:13:32.457: User selected new VST plugin: '/home/vega/.vst/lsp-plugins/spectrum-analyzer-x1.so'
+21:13:55.871: User selected new VST plugin: '/home/vega/.vst/lsp-plugins/sc-gate-mono.so'
+21:14:27.607: User selected new VST plugin: '/home/vega/.vst/lsp-plugins/sampler-mono.so'
+21:14:27.621: VST Plug-in can't support replacing. '/home/vega/.vst/lsp-plugins/sampler-mono.so'
+21:14:56.349: User selected new VST plugin: '/home/vega/.vst/lsp-plugins/para-equalizer-x32-mono.so'
+21:15:22.607: User selected new VST plugin: '/home/vega/.vst/lsp-plugins/noise-generator-x4.so'
+21:15:34.150: User selected new VST plugin: '/home/vega/.vst/lsp-plugins/noise-generator-x1.so'
+21:15:36.357: User selected new VST plugin: '/home/vega/.vst/lsp-plugins/mixer-x8-stereo.so'
+21:15:38.150: User selected new VST plugin: '/home/vega/.vst/lsp-plugins/mb-dyna-processor-ms.so'
+21:15:41.735: User selected new VST plugin: '/home/vega/.vst/lsp-plugins/latency-meter.so'
+21:16:07.065: User selected new VST plugin: '/home/vega/.vst/lsp-plugins/graph-equalizer-x16-lr.so'
+21:16:14.214: User selected new VST plugin: '/home/vega/.vst/lsp-plugins/graph-equalizer-x16-mono.so'
+21:17:38.173: User selected new VST plugin: '/home/vega/.vst/lsp-plugins/graph-equalizer-x32-mono.so'
+21:29:26.599: User added filter 'Compresor' (compressor_filter) to source 'Microfono USB'
+21:33:24.600: User added filter 'Expansor' (expander_filter) to source 'Microfono USB'
+21:36:58.688: User added filter 'Limitador' (limiter_filter) to source 'Microfono USB'
+21:39:51.068: User added filter 'Ganancia' (gain_filter) to source 'Microfono USB'
+21:42:24.710: ==== Shutting down ==================================================
+21:42:24.718: [pipewire] Stream 0x5557d2c44430 state: "paused" (error: none)
+21:42:24.719: [pipewire] Stream 0x5557d2c44430 state: "unconnected" (error: none)
+21:42:24.722: pulse-am: Stopped Monitoring in 'alsa_output.pci-0000_03_00.1.hdmi-stereo.monitor'
+21:42:24.722: pulse-am: Got 143074 packets with 146507776 frames
+21:42:24.742: All scene data cleared
+21:42:24.742: ------------------------------------------------
+21:42:24.817: [Scripting] Total detached callbacks: 0
+21:42:24.818: Freeing OBS context data
+21:42:24.830: == Profiler Results =============================
+21:42:24.830: run_program_init: 662.348 ms
+21:42:24.830:  ┣OBSApp::AppInit: 3.924 ms
+21:42:24.830:  ┃ ┗OBSApp::InitLocale: 1.202 ms
+21:42:24.830:  ┗OBSApp::OBSInit: 545.986 ms
+21:42:24.830:    ┣obs_startup: 0.899 ms
+21:42:24.830:    ┗OBSBasic::OBSInit: 503.085 ms
+21:42:24.830:      ┣OBSBasic::InitBasicConfig: 0.089 ms
+21:42:24.830:      ┣OBSBasic::ResetAudio: 0.121 ms
+21:42:24.830:      ┣OBSBasic::ResetVideo: 71.214 ms
+21:42:24.830:      ┣OBSBasic::InitOBSCallbacks: 0.005 ms
+21:42:24.830:      ┣OBSBasic::InitHotkeys: 0.043 ms
+21:42:24.830:      ┣obs_load_all_modules2: 288.025 ms
+21:42:24.830:      ┃ ┣obs_init_module(decklink-captions.so): 0 ms
+21:42:24.830:      ┃ ┣obs_init_module(decklink-output-ui.so): 0 ms
+21:42:24.830:      ┃ ┣obs_init_module(decklink.so): 0.142 ms
+21:42:24.830:      ┃ ┣obs_init_module(frontend-tools.so): 66.473 ms
+21:42:24.830:      ┃ ┣obs_init_module(image-source.so): 0.008 ms
+21:42:24.830:      ┃ ┣obs_init_module(linux-alsa.so): 0.003 ms
+21:42:24.830:      ┃ ┣obs_init_module(linux-capture.so): 0.506 ms
+21:42:24.830:      ┃ ┣obs_init_module(linux-jack.so): 0.003 ms
+21:42:24.830:      ┃ ┣obs_init_module(linux-pipewire.so): 0.967 ms
+21:42:24.830:      ┃ ┣obs_init_module(linux-pulseaudio.so): 0.004 ms
+21:42:24.831:      ┃ ┣obs_init_module(linux-v4l2.so): 4.228 ms
+21:42:24.831:      ┃ ┣obs_init_module(obs-ffmpeg.so): 8.744 ms
+21:42:24.831:      ┃ ┃ ┗nvenc_check: 0.602 ms
+21:42:24.831:      ┃ ┣obs_init_module(obs-filters.so): 0.026 ms
+21:42:24.831:      ┃ ┣obs_init_module(obs-libfdk.so): 0.001 ms
+21:42:24.831:      ┃ ┣obs_init_module(obs-outputs.so): 0.003 ms
+21:42:24.831:      ┃ ┣obs_init_module(obs-transitions.so): 0.008 ms
+21:42:24.831:      ┃ ┣obs_init_module(obs-vst.so): 0.004 ms
+21:42:24.831:      ┃ ┣obs_init_module(obs-x264.so): 0.001 ms
+21:42:24.831:      ┃ ┣obs_init_module(rtmp-services.so): 0.588 ms
+21:42:24.831:      ┃ ┣obs_init_module(text-freetype2.so): 0.016 ms
+21:42:24.831:      ┃ ┗obs_init_module(linux-pipewire-audio.so): 0.012 ms
+21:42:24.831:      ┣OBSBasic::ResetOutputs: 7.011 ms
+21:42:24.831:      ┣OBSBasic::CreateHotkeys: 0.042 ms
+21:42:24.831:      ┣OBSBasic::InitService: 0.793 ms
+21:42:24.831:      ┣OBSBasic::InitPrimitives: 0.153 ms
+21:42:24.831:      ┗OBSBasic::Load: 109.018 ms
+21:42:24.831: obs_hotkey_thread(25 ms): min=0.049 ms, median=0.141 ms, max=19.542 ms, 99th percentile=6.6 ms, 100% below 25 ms
+21:42:24.831: audio_thread(Audio): min=0.018 ms, median=0.088 ms, max=3.578 ms, 99th percentile=0.134 ms
+21:42:24.831: obs_graphics_thread(33.3333 ms): min=0.132 ms, median=5.23 ms, max=38.129 ms, 99th percentile=11.075 ms, 99.9989% below 33.333 ms
+21:42:24.831:  ┣tick_sources: min=0 ms, median=4.897 ms, max=29.187 ms, 99th percentile=9.848 ms
+21:42:24.831:  ┣output_frame: min=0.107 ms, median=0.249 ms, max=8.898 ms, 99th percentile=2.985 ms
+21:42:24.831:  ┃ ┗gs_context(video->graphics): min=0.106 ms, median=0.248 ms, max=8.895 ms, 99th percentile=2.984 ms
+21:42:24.831:  ┃   ┣render_video: min=0.019 ms, median=0.128 ms, max=5.893 ms, 99th percentile=2.658 ms
+21:42:24.831:  ┃   ┃ ┗render_main_texture: min=0.015 ms, median=0.123 ms, max=5.887 ms, 99th percentile=2.652 ms
+21:42:24.831:  ┃   ┗gs_flush: min=0.002 ms, median=0.004 ms, max=0.244 ms, 99th percentile=0.009 ms
+21:42:24.831:  ┗render_displays: min=0.001 ms, median=0.005 ms, max=1.199 ms, 99th percentile=0.012 ms
+21:42:24.831: =================================================
+21:42:24.831: == Profiler Time Between Calls ==================
+21:42:24.831: obs_hotkey_thread(25 ms): min=25.075 ms, median=25.227 ms, max=44.611 ms, 90.6616% within ±2% of 25 ms (0% lower, 9.33838% higher)
+21:42:24.831: obs_graphics_thread(33.3333 ms): min=28.511 ms, median=33.333 ms, max=38.134 ms, 99.9782% within ±2% of 33.333 ms (0.0109191% lower, 0.0109191% higher)
+21:42:24.831: =================================================
+21:42:24.867: Number of memory leaks: 0
