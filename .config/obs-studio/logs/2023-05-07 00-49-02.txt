@@ -1,0 +1,214 @@
+00:49:02.529: Using EGL/X11
+00:49:02.529: CPU Name: AMD 4700S 8-Core Processor Desktop Kit
+00:49:02.529: CPU Speed: 4000.224MHz
+00:49:02.529: Physical Cores: 8, Logical Cores: 16
+00:49:02.529: Physical Memory: 15947MB Total, 5383MB Free
+00:49:02.529: Kernel Version: Linux 6.3.1-x64v1-xanmod1-2
+00:49:02.529: Flatpak Branch: stable
+00:49:02.529: Flatpak Arch: x86_64
+00:49:02.529: Flatpak Runtime: runtime/org.kde.Platform/x86_64/6.4
+00:49:02.529: App Extensions:
+00:49:02.529:  - org.freedesktop.LinuxAudio.Plugins.TAP
+00:49:02.529:  - org.freedesktop.LinuxAudio.Plugins.swh
+00:49:02.529:  - com.obsproject.Studio.Locale
+00:49:02.529: Runtime Extensions:
+00:49:02.529:  - org.freedesktop.Platform.GL.default
+00:49:02.529:  - org.freedesktop.Platform.openh264
+00:49:02.529:  - org.gtk.Gtk3theme.Breeze
+00:49:02.529:  - org.kde.Platform.Locale
+00:49:02.529:  - org.freedesktop.Platform.GL.default
+00:49:02.529: Flatpak Framework Version: 1.15.4
+00:49:02.529: Desktop Environment: KDE (KDE)
+00:49:02.529: Session Type: x11
+00:49:02.529: Window System: X11.0, Vendor: The X.Org Foundation, Version: 1.21.1
+00:49:02.530: Qt Version: 6.4.3 (runtime), 6.4.3 (compiled)
+00:49:02.530: Portable mode: false
+00:49:02.565: OBS 29.1.0 (linux)
+00:49:02.565: ---------------------------------
+00:49:02.572: ---------------------------------
+00:49:02.572: audio settings reset:
+00:49:02.572: 	samples per sec: 48000
+00:49:02.572: 	speakers:        2
+00:49:02.572: 	max buffering:   960 milliseconds
+00:49:02.572: 	buffering type:  dynamically increasing
+00:49:02.576: ---------------------------------
+00:49:02.576: Initializing OpenGL...
+00:49:02.619: Loading up OpenGL on adapter AMD AMD Radeon RX 550 / 550 Series (polaris12, LLVM 15.0.7, DRM 3.52, 6.3.1-x64v1-xanmod1-2)
+00:49:02.619: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 23.0.2 (git-4d5e73870e), shading language 4.60
+00:49:02.648: ---------------------------------
+00:49:02.648: video settings reset:
+00:49:02.648: 	base resolution:   1360x768
+00:49:02.648: 	output resolution: 1360x768
+00:49:02.648: 	downscale filter:  Bicubic
+00:49:02.648: 	fps:               30/1
+00:49:02.648: 	format:            NV12
+00:49:02.648: 	YUV mode:          Rec. 709/Full
+00:49:02.648: NV12 texture support not available
+00:49:02.648: P010 texture support not available
+00:49:02.650: Audio monitoring device:
+00:49:02.650: 	name: Monitor of Baffin HDMI/DP Audio [Radeon RX 550 640SP / RX 560/560X] Estéreo digital (HDMI)
+00:49:02.650: 	id: alsa_output.pci-0000_03_00.1.hdmi-stereo.monitor
+00:49:02.650: ---------------------------------
+00:49:02.664: No AJA devices found, skipping loading AJA UI plugin
+00:49:02.664: Failed to initialize module 'aja-output-ui.so'
+00:49:02.677: No AJA devices found, skipping loading AJA plugin
+00:49:02.677: Failed to initialize module 'aja.so'
+00:49:02.682: Failed to load 'en-US' text for module: 'decklink-captions.so'
+00:49:02.688: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+00:49:02.694: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+00:49:02.694: Failed to initialize module 'decklink.so'
+00:49:02.867: [pipewire] Available captures:
+00:49:02.867: [pipewire]     - Desktop capture
+00:49:02.867: [pipewire]     - Window capture
+00:49:02.889: v4l2loopback not installed, virtual camera disabled
+00:49:02.898: [obs-browser]: Version 2.21.1
+00:49:02.898: [obs-browser]: CEF Version 103.0.5060.134 (runtime), 103.0.0-5060-shared-textures_143.2591+g4204d54+chromium-103.0.5060.134 (compiled)
+00:49:02.905: LIBVA_DRIVER_NAME variable is set, this could prevent FFmpeg VAAPI from working correctly
+00:49:02.912: VAAPI: API version 1.18
+00:49:02.913: FFmpeg VAAPI H264 encoding supported
+00:49:02.920: FFmpeg VAAPI HEVC encoding supported
+00:49:02.965: [obs-websocket] [obs_module_load] you can haz websockets (Version: 5.2.2 | RPC Version: 1)
+00:49:02.965: [obs-websocket] [obs_module_load] Qt version (compile-time): 6.4.3 | Qt version (run-time): 6.4.3
+00:49:02.965: [obs-websocket] [obs_module_load] Linked ASIO Version: 101201
+00:49:02.970: [obs-websocket] [obs_module_load] Module loaded.
+00:49:03.005: Failed to load 'es-ES' text for module: 'linux-pipewire-audio.so'
+00:49:03.005: ---------------------------------
+00:49:03.005:   Loaded Modules:
+00:49:03.005:     linux-pipewire-audio.so
+00:49:03.005:     text-freetype2.so
+00:49:03.005:     rtmp-services.so
+00:49:03.005:     obs-x264.so
+00:49:03.005:     obs-websocket.so
+00:49:03.005:     obs-vst.so
+00:49:03.005:     obs-transitions.so
+00:49:03.005:     obs-outputs.so
+00:49:03.005:     obs-libfdk.so
+00:49:03.005:     obs-filters.so
+00:49:03.005:     obs-ffmpeg.so
+00:49:03.006:     obs-browser.so
+00:49:03.006:     linux-v4l2.so
+00:49:03.006:     linux-pulseaudio.so
+00:49:03.006:     linux-pipewire.so
+00:49:03.006:     linux-jack.so
+00:49:03.006:     linux-capture.so
+00:49:03.006:     image-source.so
+00:49:03.006:     frontend-tools.so
+00:49:03.006:     decklink-output-ui.so
+00:49:03.006:     decklink-captions.so
+00:49:03.006: ---------------------------------
+00:49:03.006: ==== Startup complete ===============================================
+00:49:03.064: All scene data cleared
+00:49:03.064: ------------------------------------------------
+00:49:03.078: [pipewire] Created stream 0x55f06332c8d0
+00:49:03.081: pulse-am: Server name: 'PulseAudio (on PipeWire 0.3.70) 15.0.0'
+00:49:03.081: pulse-am: Audio format: s32le, 48000 Hz, 2 channels
+00:49:03.081: pulse-am: Started Monitoring in 'alsa_output.pci-0000_03_00.1.hdmi-stereo.monitor'
+00:49:03.082: [pipewire] 0x55f06332c8d0 streaming from 42
+00:49:03.082: User selected new VST plugin: '/home/vega/.vst/lsp-plugins/graph-equalizer-x32-mono.so'
+00:49:03.115: xshm-input: Geometry 1360x768 @ 0,0
+00:49:03.117: [pipewire] Created stream 0x55f0636d4b80
+00:49:03.119: [window-capture: 'Virt Manager Ventana'] update settings:
+00:49:03.119: 	title: unknown
+00:49:03.119: 	class: unknown
+00:49:03.119: 
+00:49:03.121: [pipewire] Created app capture sink 70 with 2 channels and position FL,FR
+00:49:03.138: [pipewire] Created stream 0x55f063740ae0
+00:49:03.141: [window-capture: 'Term'] update settings:
+00:49:03.141: 	title: unknown
+00:49:03.141: 	class: unknown
+00:49:03.141: 
+00:49:03.143: Switched to scene 'Terminal'
+00:49:03.143: ------------------------------------------------
+00:49:03.143: Loaded scenes:
+00:49:03.143: - scene 'Screen Share':
+00:49:03.143:     - source: 'Microfono USB' (pipewire_audio_input_capture)
+00:49:03.143:         - monitoring: monitor and output
+00:49:03.143:         - filter: 'Eliminación de ruido' (noise_suppress_filter_v2)
+00:49:03.143:         - filter: 'Puerta anti-ruidos' (noise_gate_filter)
+00:49:03.143:         - filter: 'Compresor' (compressor_filter)
+00:49:03.143:         - filter: 'Expansor' (expander_filter)
+00:49:03.143:         - filter: 'Ecualizador VST' (vst_filter)
+00:49:03.143:         - filter: 'Limitador' (limiter_filter)
+00:49:03.143:         - filter: 'Ganancia' (gain_filter)
+00:49:03.143:     - source: 'Pantalla XORG' (xshm_input)
+00:49:03.143:     - source: 'Brave Audio' (pipewire_audio_application_capture)
+00:49:03.143: - scene 'Virt Manager':
+00:49:03.143:     - source: 'Microfono USB' (pipewire_audio_input_capture)
+00:49:03.143:         - monitoring: monitor and output
+00:49:03.143:         - filter: 'Eliminación de ruido' (noise_suppress_filter_v2)
+00:49:03.143:         - filter: 'Puerta anti-ruidos' (noise_gate_filter)
+00:49:03.143:         - filter: 'Compresor' (compressor_filter)
+00:49:03.143:         - filter: 'Expansor' (expander_filter)
+00:49:03.143:         - filter: 'Ecualizador VST' (vst_filter)
+00:49:03.143:         - filter: 'Limitador' (limiter_filter)
+00:49:03.143:         - filter: 'Ganancia' (gain_filter)
+00:49:03.143:     - source: 'Virt Manager Ventana' (xcomposite_input)
+00:49:03.143:     - source: 'Virt Manager Audio' (pipewire_audio_application_capture)
+00:49:03.143:     - source: 'Brave Audio' (pipewire_audio_application_capture)
+00:49:03.143: - scene 'Terminal':
+00:49:03.143:     - source: 'Microfono USB' (pipewire_audio_input_capture)
+00:49:03.143:         - monitoring: monitor and output
+00:49:03.143:         - filter: 'Eliminación de ruido' (noise_suppress_filter_v2)
+00:49:03.143:         - filter: 'Puerta anti-ruidos' (noise_gate_filter)
+00:49:03.143:         - filter: 'Compresor' (compressor_filter)
+00:49:03.143:         - filter: 'Expansor' (expander_filter)
+00:49:03.143:         - filter: 'Ecualizador VST' (vst_filter)
+00:49:03.143:         - filter: 'Limitador' (limiter_filter)
+00:49:03.143:         - filter: 'Ganancia' (gain_filter)
+00:49:03.143:     - source: 'Brave Audio' (pipewire_audio_application_capture)
+00:49:03.143:     - source: 'Term' (xcomposite_input)
+00:49:03.143: ------------------------------------------------
+00:49:03.144: [pipewire] 0x55f06332c8d0 Got format: rate 48000 - channels 1 - format 8
+00:49:03.153: [pipewire] 0x55f0636d4b80 Got format: rate 48000 - channels 2 - format 8
+00:49:03.154: [pipewire] Created app capture sink 77 with 2 channels and position FL,FR
+00:49:03.165: [pipewire] 0x55f063740ae0 Got format: rate 48000 - channels 2 - format 8
+00:49:03.170: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Virt Manager Audio)
+00:49:03.170: 
+00:49:03.234: adding 42 milliseconds of audio buffering, total audio buffering is now 64 milliseconds (source: Microfono USB)
+00:49:03.234: 
+00:49:14.183: User switched to scene 'Virt Manager'
+00:49:14.735: User switched to scene 'Screen Share'
+00:49:16.384: User switched to scene 'Virt Manager'
+00:49:16.792: User switched to scene 'Screen Share'
+00:49:20.024: User switched to scene 'Virt Manager'
+00:49:21.161: User switched to scene 'Screen Share'
+00:49:56.079: pulse-am: Server name: 'PulseAudio (on PipeWire 0.3.70) 15.0.0'
+00:49:56.080: pulse-am: Audio format: s32le, 48000 Hz, 2 channels
+00:49:56.080: pulse-am: Started Monitoring in 'alsa_output.pci-0000_03_00.1.hdmi-stereo.monitor'
+00:49:56.080: User changed audio monitoring for source 'Brave Audio' to: monitor and output
+00:50:23.656: pulse-am: Stopped Monitoring in 'alsa_output.pci-0000_03_00.1.hdmi-stereo.monitor'
+00:50:23.656: pulse-am: Got 3771 packets with 3861504 frames
+00:50:23.656: pulse-am: Server name: 'PulseAudio (on PipeWire 0.3.70) 15.0.0'
+00:50:23.656: pulse-am: Audio format: s32le, 48000 Hz, 2 channels
+00:50:23.656: pulse-am: Started Monitoring in 'alsa_output.pci-0000_03_00.1.hdmi-stereo'
+00:50:23.656: pulse-am: Stopped Monitoring in 'alsa_output.pci-0000_03_00.1.hdmi-stereo.monitor'
+00:50:23.656: pulse-am: Got 1292 packets with 1323008 frames
+00:50:23.657: pulse-am: Server name: 'PulseAudio (on PipeWire 0.3.70) 15.0.0'
+00:50:23.657: pulse-am: Audio format: s32le, 48000 Hz, 2 channels
+00:50:23.658: pulse-am: Started Monitoring in 'alsa_output.pci-0000_03_00.1.hdmi-stereo'
+00:50:23.658: Audio monitoring device:
+00:50:23.658: 	name: Baffin HDMI/DP Audio [Radeon RX 550 640SP / RX 560/560X] Estéreo digital (HDMI)
+00:50:23.658: 	id: alsa_output.pci-0000_03_00.1.hdmi-stereo
+00:50:23.683: Number of remaining views: 1
+00:50:23.683: ---------------------------------
+00:50:23.684: video settings reset:
+00:50:23.684: 	base resolution:   1360x768
+00:50:23.684: 	output resolution: 1360x768
+00:50:23.684: 	downscale filter:  Bicubic
+00:50:23.684: 	fps:               30/1
+00:50:23.684: 	format:            NV12
+00:50:23.684: 	YUV mode:          Rec. 709/Full
+00:50:23.684: NV12 texture support not available
+00:50:23.684: P010 texture support not available
+00:50:23.685: Settings changed (advanced)
+00:50:23.685: ------------------------------------------------
+00:50:28.817: pulse-am: Stopped Monitoring in 'alsa_output.pci-0000_03_00.1.hdmi-stereo'
+00:50:28.817: pulse-am: Got 241 packets with 246784 frames
+00:50:28.817: User changed audio monitoring for source 'Brave Audio' to: none
+00:50:31.761: pulse-am: Stopped Monitoring in 'alsa_output.pci-0000_03_00.1.hdmi-stereo'
+00:50:31.761: pulse-am: Got 380 packets with 389120 frames
+00:50:31.761: User changed audio monitoring for source 'Microfono USB' to: none
+00:50:33.227: pulse-am: Server name: 'PulseAudio (on PipeWire 0.3.70) 15.0.0'
+00:50:33.227: pulse-am: Audio format: s32le, 48000 Hz, 2 channels
+00:50:33.227: pulse-am: Started Monitoring in 'alsa_output.pci-0000_03_00.1.hdmi-stereo'
+00:50:33.227: User changed audio monitoring for source 'Microfono USB' to: monitor and output
