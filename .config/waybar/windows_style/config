@@ -234,7 +234,7 @@ NOTA: Si va a ocupar gnome terminal en lugar de foot, solo reemplaze "foot -e" p
         "on-click-right": "swaymsg layout toggle split"
         },        
     "custom/pacman": {
-        "format": " ({})",
+        "format": " ({})",
         "interval": "1800",
 /*        "exec": "checkupdates | wc -l", */
         "exec": "pamac checkupdates -a -q | wc -l",
