@@ -3,7 +3,7 @@
 # https://github.com/mxhectorvega/hyprland
 # Version: v1.5 01/04/2023
 
-NOTA: Si va a ocupar gnome terminal en lugar de kitty, solo reemplaze "kitty -e" por "gnome-terminal --"
+NOTA: Si va a ocupar gnome terminal en lugar de foot, solo reemplaze "foot -e" por "gnome-terminal --"
 
 */
 
@@ -37,10 +37,11 @@ NOTA: Si va a ocupar gnome terminal en lugar de kitty, solo reemplaze "kitty -e"
     "sway/language",
     "sway/mode",
     "custom/forzar",
-    "custom/wf-recorder", */ 
+    "custom/wf-recorder", 
+    "bluetooth", 
+    "idle_inhibitor", */ 
     "tray",
     "custom/ayuda", 
-    "idle_inhibitor",
     "custom/pacman",
     "backlight",
     "custom/portapapeles",
@@ -48,7 +49,6 @@ NOTA: Si va a ocupar gnome terminal en lugar de kitty, solo reemplaze "kitty -e"
     "pulseaudio",
     "custom/grabar", 
     "custom/darkmode",
-    "bluetooth",
     "network",
     "battery",
     "clock"
@@ -148,7 +148,7 @@ NOTA: Si va a ocupar gnome terminal en lugar de kitty, solo reemplaze "kitty -e"
         "spacing": 10
     },
     "network": {
-    "interface": "wlp*",
+    "interface": ["enp*","wl*"],
     "format": "{ifname}",
     "format-wifi": "",
     "format-ethernet": "",
@@ -159,7 +159,7 @@ NOTA: Si va a ocupar gnome terminal en lugar de kitty, solo reemplaze "kitty -e"
     "tooltip-format-ethernet": "Ethernet\n{ifname}\n\nIP local: \n{ipaddr}",
     "tooltip-format-disconnected": "Desconectado",
     "max-length": 50,
-    "on-click": "kitty -e nmtui"
+    "on-click": "foot -e nmtui"
     },
     "pulseaudio": {
     "scroll-step": "5",
@@ -178,7 +178,7 @@ NOTA: Si va a ocupar gnome terminal en lugar de kitty, solo reemplaze "kitty -e"
     },
     "scroll-step": 1,
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-    "on-click-right": "kitty -e pulsemixer",
+    "on-click-right": "foot -e pulsemixer",
     "tooltip-format": "Vol: {volume}%"
     },
     "pulseaudio#mic": {
@@ -187,7 +187,7 @@ NOTA: Si va a ocupar gnome terminal en lugar de kitty, solo reemplaze "kitty -e"
         "format-source-muted": "​<span color='#D75C42'></span>",
         "tooltip-format": "Microfono",
         "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
-        "on-click-right": "kitty -e pulsemixer",
+        "on-click-right": "foot -e pulsemixer",
         "tooltip-format": "Mic: {volume}%"
     },
     "memory": {
@@ -195,7 +195,7 @@ NOTA: Si va a ocupar gnome terminal en lugar de kitty, solo reemplaze "kitty -e"
     "format": "{icon}  {}%",
     "format-icons": "",
     "max-length": 10,
-    "on-click": "kitty -e htop",
+    "on-click": "foot -e htop",
     "tooltip-format": "Consumo:\t\t\t{used:0.1f}G\n\nDisponible:\t\t\t{avail:0.1f}G\n\nInstalada:\t\t\t{total:0.1f}G"
     },
 "idle_inhibitor": {
@@ -219,7 +219,7 @@ NOTA: Si va a ocupar gnome terminal en lugar de kitty, solo reemplaze "kitty -e"
         "critical-threshold": 75,
         "format-critical": "<span color='#D75C42'></span>  {temperatureC}°C",
         "format": "  {temperatureC}°C",
-        "on-click": "kitty -e htop"
+        "on-click": "foot -e htop"
         },
     "custom/grabar":{
     "format": "{icon}",
@@ -239,7 +239,7 @@ NOTA: Si va a ocupar gnome terminal en lugar de kitty, solo reemplaze "kitty -e"
 /*        "exec": "checkupdates | wc -l", */
         "exec": "pamac checkupdates -a -q | wc -l",
         "exec-if": "exit 0",
-/*        "on-click": "kitty -e sh -c 'sudo pacman -Syu;flatpak update;exec bash'", */
+/*        "on-click": "foot -e sh -c 'sudo pacman -Syu;flatpak update;exec bash'", */
         "on-click": "pamac-manager", 
         "tooltip": "false"
         },
@@ -251,7 +251,7 @@ NOTA: Si va a ocupar gnome terminal en lugar de kitty, solo reemplaze "kitty -e"
     "cpu": {
         "format": "<span color='#8fb15d'>{icon}</span>  {usage}%",
         "format-icons": "",
-        "on-click": "kitty -e htop"
+        "on-click": "foot -e htop"
     },
 
 	"custom/darkmode": {
@@ -270,7 +270,7 @@ NOTA: Si va a ocupar gnome terminal en lugar de kitty, solo reemplaze "kitty -e"
     "custom/forzar": {
         "format":"<span color='#D75C42'>{icon}</span>",
         "format-icons": "",
-        "on-click": "kitty -e hyprctl kill",
+        "on-click": "foot -e hyprctl kill",
         "tooltip-format": "Forzar cierre",
         "tooltip": "true"
        },

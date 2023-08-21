@@ -20,6 +20,6 @@ texto=$(echo " <b>AYUDA</b> \
 \n win+shift+(algún numero) \
 \t Mover ventana activa a espacio de trabajo \
 \n\n <b>NOTA:</b> El icono del pingüino es para abrir el menú de apagado, si \
-\n necesitas ayuda contactame <u>mxhectorvega.ml</u>")
+\n necesitas ayuda contactame <u>mxhectorvega.com</u>")
 
 echo "{\"text\":\"\", \"tooltip\":\"$texto\"}"

@@ -5,7 +5,7 @@
 	<name>Abrir un terminal aquí</name>
 	<submenu></submenu>
 	<unique-id>1680291302860260-1</unique-id>
-	<command>sh -c &apos;cd %f;kitty&apos;</command>
+	<command>sh -c &apos;cd %f;foot&apos;</command>
 	<description>Ejemplo de una acción personalizada</description>
 	<range></range>
 	<patterns>*</patterns>

@@ -32,9 +32,9 @@ gsettings set org.gnome.desktop.interface icon-theme "Colloid-light"
 gsettings set org.gnome.desktop.interface font-name 'SF Compact Display SemiBold 9'
 gsettings set org.gnome.desktop.interface monospace-font-name 'SF Mono 10'
 gsettings set org.gnome.desktop.interface document-font-name 'SF Compact Display SemiBold 9'
-#gsettings set org.gnome.desktop.wm.preferences titlebar-font 'SF Compact Display SemiBold 9'
-#gsettings set org.gnome.desktop.wm.preferences button-layout : ''
-#gsettings set org.gnome.desktop.default-applications.terminal exec 'kitty'
+gsettings set org.gnome.desktop.wm.preferences titlebar-font 'SF Compact Display SemiBold 9'
+gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
+gsettings set org.gnome.desktop.default-applications.terminal exec 'foot'
 
 pkill -9 mako
 mako &

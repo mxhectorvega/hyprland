@@ -32,7 +32,8 @@ set $teclado2 es
 set $filemanager thunar
 
 ## Delara la terminal por defecto
-set $terminal kitty
+set $terminal foot
+
 
 ## Delara el editor de texto en terminal por defecto
 set $editor vim
@@ -51,7 +52,7 @@ set $gap_top 5
 set $menu "pkill -9 wofi;wofi -p Buscar... --no-actions --allow-images --show drun -n -i -I -W 400 -H 300
 
 ## Declara menu gestor de portapapeles
-set $menu_clipboard "pkill -9 wofi ; clipman pick -t wofi"
+set $menu_clipboard "pkill -9 rofi ; clipman pick -t rofi"
 
 ## Limpiar menu portapales
 set $clean_clipboard clipman clear --all ; exec \
@@ -374,4 +375,3 @@ exec /usr/bin/gnome-keyring-daemon --start
 exec swayidle -w \
     timeout 120 "$lock_warning" \
     timeout 140 "swaylock"
-
