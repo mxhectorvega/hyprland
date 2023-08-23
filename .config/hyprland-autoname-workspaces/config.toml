@@ -1,8 +1,8 @@
 version = "1.1.7"
 
 [class]
-"[Ff]irefox" = "browser"
-"(?i)Kitty" = "term"
+"[Ff]irefox" = ""
+"(?i)Kitty" = ""
 #DEFAULT = " {class}: {title}"
 DEFAULT = "<span foreground='white'></span>"
 "(?i)waydroid.*" = "droid"
