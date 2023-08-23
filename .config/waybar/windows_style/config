@@ -23,11 +23,11 @@ NOTA: Si va a ocupar gnome terminal en lugar de foot, solo reemplaze "foot -e" p
     ],
     
     "modules-center": [
-/*    "sway/workspaces", */
-/*    "wlr/workspaces", */
+   /*  "sway/workspaces", */
     "custom/power",
     "custom/menu",
-    "wlr/taskbar"
+    "wlr/workspaces"
+/*    "wlr/taskbar"  */
     ],
     
     "modules-right": [

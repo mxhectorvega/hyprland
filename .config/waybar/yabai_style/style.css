@@ -5,7 +5,7 @@
 ## mxhectorvega@gmail.com
 ## https://github.com/mxhectorvega
 ## Version:
-## v2.0: 20/11/2021
+## v2.2: 11/03/2023
 */
 
 * {
@@ -34,22 +34,14 @@ window#waybar.solo {
     background: none;
 }
 
+
 #workspaces button {
-    background-color: rgba(0, 0, 0, 0.80);
+    background-color: rgba(255, 255, 255, 0.80);
     margin-right: 3px;
     border-top: 1px solid #555555;
     border-left: 1px solid #333333;
     border-right: 1px solid #333333;
     border-bottom: 1px solid #222222;
-}
-
-#workspaces button.visible {
-    background-color: rgba(0, 0, 0, 0.80);
-    margin-right: 3px;
-    border-top: 1px solid #555555;
-    border-left: 1px solid #333333;
-    border-right: 1px solid #333333;
-    border-bottom: 1px solid #222222;    
 }
 
 #workspaces button.active {
@@ -73,7 +65,7 @@ window#waybar.solo {
 }
 
 #workspaces button.persistent{
-    background-color: rgba(0, 0, 0, 0.80);
+    background-color: rgba(255, 255, 255, 0.80);
     margin-right: 3px;
     border-top: 1px solid #555555;
     border-left: 1px solid #333333;
@@ -105,8 +97,8 @@ window#waybar.solo {
 #custom-menu,
 #mpd,
 #custom-power {
-    background-color: rgba(0, 0, 0, 0.80);
-    color: #dddddd;
+    background-color: rgba(255, 255, 255, 0.80);
+    color: #444444;
     margin-right: 3px;
     padding: 0px 11px 0px 11px;
     border-top: 1px solid #555555;
@@ -116,7 +108,7 @@ window#waybar.solo {
 }
 
 #battery.critical:not(.charging) {
-    background-color: rgba(0, 0, 0, 0.80);
+    background-color: rgba(255, 255, 255, 0.80);
     animation-name: blink;
     animation-duration: 0.9s;
     animation-timing-function: linear;
@@ -134,9 +126,9 @@ window#waybar.solo {
 }
 
 #temperature
-{
-    background-color: rgba(0, 0, 0, 0.80);
-    color: #dddddd;
+{    
+    background-color: rgba(255, 255, 255, 0.80);
+    color: #444444;
     border-radius: 7px 0px 0px 7px;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 11px;
@@ -148,9 +140,9 @@ window#waybar.solo {
 
 #cpu
 {    
-    background-color: rgba(0, 0, 0, 0.80);
-    color: #dddddd;
+    background-color: rgba(255, 255, 255, 0.80);
     border-radius: 0px 0px 0px 0px;
+    color: #444444;
     padding: 0px 11px 0px 11px;
     border-top: 1px solid #555555;
     border-left: 0px solid #333333;
@@ -159,9 +151,9 @@ window#waybar.solo {
 }
 
 #memory
-{   
-    background-color: rgba(0, 0, 0, 0.80);
-    color: #dddddd;
+{    
+    background-color: rgba(255, 255, 255, 0.80);
+    color: #444444;
     border-radius: 0px 7px 7px 0px;
     margin: 0px 3px 0px 0px;
     padding: 0px 11px 0px 0px;
@@ -170,3 +162,4 @@ window#waybar.solo {
     border-right: 1px solid #333333;
     border-bottom: 1px solid #222222;
 }
+

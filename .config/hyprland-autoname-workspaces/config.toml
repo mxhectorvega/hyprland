@@ -1,14 +1,48 @@
-# Configuración para Hyprland Autoname Workspaces
-# https://github.com/mxhectorvega/hyprland
-# Versión: v1.2: 01/04/2023
+version = "1.1.7"
 
-# Añade tu asignación de iconos
-# use comillas dobles la clave y el valor
-# Tome el nombre de cada una las ventanas 
-# abiertas con 'hyprctl clients | grep class'
+[class]
+"[Ff]irefox" = "browser"
+"(?i)Kitty" = "term"
+#DEFAULT = " {class}: {title}"
+DEFAULT = "<span foreground='white'></span>"
+"(?i)waydroid.*" = "droid"
+"foot" = ""
+"kitty" = ""
+"Firefox" = ""
+"Microsoft-edge" = ""
+"org.pwmt.zathura" = ""
+"evince" = ""
+"org.gnome.Nautilus" = ""
+"thunar" = ""
+"Spotify" = ""
+"Gimp-2.10" = ""
+"libreoffice-writer" = ""
+"libreoffice-calc" = ""
+"libreoffice-impress" = ""
+"org.telegram.desktop" = ""
+"org.gnome.TextEditor" = ""
+"xdg-desktop-portal-gnome" = ""
+"YouTube" = ""
+"virt-manager" = ""
+"eog" = ""
+"com.obsproject.Studio" = ""
+"Steam" = ""
+"Whatsapp" = ""
+"Twitter" = ""
+"Tiktok" = ""
+"Instagram" = ""
+"Facebook" = ""
+"VSCodium" = ""
+"pamac-manager" = ""
+"mcpelauncher-client" = ""
+"Imagen en Imagen" = ""
+"Netflix" = ""
+"io.bassi.Amberol" = ""
+"mpv" = ""
 
-[icons]
-"DEFAULT" = ""
+[class_active]
+DEFAULT = "<span foreground='gray'></span>"
+"(?i)ExampleOneTerm" = "<span foreground='red'>{icon}</span>"
 "gnome-terminal-server" = ""
 "foot" = ""
 "kitty" = ""
@@ -38,19 +72,66 @@
 "Facebook" = ""
 "VSCodium" = ""
 "pamac-manager" = ""
-"Steam" = ""
 "mcpelauncher-client" = ""
 "Imagen en Imagen" = ""
 "Netflix" = ""
 "io.bassi.Amberol" = ""
 "mpv" = ""
 
-# Agregue sus aplicaciones que necesitan ser excluidas
-# La clave es la clase, el valor es el título.
-# Puede poner un título vacío para excluir en función de
-# solo nombre de clase 'nombre del software'
+[initial_class]
+
+[initial_class_active]
+
+[workspaces_name]
+1 = "one"
+7 = "seven"
+2 = "two"
+6 = "six"
+0 = "zero"
+5 = "five"
+10 = "ten"
+4 = "four"
+3 = "three"
+9 = "nine"
+8 = "eight"
+
+[title_in_class."(?i)kitty"]
+"(?i)neomutt" = "neomutt"
+
+[title_in_class_active."(?i)firefox"]
+"(?i)twitch" = "<span color='purple'>{icon}</span>"
+
+[title_in_initial_class]
+
+[title_in_initial_class_active]
+
+[initial_title_in_class]
+
+[initial_title_in_class_active]
+
+[initial_title_in_initial_class]
+
+[initial_title_in_initial_class_active]
 
 [exclude]
-"wofi" = "*"
+"" = "^$"
+"(?i)fcitx" = ".*"
+aProgram = "^$"
+"(?i)TestApp" = ""
+"[Ss]team" = "^(Friends List.*)?$"
+"wofi" = ".*"
+
+[format]
+dedup = false
+dedup_inactive_fullscreen = false
+delim = " "
+workspace = "{id}:{delim}{clients}"
+workspace_empty = "{id}"
+client = "{icon}"
+client_fullscreen = "[{icon}]"
+client_active = "*{icon}*"
+client_dup = "{icon}{counter_sup}"
+client_dup_active = "*{icon}*{delim}{icon}{counter_unfocused_sup}"
+client_dup_fullscreen = "[{icon}]{delim}{icon}{counter_unfocused_sup}"
 
 #                              

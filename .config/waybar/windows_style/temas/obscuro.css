@@ -96,7 +96,7 @@ window#waybar.solo {
     border-left: 1px solid #333333;
     border-right: 1px solid #333333;
     border-bottom: 0px solid #444444;
-    margin: 7px 0px 7px 0px;
+    margin: 7px 7px 7px 0px;
     padding: 0px 80px 0px 10px;
     font-weight: 400;
     font-size: 12px;
