@@ -433,3 +433,186 @@
 12:07:23.850: ------------------------------------------------
 12:07:44.134: Settings changed (outputs)
 12:07:44.134: ------------------------------------------------
+12:21:20.303: User switched to scene 'QEMU'
+12:21:20.315: [pipewire] Stream 0x55a203f12760 state: "streaming" (error: none)
+12:21:20.916: [pipewire] Stream 0x55a205a39a20 state: "paused" (error: none)
+12:21:21.046: User switched to scene 'Terminal'
+12:21:21.049: [pipewire] Stream 0x55a20598c1a0 state: "streaming" (error: none)
+12:21:21.649: [pipewire] Stream 0x55a203f12760 state: "paused" (error: none)
+12:21:21.806: User switched to scene 'Server'
+12:21:22.415: [pipewire] Stream 0x55a20598c1a0 state: "paused" (error: none)
+12:21:23.375: User switched to scene 'Pantalla'
+12:21:23.382: [pipewire] Stream 0x55a205a39a20 state: "streaming" (error: none)
+12:25:15.028: v4l2-input: /dev/video0: failed to dequeue buffer
+12:25:15.028: v4l2-input: /dev/video0: Stopped capture after 12319 frames
+12:25:15.028: v4l2-helpers: unable to stop stream
+12:27:14.583: ---------------------------------
+12:27:14.585: [FFmpeg VAAPI encoder: 'advanced_video_recording'] settings:
+12:27:14.585: 	device:       /dev/dri/by-path/pci-0000:03:00.0-render
+12:27:14.585: 	rate_control: CBR
+12:27:14.585: 	profile:      1
+12:27:14.585: 	level:        40
+12:27:14.585: 	qp:           0
+12:27:14.585: 	bitrate:      20000
+12:27:14.585: 	maxrate:      20000
+12:27:14.585: 	keyint:       120
+12:27:14.585: 	width:        1920
+12:27:14.585: 	height:       982
+12:27:14.585: 	b-frames:     0
+12:27:14.585: 
+12:27:14.596: libfdk_aac encoder created
+12:27:14.596: libfdk_aac bitrate: 160, channels: 2
+12:27:14.598: ==== Recording Start ===============================================
+12:27:14.598: [ffmpeg muxer: 'adv_file_output'] Writing file '/home/vega/Vídeos/2023-10-31_12-27-14.mkv'...
+12:27:44.603: Failed to create xdg-screensaver: 2
+12:28:14.605: Failed to create xdg-screensaver: 2
+12:28:44.606: Failed to create xdg-screensaver: 2
+12:28:47.270: User switched to scene 'QEMU'
+12:28:47.282: [pipewire] Stream 0x55a203f12760 state: "streaming" (error: none)
+12:28:47.882: [pipewire] Stream 0x55a205a39a20 state: "paused" (error: none)
+12:28:48.337: User switched to scene 'Terminal'
+12:28:48.348: [pipewire] Stream 0x55a20598c1a0 state: "streaming" (error: none)
+12:28:48.948: [pipewire] Stream 0x55a203f12760 state: "paused" (error: none)
+12:28:49.008: User switched to scene 'QEMU'
+12:28:49.015: [pipewire] Stream 0x55a203f12760 state: "streaming" (error: none)
+12:28:49.615: [pipewire] Stream 0x55a20598c1a0 state: "paused" (error: none)
+12:29:14.607: Failed to create xdg-screensaver: 2
+12:29:44.608: Failed to create xdg-screensaver: 2
+12:29:56.304: User switched to scene 'Terminal'
+12:29:56.315: [pipewire] Stream 0x55a20598c1a0 state: "streaming" (error: none)
+12:29:56.915: [pipewire] Stream 0x55a203f12760 state: "paused" (error: none)
+12:30:14.609: Failed to create xdg-screensaver: 2
+12:30:27.129: User switched to scene 'Server'
+12:30:27.749: [pipewire] Stream 0x55a20598c1a0 state: "paused" (error: none)
+12:30:44.610: Failed to create xdg-screensaver: 2
+12:30:47.781: v4l2-input: Found device 'USB Video: USB Video' at /dev/video1
+12:30:47.782: v4l2-input: /dev/video2 seems to not support video capture
+12:30:49.607: v4l2-input: Found input 'Camera 1' (Index 0)
+12:30:49.609: v4l2-input: Pixelformat: Motion-JPEG (available)
+12:30:49.609: v4l2-input: Pixelformat: YUYV 4:2:2 (available)
+12:30:49.609: v4l2-input: Pixelformat: RGB3 (Emulated) (unavailable)
+12:30:49.609: v4l2-input: Pixelformat: BGR3 (Emulated) (available)
+12:30:49.609: v4l2-input: Pixelformat: YU12 (Emulated) (available)
+12:30:49.609: v4l2-input: Pixelformat: YV12 (Emulated) (available)
+12:30:49.618: v4l2-input: Start capture from /dev/video1
+12:30:49.621: v4l2-input: Input: 0
+12:30:49.625: v4l2-input: Resolution: 1920x1080
+12:30:49.625: v4l2-input: Pixelformat: YUYV
+12:30:49.625: v4l2-input: Linesize: 3840 Bytes
+12:30:49.627: v4l2-input: Framerate: 5.00 fps
+12:30:49.634: v4l2-input: /dev/video1: select timeout set to 400000 (2x frame periods)
+12:30:50.066: v4l2-input: /dev/video1: select timed out
+12:30:50.066: v4l2-input: /dev/video1: failed to log status
+12:31:14.611: Failed to create xdg-screensaver: 2
+12:31:44.613: Failed to create xdg-screensaver: 2
+12:32:13.816: User switched to scene 'Terminal'
+12:32:13.848: [pipewire] Stream 0x55a20598c1a0 state: "streaming" (error: none)
+12:32:14.613: Failed to create xdg-screensaver: 2
+12:32:44.615: Failed to create xdg-screensaver: 2
+12:32:53.783: User switched to scene 'QEMU'
+12:32:53.815: [pipewire] Stream 0x55a203f12760 state: "streaming" (error: none)
+12:32:54.382: [pipewire] Stream 0x55a20598c1a0 state: "paused" (error: none)
+12:33:14.616: Failed to create xdg-screensaver: 2
+12:33:23.405: User switched to scene 'Pantalla'
+12:33:23.415: [pipewire] Stream 0x55a205a39a20 state: "streaming" (error: none)
+12:33:24.015: [pipewire] Stream 0x55a203f12760 state: "paused" (error: none)
+12:33:44.639: Failed to create xdg-screensaver: 2
+12:34:14.640: Failed to create xdg-screensaver: 2
+12:34:44.641: Failed to create xdg-screensaver: 2
+12:35:14.642: Failed to create xdg-screensaver: 2
+12:35:44.643: Failed to create xdg-screensaver: 2
+12:36:00.765: [ffmpeg muxer: 'adv_file_output'] Output of file '/home/vega/Vídeos/2023-10-31_12-27-14.mkv' stopped
+12:36:00.766: Output 'adv_file_output': stopping
+12:36:00.766: Output 'adv_file_output': Total frames output: 15780
+12:36:00.766: Output 'adv_file_output': Total drawn frames: 15785
+12:36:00.766: ==== Recording Stop ================================================
+12:36:00.776: libfdk_aac encoder destroyed
+14:06:38.412: User switched to scene 'QEMU'
+14:06:38.415: [pipewire] Stream 0x55a203f12760 state: "streaming" (error: none)
+14:06:39.049: [pipewire] Stream 0x55a205a39a20 state: "paused" (error: none)
+14:06:39.654: User switched to scene 'Terminal'
+14:06:39.682: [pipewire] Stream 0x55a20598c1a0 state: "streaming" (error: none)
+14:06:40.282: [pipewire] Stream 0x55a203f12760 state: "paused" (error: none)
+14:06:41.454: User switched to scene 'Server'
+14:06:42.049: [pipewire] Stream 0x55a20598c1a0 state: "paused" (error: none)
+15:23:02.939: User switched to scene 'Pantalla'
+15:23:02.948: [pipewire] Stream 0x55a205a39a20 state: "streaming" (error: none)
+15:32:31.144: User added filter 'Sabor' (basic_eq_filter) to source 'Microfono USB'
+15:34:14.316: User removed filter 'Expansor' (expander_filter) from source 'Microfono USB'
+15:34:17.972: User removed filter 'Puerta anti-ruidos' (noise_gate_filter) from source 'Microfono USB'
+15:34:33.189: User renamed filter 'Ecualizador de 3 bandas' on source 'Microfono USB' to 'Correccion'
+15:36:08.313: User added filter 'Puerta anti-ruidos' (noise_gate_filter) to source 'Microfono USB'
+15:37:42.790: User removed filter 'Puerta anti-ruidos' (noise_gate_filter) from source 'Microfono USB'
+15:44:41.019: ---------------------------------
+15:44:41.020: [FFmpeg VAAPI encoder: 'advanced_video_recording'] settings:
+15:44:41.020: 	device:       /dev/dri/by-path/pci-0000:03:00.0-render
+15:44:41.020: 	rate_control: CBR
+15:44:41.020: 	profile:      1
+15:44:41.020: 	level:        40
+15:44:41.020: 	qp:           0
+15:44:41.020: 	bitrate:      20000
+15:44:41.020: 	maxrate:      20000
+15:44:41.020: 	keyint:       120
+15:44:41.020: 	width:        1920
+15:44:41.020: 	height:       982
+15:44:41.020: 	b-frames:     0
+15:44:41.020: 
+15:44:41.041: libfdk_aac encoder created
+15:44:41.041: libfdk_aac bitrate: 160, channels: 2
+15:44:41.047: ==== Recording Start ===============================================
+15:44:41.047: [ffmpeg muxer: 'adv_file_output'] Writing file '/home/vega/Vídeos/2023-10-31_15-44-41.mkv'...
+15:45:11.046: Failed to create xdg-screensaver: 2
+15:45:16.905: User switched to scene 'Terminal'
+15:45:17.515: [pipewire] Stream 0x55a205a39a20 state: "paused" (error: none)
+15:45:17.549: User switched to scene 'QEMU'
+15:45:41.047: Failed to create xdg-screensaver: 2
+15:45:41.139: [pipewire] Stream 0x55a203f12760 state: "unconnected" (error: none)
+15:45:41.139: PipeWire initialized
+15:45:41.144: [pipewire] Screencast session created
+15:45:41.147: [pipewire] Asking for window
+15:45:45.011: [pipewire] window selected, setting up screencast
+15:45:45.014: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+15:45:45.014: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+15:45:45.014: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+15:45:45.014: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+15:45:45.015: [pipewire] Server version: 0.3.83
+15:45:45.016: [pipewire] Library version: 0.3.65
+15:45:45.016: [pipewire] Header version: 0.3.65
+15:45:45.016: [pipewire] Created stream 0x55a203f12760
+15:45:45.016: [pipewire] Stream 0x55a203f12760 state: "connecting" (error: none)
+15:45:45.016: [pipewire] Playing stream 0x55a203f12760
+15:45:45.016: [pipewire] Stream 0x55a203f12760 state: "paused" (error: none)
+15:45:45.018: [pipewire] Negotiated format:
+15:45:45.018: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+15:45:45.018: [pipewire]     Modifier: 0xffffffffffffff
+15:45:45.018: [pipewire]     Size: 1920x1080
+15:45:45.018: [pipewire]     Framerate: 0/1
+15:45:45.022: [pipewire] Stream 0x55a203f12760 state: "streaming" (error: none)
+15:46:11.048: Failed to create xdg-screensaver: 2
+15:46:22.875: User switched to scene 'Server'
+15:46:23.481: [pipewire] Stream 0x55a203f12760 state: "paused" (error: none)
+15:46:25.572: User switched to scene 'Terminal'
+15:46:28.454: User switched to scene 'QEMU'
+15:46:28.481: [pipewire] Stream 0x55a203f12760 state: "streaming" (error: none)
+15:46:41.072: Failed to create xdg-screensaver: 2
+15:47:11.073: Failed to create xdg-screensaver: 2
+15:47:41.074: Failed to create xdg-screensaver: 2
+15:48:11.075: Failed to create xdg-screensaver: 2
+15:48:41.075: Failed to create xdg-screensaver: 2
+15:49:11.076: Failed to create xdg-screensaver: 2
+15:49:41.077: Failed to create xdg-screensaver: 2
+15:50:11.106: Failed to create xdg-screensaver: 2
+15:50:41.108: Failed to create xdg-screensaver: 2
+15:51:11.109: Failed to create xdg-screensaver: 2
+15:51:41.110: Failed to create xdg-screensaver: 2
+15:52:11.111: Failed to create xdg-screensaver: 2
+15:52:41.112: Failed to create xdg-screensaver: 2
+15:53:06.881: [ffmpeg muxer: 'adv_file_output'] Output of file '/home/vega/Vídeos/2023-10-31_15-44-41.mkv' stopped
+15:53:06.881: Output 'adv_file_output': stopping
+15:53:06.881: Output 'adv_file_output': Total frames output: 15170
+15:53:06.881: Output 'adv_file_output': Total drawn frames: 15175
+15:53:06.881: ==== Recording Stop ================================================
+15:53:06.890: libfdk_aac encoder destroyed
+17:02:41.100: User switched to scene 'Pantalla'
+17:02:41.115: [pipewire] Stream 0x55a205a39a20 state: "streaming" (error: none)
+17:02:41.715: [pipewire] Stream 0x55a203f12760 state: "paused" (error: none)
