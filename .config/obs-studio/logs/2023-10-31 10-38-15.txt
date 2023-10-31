@@ -1,0 +1,675 @@
+10:38:15.242: Platform: Wayland
+10:38:15.242: CPU Name: AMD 4700S 8-Core Processor Desktop Kit
+10:38:15.242: CPU Speed: 1776.607MHz
+10:38:15.242: Physical Cores: 8, Logical Cores: 16
+10:38:15.242: Physical Memory: 15950MB Total, 13644MB Free
+10:38:15.242: Kernel Version: Linux 6.5.9-arch2-1
+10:38:15.242: Flatpak Branch: stable
+10:38:15.242: Flatpak Arch: x86_64
+10:38:15.243: Flatpak Runtime: runtime/org.kde.Platform/x86_64/6.4
+10:38:15.243: App Extensions:
+10:38:15.243:  - org.freedesktop.LinuxAudio.Plugins.TAP
+10:38:15.243:  - org.freedesktop.LinuxAudio.Plugins.swh
+10:38:15.243:  - com.obsproject.Studio.Locale
+10:38:15.243: Runtime Extensions:
+10:38:15.243:  - org.freedesktop.Platform.GL.default
+10:38:15.243:  - org.freedesktop.Platform.openh264
+10:38:15.243:  - org.kde.KStyle.Adwaita
+10:38:15.243:  - org.kde.PlatformTheme.QGnomePlatform
+10:38:15.243:  - org.kde.WaylandDecoration.QGnomePlatform-decoration
+10:38:15.243:  - org.kde.Platform.Locale
+10:38:15.243:  - org.freedesktop.Platform.GL.default
+10:38:15.243: Flatpak Framework Version: 1.15.4
+10:38:15.243: Desktop Environment: GNOME (gnome)
+10:38:15.243: Session Type: wayland
+10:38:15.245: Qt Version: 6.4.3 (runtime), 6.4.3 (compiled)
+10:38:15.245: Portable mode: false
+10:38:15.277: OBS 29.1.3 (linux)
+10:38:15.277: ---------------------------------
+10:38:15.277: ---------------------------------
+10:38:15.277: audio settings reset:
+10:38:15.277: 	samples per sec: 48000
+10:38:15.277: 	speakers:        2
+10:38:15.277: 	max buffering:   960 milliseconds
+10:38:15.277: 	buffering type:  dynamically increasing
+10:38:15.283: ---------------------------------
+10:38:15.283: Initializing OpenGL...
+10:38:15.283: Using EGL/Wayland
+10:38:15.766: Initialized EGL 1.5
+10:38:15.818: Loading up OpenGL on adapter AMD AMD Radeon RX 550 / 550 Series (polaris12, LLVM 15.0.7, DRM 3.54, 6.5.9-arch2-1)
+10:38:15.818: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 23.1.9 (git-acb5ee278a), shading language 4.60
+10:38:15.863: ---------------------------------
+10:38:15.863: video settings reset:
+10:38:15.863: 	base resolution:   1920x982
+10:38:15.863: 	output resolution: 1920x982
+10:38:15.863: 	downscale filter:  Bicubic
+10:38:15.863: 	fps:               30/1
+10:38:15.863: 	format:            NV12
+10:38:15.863: 	YUV mode:          Rec. 709/Full
+10:38:15.863: NV12 texture support not available
+10:38:15.863: P010 texture support not available
+10:38:15.865: Audio monitoring device:
+10:38:15.865: 	name: Echo Dot-3KU
+10:38:15.865: 	id: bluez_output.90_A8_22_FA_E8_BD.1
+10:38:15.866: ---------------------------------
+10:38:15.910: No AJA devices found, skipping loading AJA UI plugin
+10:38:15.910: Failed to initialize module 'aja-output-ui.so'
+10:38:15.947: No AJA devices found, skipping loading AJA plugin
+10:38:15.947: Failed to initialize module 'aja.so'
+10:38:15.960: Failed to load 'en-US' text for module: 'decklink-captions.so'
+10:38:15.976: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+10:38:15.989: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+10:38:15.989: Failed to initialize module 'decklink.so'
+10:38:16.461: [pipewire] Available captures:
+10:38:16.461: [pipewire]     - Desktop capture
+10:38:16.461: [pipewire]     - Window capture
+10:38:16.519: v4l2loopback not installed, virtual camera disabled
+10:38:16.541: [obs-browser]: Version 2.21.1
+10:38:16.541: [obs-browser]: CEF Version 103.0.5060.134 (runtime), 103.0.0-5060-shared-textures_143.2591+g4204d54+chromium-103.0.5060.134 (compiled)
+10:38:16.625: VAAPI: API version 1.18
+10:38:16.629: FFmpeg VAAPI H264 encoding supported
+10:38:16.637: FFmpeg VAAPI HEVC encoding supported
+10:38:16.735: [obs-websocket] [obs_module_load] you can haz websockets (Version: 5.2.3 | RPC Version: 1)
+10:38:16.735: [obs-websocket] [obs_module_load] Qt version (compile-time): 6.4.3 | Qt version (run-time): 6.4.3
+10:38:16.735: [obs-websocket] [obs_module_load] Linked ASIO Version: 101201
+10:38:16.740: [obs-websocket] [obs_module_load] Module loaded.
+10:38:16.798: Failed to load 'es-ES' text for module: 'linux-pipewire-audio.so'
+10:38:16.799: ---------------------------------
+10:38:16.799:   Loaded Modules:
+10:38:16.799:     linux-pipewire-audio.so
+10:38:16.799:     text-freetype2.so
+10:38:16.799:     rtmp-services.so
+10:38:16.799:     obs-x264.so
+10:38:16.799:     obs-websocket.so
+10:38:16.799:     obs-vst.so
+10:38:16.799:     obs-transitions.so
+10:38:16.799:     obs-outputs.so
+10:38:16.799:     obs-libfdk.so
+10:38:16.799:     obs-filters.so
+10:38:16.799:     obs-ffmpeg.so
+10:38:16.799:     obs-browser.so
+10:38:16.799:     linux-v4l2.so
+10:38:16.799:     linux-pulseaudio.so
+10:38:16.799:     linux-pipewire.so
+10:38:16.799:     linux-jack.so
+10:38:16.799:     linux-capture.so
+10:38:16.799:     image-source.so
+10:38:16.799:     frontend-tools.so
+10:38:16.799:     decklink-output-ui.so
+10:38:16.799:     decklink-captions.so
+10:38:16.799: ---------------------------------
+10:38:16.799: ==== Startup complete ===============================================
+10:38:16.837: All scene data cleared
+10:38:16.837: ------------------------------------------------
+10:38:16.843: pulse-input: Server name: 'PulseAudio (on PipeWire 0.3.83) 15.0.0'
+10:38:16.843: pulse-input: An error occurred while getting the source info!
+10:38:16.843: [Loaded global audio device]: 'Audio del escritorio'
+10:38:16.854: [pipewire] Created stream 0x5590f9d6b1a0
+10:38:16.859: [pipewire] 0x5590f9d6b1a0 streaming from 55
+10:38:16.860: [pipewire] Created stream 0x5590fa7c56b0
+10:38:16.862: PipeWire initialized
+10:38:16.862: PipeWire initialized
+10:38:16.863: PipeWire initialized
+10:38:16.863: v4l2-input: Start capture from /dev/video0
+10:38:16.865: v4l2-input: Input: 0
+10:38:16.869: v4l2-input: Resolution: 1920x1080
+10:38:16.869: v4l2-input: Pixelformat: YUYV
+10:38:16.869: v4l2-input: Linesize: 3840 Bytes
+10:38:16.870: v4l2-input: Framerate: 5.00 fps
+10:38:16.871: [pipewire] Created app capture sink 68 with 2 channels and position FL,FR
+10:38:16.873: v4l2-input: /dev/video0: select timeout set to 400000 (2x frame periods)
+10:38:16.874: Switched to scene 'QEMU'
+10:38:16.875: ------------------------------------------------
+10:38:16.875: Loaded scenes:
+10:38:16.875: - scene 'Pantalla':
+10:38:16.875:     - source: 'Microfono USB' (pipewire_audio_input_capture)
+10:38:16.875:         - filter: 'Eliminación de ruido' (noise_suppress_filter_v2)
+10:38:16.875:         - filter: 'Puerta anti-ruidos' (noise_gate_filter)
+10:38:16.875:         - filter: 'Compresor' (compressor_filter)
+10:38:16.875:         - filter: 'Expansor' (expander_filter)
+10:38:16.875:         - filter: 'Ecualizador de 3 bandas' (basic_eq_filter)
+10:38:16.875:         - filter: 'Limitador' (limiter_filter)
+10:38:16.875:         - filter: 'Ganancia' (gain_filter)
+10:38:16.875:     - source: 'Musica (PipeWire)' (pipewire_audio_application_capture)
+10:38:16.875:         - filter: 'Limitador' (limiter_filter)
+10:38:16.875:     - source: 'Pantalla (PipeWire)' (pipewire-desktop-capture-source)
+10:38:16.875: - scene 'QEMU':
+10:38:16.875:     - source: 'Microfono USB' (pipewire_audio_input_capture)
+10:38:16.875:         - filter: 'Eliminación de ruido' (noise_suppress_filter_v2)
+10:38:16.875:         - filter: 'Puerta anti-ruidos' (noise_gate_filter)
+10:38:16.875:         - filter: 'Compresor' (compressor_filter)
+10:38:16.875:         - filter: 'Expansor' (expander_filter)
+10:38:16.875:         - filter: 'Ecualizador de 3 bandas' (basic_eq_filter)
+10:38:16.875:         - filter: 'Limitador' (limiter_filter)
+10:38:16.875:         - filter: 'Ganancia' (gain_filter)
+10:38:16.875:     - source: 'Musica (PipeWire)' (pipewire_audio_application_capture)
+10:38:16.875:         - filter: 'Limitador' (limiter_filter)
+10:38:16.875:     - source: 'QEMU (PipeWire)' (pipewire-window-capture-source)
+10:38:16.875: - scene 'Terminal':
+10:38:16.875:     - source: 'Microfono USB' (pipewire_audio_input_capture)
+10:38:16.875:         - filter: 'Eliminación de ruido' (noise_suppress_filter_v2)
+10:38:16.875:         - filter: 'Puerta anti-ruidos' (noise_gate_filter)
+10:38:16.875:         - filter: 'Compresor' (compressor_filter)
+10:38:16.875:         - filter: 'Expansor' (expander_filter)
+10:38:16.875:         - filter: 'Ecualizador de 3 bandas' (basic_eq_filter)
+10:38:16.875:         - filter: 'Limitador' (limiter_filter)
+10:38:16.875:         - filter: 'Ganancia' (gain_filter)
+10:38:16.875:     - source: 'Musica (PipeWire)' (pipewire_audio_application_capture)
+10:38:16.875:         - filter: 'Limitador' (limiter_filter)
+10:38:16.875:     - source: 'Terminal (PipeWire)' (pipewire-window-capture-source)
+10:38:16.875: - scene 'Server':
+10:38:16.875:     - source: 'Microfono USB' (pipewire_audio_input_capture)
+10:38:16.875:         - filter: 'Eliminación de ruido' (noise_suppress_filter_v2)
+10:38:16.875:         - filter: 'Puerta anti-ruidos' (noise_gate_filter)
+10:38:16.875:         - filter: 'Compresor' (compressor_filter)
+10:38:16.875:         - filter: 'Expansor' (expander_filter)
+10:38:16.875:         - filter: 'Ecualizador de 3 bandas' (basic_eq_filter)
+10:38:16.875:         - filter: 'Limitador' (limiter_filter)
+10:38:16.875:         - filter: 'Ganancia' (gain_filter)
+10:38:16.875:     - source: 'Musica (PipeWire)' (pipewire_audio_application_capture)
+10:38:16.875:         - filter: 'Limitador' (limiter_filter)
+10:38:16.875:     - source: 'Server (V4L2)' (v4l2_input)
+10:38:16.875: ------------------------------------------------
+10:38:16.887: [pipewire] 0x5590fa7c56b0 Got format: rate 48000 - channels 2 - format 8
+10:38:16.899: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Musica (PipeWire))
+10:38:16.899: 
+10:38:16.900: [pipewire] 0x5590f9d6b1a0 Got format: rate 48000 - channels 1 - format 8
+10:38:16.980: [pipewire] Screencast session created
+10:38:16.980: [pipewire] Screencast session created
+10:38:16.980: [pipewire] Screencast session created
+10:38:16.984: adding 21 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Microfono USB)
+10:38:16.984: 
+10:38:16.997: [pipewire] Asking for desktop
+10:38:17.041: [pipewire] Asking for window
+10:38:17.041: [pipewire] Asking for window
+10:38:17.080: [pipewire] desktop selected, setting up screencast
+10:38:17.083: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+10:38:17.083: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+10:38:17.084: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+10:38:17.084: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+10:38:17.085: [pipewire] Server version: 0.3.83
+10:38:17.085: [pipewire] Library version: 0.3.65
+10:38:17.085: [pipewire] Header version: 0.3.65
+10:38:17.085: [pipewire] Created stream 0x5590fa37d0f0
+10:38:17.085: [pipewire] Stream 0x5590fa37d0f0 state: "connecting" (error: none)
+10:38:17.085: [pipewire] Playing stream 0x5590fa37d0f0
+10:38:17.086: [pipewire] Stream 0x5590fa37d0f0 state: "paused" (error: none)
+10:38:17.089: [pipewire] Negotiated format:
+10:38:17.089: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+10:38:17.089: [pipewire]     Modifier: 0xffffffffffffff
+10:38:17.089: [pipewire]     Size: 1920x1080
+10:38:17.089: [pipewire]     Framerate: 0/1
+10:38:17.157: [pipewire] Stream 0x5590fa37d0f0 state: "streaming" (error: none)
+10:38:17.291: v4l2-input: /dev/video0: select timed out
+10:38:17.291: v4l2-input: /dev/video0: failed to log status
+10:38:28.422: [pipewire] window selected, setting up screencast
+10:38:28.424: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+10:38:28.425: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+10:38:28.425: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+10:38:28.425: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+10:38:28.427: [pipewire] Server version: 0.3.83
+10:38:28.427: [pipewire] Library version: 0.3.65
+10:38:28.427: [pipewire] Header version: 0.3.65
+10:38:28.427: [pipewire] Created stream 0x5590fa3680c0
+10:38:28.427: [pipewire] Stream 0x5590fa3680c0 state: "connecting" (error: none)
+10:38:28.428: [pipewire] Playing stream 0x5590fa3680c0
+10:38:28.428: [pipewire] Stream 0x5590fa3680c0 state: "paused" (error: none)
+10:38:28.432: [pipewire] Negotiated format:
+10:38:28.432: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+10:38:28.432: [pipewire]     Modifier: 0xffffffffffffff
+10:38:28.433: [pipewire]     Size: 1920x1080
+10:38:28.433: [pipewire]     Framerate: 0/1
+10:38:28.478: [pipewire] Stream 0x5590fa3680c0 state: "streaming" (error: none)
+10:38:33.722: [pipewire] window selected, setting up screencast
+10:38:33.726: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+10:38:33.726: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+10:38:33.726: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+10:38:33.726: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+10:38:33.728: [pipewire] Server version: 0.3.83
+10:38:33.729: [pipewire] Library version: 0.3.65
+10:38:33.729: [pipewire] Header version: 0.3.65
+10:38:33.729: [pipewire] Created stream 0x5590fa3a2b80
+10:38:33.729: [pipewire] Stream 0x5590fa3a2b80 state: "connecting" (error: none)
+10:38:33.729: [pipewire] Playing stream 0x5590fa3a2b80
+10:38:33.730: [pipewire] Stream 0x5590fa3a2b80 state: "paused" (error: none)
+10:38:33.737: [pipewire] Negotiated format:
+10:38:33.737: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+10:38:33.737: [pipewire]     Modifier: 0xffffffffffffff
+10:38:33.737: [pipewire]     Size: 1920x1080
+10:38:33.737: [pipewire]     Framerate: 0/1
+10:38:33.747: [pipewire] Stream 0x5590fa3a2b80 state: "streaming" (error: none)
+10:38:36.934: User switched to scene 'Pantalla'
+10:38:37.533: [pipewire] Stream 0x5590fa3680c0 state: "paused" (error: none)
+10:38:38.718: User switched to scene 'QEMU'
+10:38:38.732: [pipewire] Stream 0x5590fa3680c0 state: "streaming" (error: none)
+10:38:39.333: [pipewire] Stream 0x5590fa37d0f0 state: "paused" (error: none)
+10:38:42.078: User switched to scene 'Terminal'
+10:38:42.666: [pipewire] Stream 0x5590fa3680c0 state: "paused" (error: none)
+10:38:42.942: User switched to scene 'QEMU'
+10:38:42.966: [pipewire] Stream 0x5590fa3680c0 state: "streaming" (error: none)
+10:38:43.286: User switched to scene 'Terminal'
+10:38:43.299: [pipewire] Stream 0x5590fa3680c0 state: "paused" (error: none)
+10:38:43.622: User switched to scene 'Server'
+10:38:44.200: [pipewire] Stream 0x5590fa3a2b80 state: "paused" (error: none)
+10:39:00.791: User switched to scene 'Pantalla'
+10:39:00.799: [pipewire] Stream 0x5590fa37d0f0 state: "streaming" (error: none)
+10:39:18.326: User switched to scene 'QEMU'
+10:39:18.333: [pipewire] Stream 0x5590fa3680c0 state: "streaming" (error: none)
+10:39:18.900: [pipewire] Stream 0x5590fa37d0f0 state: "paused" (error: none)
+10:39:24.099: [pipewire] Stream 0x5590fa3680c0 state: "paused" (error: none)
+10:39:24.100: [pipewire] Stream 0x5590fa3680c0 state: "unconnected" (error: none)
+10:39:24.103: PipeWire initialized
+10:39:24.108: [pipewire] Screencast session created
+10:39:24.110: [pipewire] Asking for window
+10:39:29.000: [pipewire] Stream 0x5590fa37d0f0 state: "streaming" (error: none)
+10:39:29.000: User switched to scene 'Pantalla'
+10:39:30.718: User switched to scene 'Terminal'
+10:39:30.733: [pipewire] Stream 0x5590fa3a2b80 state: "streaming" (error: none)
+10:39:31.300: [pipewire] Stream 0x5590fa37d0f0 state: "paused" (error: none)
+10:39:33.059: [pipewire] Stream 0x5590fa3a2b80 state: "paused" (error: none)
+10:39:33.060: [pipewire] Stream 0x5590fa3a2b80 state: "unconnected" (error: none)
+10:39:33.061: PipeWire initialized
+10:39:33.069: [pipewire] Screencast session created
+10:39:33.073: [pipewire] Asking for window
+10:39:37.620: [pipewire] window selected, setting up screencast
+10:39:37.624: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+10:39:37.624: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+10:39:37.624: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+10:39:37.624: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+10:39:37.626: [pipewire] Server version: 0.3.83
+10:39:37.626: [pipewire] Library version: 0.3.65
+10:39:37.626: [pipewire] Header version: 0.3.65
+10:39:37.626: [pipewire] Created stream 0x5590f9f531e0
+10:39:37.626: [pipewire] Stream 0x5590f9f531e0 state: "connecting" (error: none)
+10:39:37.627: [pipewire] Playing stream 0x5590f9f531e0
+10:39:37.627: [pipewire] Stream 0x5590f9f531e0 state: "paused" (error: none)
+10:39:37.630: [pipewire] Negotiated format:
+10:39:37.630: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+10:39:37.630: [pipewire]     Modifier: 0xffffffffffffff
+10:39:37.630: [pipewire]     Size: 1920x1080
+10:39:37.630: [pipewire]     Framerate: 0/1
+10:39:37.660: [pipewire] Stream 0x5590f9f531e0 state: "streaming" (error: none)
+10:39:39.743: User switched to scene 'Server'
+10:39:40.333: [pipewire] Stream 0x5590f9f531e0 state: "paused" (error: none)
+10:39:41.088: User switched to scene 'QEMU'
+10:39:42.015: User switched to scene 'Pantalla'
+10:39:42.033: [pipewire] Stream 0x5590fa37d0f0 state: "streaming" (error: none)
+10:40:32.074: User switched to scene 'QEMU'
+10:40:32.666: [pipewire] Stream 0x5590fa37d0f0 state: "paused" (error: none)
+10:40:32.962: User switched to scene 'Pantalla'
+10:40:32.966: [pipewire] Stream 0x5590fa37d0f0 state: "streaming" (error: none)
+10:40:37.095: User switched to scene 'QEMU'
+10:40:37.699: [pipewire] Stream 0x5590fa37d0f0 state: "paused" (error: none)
+10:40:46.785: PipeWire initialized
+10:40:46.791: [pipewire] Screencast session created
+10:40:46.794: [pipewire] Asking for window
+10:40:49.576: [pipewire] window selected, setting up screencast
+10:40:49.581: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+10:40:49.581: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+10:40:49.581: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+10:40:49.581: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+10:40:49.583: [pipewire] Server version: 0.3.83
+10:40:49.583: [pipewire] Library version: 0.3.65
+10:40:49.583: [pipewire] Header version: 0.3.65
+10:40:49.583: [pipewire] Created stream 0x5590f8743400
+10:40:49.583: [pipewire] Stream 0x5590f8743400 state: "connecting" (error: none)
+10:40:49.583: [pipewire] Playing stream 0x5590f8743400
+10:40:49.584: [pipewire] Stream 0x5590f8743400 state: "paused" (error: none)
+10:40:49.592: [pipewire] Negotiated format:
+10:40:49.592: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+10:40:49.592: [pipewire]     Modifier: 0xffffffffffffff
+10:40:49.592: [pipewire]     Size: 1920x1080
+10:40:49.592: [pipewire]     Framerate: 0/1
+10:40:49.598: [pipewire] Stream 0x5590f8743400 state: "streaming" (error: none)
+10:40:51.662: User switched to scene 'Terminal'
+10:40:51.666: [pipewire] Stream 0x5590f9f531e0 state: "streaming" (error: none)
+10:40:52.233: [pipewire] Stream 0x5590f8743400 state: "paused" (error: none)
+10:40:58.586: User switched to scene 'Pantalla'
+10:40:58.599: [pipewire] Stream 0x5590fa37d0f0 state: "streaming" (error: none)
+10:40:59.166: [pipewire] Stream 0x5590f9f531e0 state: "paused" (error: none)
+10:41:00.413: User switched to scene 'QEMU'
+10:41:00.433: [pipewire] Stream 0x5590f8743400 state: "streaming" (error: none)
+10:41:00.845: User switched to scene 'Pantalla'
+10:41:00.866: [pipewire] Stream 0x5590f8743400 state: "paused" (error: none)
+10:41:20.512: User switched to scene 'QEMU'
+10:41:20.533: [pipewire] Stream 0x5590f8743400 state: "streaming" (error: none)
+10:41:21.099: [pipewire] Stream 0x5590fa37d0f0 state: "paused" (error: none)
+10:41:21.837: User switched to scene 'Terminal'
+10:41:21.866: [pipewire] Stream 0x5590f9f531e0 state: "streaming" (error: none)
+10:41:22.300: [pipewire] Stream 0x5590f9f531e0 state: "paused" (error: none)
+10:41:22.302: User switched to scene 'Server'
+10:41:22.900: [pipewire] Stream 0x5590f8743400 state: "paused" (error: none)
+10:41:23.373: User switched to scene 'Pantalla'
+10:41:23.399: [pipewire] Stream 0x5590fa37d0f0 state: "streaming" (error: none)
+10:41:23.948: User switched to scene 'QEMU'
+10:41:23.966: [pipewire] Stream 0x5590f8743400 state: "streaming" (error: none)
+10:41:23.966: [pipewire] Stream 0x5590fa37d0f0 state: "paused" (error: none)
+10:41:24.261: User switched to scene 'Terminal'
+10:41:24.266: [pipewire] Stream 0x5590f9f531e0 state: "streaming" (error: none)
+10:41:24.266: [pipewire] Stream 0x5590f8743400 state: "paused" (error: none)
+10:41:24.660: User switched to scene 'Server'
+10:41:24.666: [pipewire] Stream 0x5590f9f531e0 state: "paused" (error: none)
+10:41:25.244: User switched to scene 'Pantalla'
+10:41:25.266: [pipewire] Stream 0x5590fa37d0f0 state: "streaming" (error: none)
+10:41:33.029: ---------------------------------
+10:41:33.034: [FFmpeg VAAPI encoder: 'advanced_video_recording'] settings:
+10:41:33.034: 	device:       /dev/dri/by-path/pci-0000:03:00.0-render
+10:41:33.034: 	rate_control: CBR
+10:41:33.034: 	profile:      1
+10:41:33.034: 	level:        40
+10:41:33.034: 	qp:           0
+10:41:33.034: 	bitrate:      20000
+10:41:33.034: 	maxrate:      20000
+10:41:33.034: 	keyint:       120
+10:41:33.034: 	width:        1920
+10:41:33.034: 	height:       982
+10:41:33.034: 	b-frames:     0
+10:41:33.034: 
+10:41:33.067: libfdk_aac encoder created
+10:41:33.067: libfdk_aac bitrate: 160, channels: 2
+10:41:33.090: ==== Recording Start ===============================================
+10:41:33.090: [ffmpeg muxer: 'adv_file_output'] Writing file '/home/vega/Vídeos/2023-10-31_10-41-33.mkv'...
+10:42:03.090: Failed to create xdg-screensaver: 2
+10:42:09.980: User switched to scene 'QEMU'
+10:42:09.999: [pipewire] Stream 0x5590f8743400 state: "streaming" (error: none)
+10:42:10.566: [pipewire] Stream 0x5590fa37d0f0 state: "paused" (error: none)
+10:42:26.482: User switched to scene 'Terminal'
+10:42:26.499: [pipewire] Stream 0x5590f9f531e0 state: "streaming" (error: none)
+10:42:27.066: [pipewire] Stream 0x5590f8743400 state: "paused" (error: none)
+10:42:33.091: Failed to create xdg-screensaver: 2
+10:42:36.678: User switched to scene 'Server'
+10:42:37.266: [pipewire] Stream 0x5590f9f531e0 state: "paused" (error: none)
+10:42:41.051: User switched to scene 'Pantalla'
+10:42:41.066: [pipewire] Stream 0x5590fa37d0f0 state: "streaming" (error: none)
+10:42:41.789: User switched to scene 'QEMU'
+10:42:41.799: [pipewire] Stream 0x5590f8743400 state: "streaming" (error: none)
+10:42:42.243: User switched to scene 'Terminal'
+10:42:42.266: [pipewire] Stream 0x5590f8743400 state: "paused" (error: none)
+10:42:42.266: [pipewire] Stream 0x5590f9f531e0 state: "streaming" (error: none)
+10:42:42.579: User switched to scene 'Server'
+10:42:42.600: [pipewire] Stream 0x5590f9f531e0 state: "paused" (error: none)
+10:42:43.167: [pipewire] Stream 0x5590fa37d0f0 state: "paused" (error: none)
+10:42:43.340: User switched to scene 'Pantalla'
+10:42:43.366: [pipewire] Stream 0x5590fa37d0f0 state: "streaming" (error: none)
+10:42:44.331: User switched to scene 'QEMU'
+10:42:44.333: [pipewire] Stream 0x5590f8743400 state: "streaming" (error: none)
+10:42:44.806: User switched to scene 'Pantalla'
+10:42:44.833: [pipewire] Stream 0x5590f8743400 state: "paused" (error: none)
+10:42:47.166: [pipewire] Stream 0x5590f8743400 state: "streaming" (error: none)
+10:42:47.167: User switched to scene 'QEMU'
+10:42:47.766: [pipewire] Stream 0x5590fa37d0f0 state: "paused" (error: none)
+10:42:49.073: User switched to scene 'Terminal'
+10:42:49.100: [pipewire] Stream 0x5590f9f531e0 state: "streaming" (error: none)
+10:42:49.666: [pipewire] Stream 0x5590f8743400 state: "paused" (error: none)
+10:42:50.674: User switched to scene 'Server'
+10:42:51.266: [pipewire] Stream 0x5590f9f531e0 state: "paused" (error: none)
+10:42:52.300: [pipewire] Stream 0x5590fa37d0f0 state: "streaming" (error: none)
+10:42:52.300: User switched to scene 'Pantalla'
+10:42:55.358: [ffmpeg muxer: 'adv_file_output'] Output of file '/home/vega/Vídeos/2023-10-31_10-41-33.mkv' stopped
+10:42:55.358: Output 'adv_file_output': stopping
+10:42:55.358: Output 'adv_file_output': Total frames output: 2462
+10:42:55.358: Output 'adv_file_output': Total drawn frames: 2464 (2468 attempted)
+10:42:55.358: Output 'adv_file_output': Number of lagged frames due to rendering lag/stalls: 4 (0.2%)
+10:42:55.359: ==== Recording Stop ================================================
+10:42:55.365: libfdk_aac encoder destroyed
+10:53:45.876: User switched to scene 'QEMU'
+10:53:45.881: [pipewire] Stream 0x5590f8743400 state: "streaming" (error: none)
+10:53:46.481: [pipewire] Stream 0x5590fa37d0f0 state: "paused" (error: none)
+10:53:46.705: User switched to scene 'Pantalla'
+10:53:46.715: [pipewire] Stream 0x5590fa37d0f0 state: "streaming" (error: none)
+10:53:47.048: [pipewire] Stream 0x5590fa37d0f0 state: "paused" (error: none)
+10:53:47.048: User switched to scene 'QEMU'
+10:53:58.519: User removed filter 'Eliminación de ruido' (noise_suppress_filter_v2) from source 'Microfono USB'
+10:54:00.728: User removed filter 'Puerta anti-ruidos' (noise_gate_filter) from source 'Microfono USB'
+10:54:02.725: User removed filter 'Compresor' (compressor_filter) from source 'Microfono USB'
+10:54:04.569: User removed filter 'Expansor' (expander_filter) from source 'Microfono USB'
+10:54:06.697: User removed filter 'Ecualizador de 3 bandas' (basic_eq_filter) from source 'Microfono USB'
+10:54:08.433: User removed filter 'Limitador' (limiter_filter) from source 'Microfono USB'
+10:54:10.278: User removed filter 'Ganancia' (gain_filter) from source 'Microfono USB'
+10:54:23.671: pulse-am: Server name: 'PulseAudio (on PipeWire 0.3.83) 15.0.0'
+10:54:23.671: pulse-am: Audio format: s16le, 48000 Hz, 2 channels
+10:54:23.672: pulse-am: Started Monitoring in 'bluez_output.90_A8_22_FA_E8_BD.1'
+10:54:23.672: User changed audio monitoring for source 'Musica (PipeWire)' to: monitor only
+10:54:35.955: User changed audio monitoring for source 'Musica (PipeWire)' to: monitor and output
+10:54:35.967: adding 42 milliseconds of audio buffering, total audio buffering is now 85 milliseconds (source: Musica (PipeWire))
+10:54:35.967: 
+10:54:40.579: User changed audio monitoring for source 'Musica (PipeWire)' to: monitor only
+10:55:35.938: pulse-am: Stopped Monitoring in 'bluez_output.90_A8_22_FA_E8_BD.1'
+10:55:35.938: pulse-am: Got 3387 packets with 3468288 frames
+10:55:35.939: User changed audio monitoring for source 'Musica (PipeWire)' to: none
+10:55:37.399: pulse-am: Server name: 'PulseAudio (on PipeWire 0.3.83) 15.0.0'
+10:55:37.399: pulse-am: Audio format: s16le, 48000 Hz, 2 channels
+10:55:37.399: pulse-am: Started Monitoring in 'bluez_output.90_A8_22_FA_E8_BD.1'
+10:55:37.399: User changed audio monitoring for source 'Microfono USB' to: monitor and output
+10:55:39.674: User changed audio monitoring for source 'Microfono USB' to: monitor only
+10:56:37.067: Settings changed (audio)
+10:56:37.067: ------------------------------------------------
+10:56:43.277: User switched to scene 'Pantalla'
+10:56:43.281: [pipewire] Stream 0x5590fa37d0f0 state: "streaming" (error: none)
+10:56:43.914: [pipewire] Stream 0x5590f8743400 state: "paused" (error: none)
+10:56:44.330: User switched to scene 'Terminal'
+10:56:44.348: [pipewire] Stream 0x5590f9f531e0 state: "streaming" (error: none)
+10:56:44.981: [pipewire] Stream 0x5590fa37d0f0 state: "paused" (error: none)
+10:56:45.178: User switched to scene 'Server'
+10:56:45.815: [pipewire] Stream 0x5590f9f531e0 state: "paused" (error: none)
+10:56:45.979: User switched to scene 'Terminal'
+10:56:45.981: [pipewire] Stream 0x5590f9f531e0 state: "streaming" (error: none)
+10:56:46.533: User switched to scene 'Pantalla'
+10:56:46.548: [pipewire] Stream 0x5590fa37d0f0 state: "streaming" (error: none)
+10:56:46.548: [pipewire] Stream 0x5590f9f531e0 state: "paused" (error: none)
+10:56:47.076: User switched to scene 'QEMU'
+10:56:47.082: [pipewire] Stream 0x5590f8743400 state: "streaming" (error: none)
+10:56:47.082: [pipewire] Stream 0x5590fa37d0f0 state: "paused" (error: none)
+10:56:51.357: User switched to scene 'Pantalla'
+10:56:51.381: [pipewire] Stream 0x5590fa37d0f0 state: "streaming" (error: none)
+10:56:51.981: [pipewire] Stream 0x5590f8743400 state: "paused" (error: none)
+10:56:54.462: User switched to scene 'QEMU'
+10:56:54.481: [pipewire] Stream 0x5590f8743400 state: "streaming" (error: none)
+10:56:54.981: [pipewire] Stream 0x5590f8743400 state: "paused" (error: none)
+10:56:54.982: User switched to scene 'Pantalla'
+10:56:56.907: User switched to scene 'QEMU'
+10:56:56.914: [pipewire] Stream 0x5590f8743400 state: "streaming" (error: none)
+10:56:57.372: User switched to scene 'Pantalla'
+10:56:57.381: [pipewire] Stream 0x5590f8743400 state: "paused" (error: none)
+10:56:58.430: User switched to scene 'QEMU'
+10:56:58.447: [pipewire] Stream 0x5590f8743400 state: "streaming" (error: none)
+10:56:58.790: User switched to scene 'Terminal'
+10:56:58.814: [pipewire] Stream 0x5590f8743400 state: "paused" (error: none)
+10:56:58.814: [pipewire] Stream 0x5590f9f531e0 state: "streaming" (error: none)
+10:56:59.261: User switched to scene 'Server'
+10:56:59.281: [pipewire] Stream 0x5590f9f531e0 state: "paused" (error: none)
+10:56:59.914: [pipewire] Stream 0x5590fa37d0f0 state: "paused" (error: none)
+10:57:02.020: User switched to scene 'Terminal'
+10:57:02.048: [pipewire] Stream 0x5590f9f531e0 state: "streaming" (error: none)
+10:57:02.411: User switched to scene 'QEMU'
+10:57:02.414: [pipewire] Stream 0x5590f8743400 state: "streaming" (error: none)
+10:57:02.414: [pipewire] Stream 0x5590f9f531e0 state: "paused" (error: none)
+10:57:03.244: User switched to scene 'Pantalla'
+10:57:03.248: [pipewire] Stream 0x5590fa37d0f0 state: "streaming" (error: none)
+10:57:03.881: [pipewire] Stream 0x5590f8743400 state: "paused" (error: none)
+10:57:18.940: User switched to scene 'QEMU'
+10:57:18.947: [pipewire] Stream 0x5590f8743400 state: "streaming" (error: none)
+10:57:19.322: User switched to scene 'Pantalla'
+10:57:19.348: [pipewire] Stream 0x5590f8743400 state: "paused" (error: none)
+10:57:28.874: User added filter 'Ganancia' (gain_filter) to source 'Microfono USB'
+10:59:54.344: User added filter 'Ecualizador de 3 bandas' (basic_eq_filter) to source 'Microfono USB'
+11:01:30.785: User added filter 'Eliminación de ruido' (noise_suppress_filter_v2) to source 'Microfono USB'
+11:01:45.943: User added filter 'Compresor' (compressor_filter) to source 'Microfono USB'
+11:03:15.870: User added filter 'Limitador' (limiter_filter) to source 'Microfono USB'
+11:04:05.973: User added filter 'Expansor' (expander_filter) to source 'Microfono USB'
+11:05:21.133: User added filter 'Puerta anti-ruidos' (noise_gate_filter) to source 'Microfono USB'
+11:06:58.952: ---------------------------------
+11:06:58.955: [FFmpeg VAAPI encoder: 'advanced_video_recording'] settings:
+11:06:58.955: 	device:       /dev/dri/by-path/pci-0000:03:00.0-render
+11:06:58.955: 	rate_control: CBR
+11:06:58.955: 	profile:      1
+11:06:58.955: 	level:        40
+11:06:58.955: 	qp:           0
+11:06:58.955: 	bitrate:      20000
+11:06:58.955: 	maxrate:      20000
+11:06:58.955: 	keyint:       120
+11:06:58.955: 	width:        1920
+11:06:58.955: 	height:       982
+11:06:58.955: 	b-frames:     0
+11:06:58.955: 
+11:06:58.969: libfdk_aac encoder created
+11:06:58.969: libfdk_aac bitrate: 160, channels: 2
+11:06:58.972: ==== Recording Start ===============================================
+11:06:58.972: [ffmpeg muxer: 'adv_file_output'] Writing file '/home/vega/Vídeos/2023-10-31_11-06-58.mkv'...
+11:07:08.403: pulse-am: Stopped Monitoring in 'bluez_output.90_A8_22_FA_E8_BD.1'
+11:07:08.403: pulse-am: Got 32390 packets with 33167360 frames
+11:07:08.403: User changed audio monitoring for source 'Microfono USB' to: none
+11:07:28.971: Failed to create xdg-screensaver: 2
+11:07:47.896: User switched to scene 'QEMU'
+11:07:47.914: [pipewire] Stream 0x5590f8743400 state: "streaming" (error: none)
+11:07:48.548: [pipewire] Stream 0x5590fa37d0f0 state: "paused" (error: none)
+11:07:48.726: User switched to scene 'Terminal'
+11:07:48.748: [pipewire] Stream 0x5590f9f531e0 state: "streaming" (error: none)
+11:07:49.348: [pipewire] Stream 0x5590f8743400 state: "paused" (error: none)
+11:07:49.545: User switched to scene 'QEMU'
+11:07:49.548: [pipewire] Stream 0x5590f8743400 state: "streaming" (error: none)
+11:07:50.181: [pipewire] Stream 0x5590f9f531e0 state: "paused" (error: none)
+11:07:56.181: User switched to scene 'Terminal'
+11:07:56.181: [pipewire] Stream 0x5590f9f531e0 state: "streaming" (error: none)
+11:07:56.814: [pipewire] Stream 0x5590f8743400 state: "paused" (error: none)
+11:07:57.788: User switched to scene 'Server'
+11:07:58.414: [pipewire] Stream 0x5590f9f531e0 state: "paused" (error: none)
+11:07:58.973: Failed to create xdg-screensaver: 2
+11:07:59.403: User switched to scene 'Pantalla'
+11:07:59.414: [pipewire] Stream 0x5590fa37d0f0 state: "streaming" (error: none)
+11:08:16.956: [ffmpeg muxer: 'adv_file_output'] Output of file '/home/vega/Vídeos/2023-10-31_11-06-58.mkv' stopped
+11:08:16.956: Output 'adv_file_output': stopping
+11:08:16.956: Output 'adv_file_output': Total frames output: 2335
+11:08:16.956: Output 'adv_file_output': Total drawn frames: 2340
+11:08:16.957: ==== Recording Stop ================================================
+11:08:16.978: libfdk_aac encoder destroyed
+11:12:13.820: ---------------------------------
+11:12:13.821: [FFmpeg VAAPI encoder: 'advanced_video_recording'] settings:
+11:12:13.821: 	device:       /dev/dri/by-path/pci-0000:03:00.0-render
+11:12:13.821: 	rate_control: CBR
+11:12:13.821: 	profile:      1
+11:12:13.821: 	level:        40
+11:12:13.821: 	qp:           0
+11:12:13.821: 	bitrate:      20000
+11:12:13.821: 	maxrate:      20000
+11:12:13.821: 	keyint:       120
+11:12:13.821: 	width:        1920
+11:12:13.821: 	height:       982
+11:12:13.821: 	b-frames:     0
+11:12:13.821: 
+11:12:13.848: libfdk_aac encoder created
+11:12:13.848: libfdk_aac bitrate: 160, channels: 2
+11:12:13.854: ==== Recording Start ===============================================
+11:12:13.854: [ffmpeg muxer: 'adv_file_output'] Writing file '/home/vega/Vídeos/2023-10-31_11-12-13.mkv'...
+11:12:43.870: Failed to create xdg-screensaver: 2
+11:13:13.873: Failed to create xdg-screensaver: 2
+11:13:41.673: User switched to scene 'QEMU'
+11:13:41.681: [pipewire] Stream 0x5590f8743400 state: "streaming" (error: none)
+11:13:42.314: [pipewire] Stream 0x5590fa37d0f0 state: "paused" (error: none)
+11:13:43.874: Failed to create xdg-screensaver: 2
+11:13:46.399: User switched to scene 'Terminal'
+11:13:46.414: [pipewire] Stream 0x5590f9f531e0 state: "streaming" (error: none)
+11:13:47.014: [pipewire] Stream 0x5590f8743400 state: "paused" (error: none)
+11:13:48.729: User switched to scene 'Server'
+11:13:49.381: [pipewire] Stream 0x5590f9f531e0 state: "paused" (error: none)
+11:13:54.001: User switched to scene 'QEMU'
+11:13:54.014: [pipewire] Stream 0x5590f8743400 state: "streaming" (error: none)
+11:13:54.329: User switched to scene 'Pantalla'
+11:13:54.348: [pipewire] Stream 0x5590f8743400 state: "paused" (error: none)
+11:13:54.348: [pipewire] Stream 0x5590fa37d0f0 state: "streaming" (error: none)
+11:13:56.486: [ffmpeg muxer: 'adv_file_output'] Output of file '/home/vega/Vídeos/2023-10-31_11-12-13.mkv' stopped
+11:13:56.486: Output 'adv_file_output': stopping
+11:13:56.486: Output 'adv_file_output': Total frames output: 3073
+11:13:56.486: Output 'adv_file_output': Total drawn frames: 3079
+11:13:56.486: ==== Recording Stop ================================================
+11:13:56.512: libfdk_aac encoder destroyed
+11:18:09.917: User switched to scene 'Server'
+11:18:10.548: [pipewire] Stream 0x5590fa37d0f0 state: "paused" (error: none)
+11:18:18.082: v4l2-input: /dev/video0: failed to dequeue buffer
+11:18:18.082: v4l2-input: /dev/video0: Stopped capture after 12003 frames
+11:18:18.082: v4l2-helpers: unable to stop stream
+11:18:21.993: [pipewire] 0x5590f9d6b1a0 streaming from 67
+11:18:22.009: [pipewire] 0x5590f9d6b1a0 Got format: rate 48000 - channels 1 - format 8
+11:21:52.130: ==== Shutting down ==================================================
+11:21:52.145: [pipewire] Stream 0x5590fa37d0f0 state: "unconnected" (error: none)
+11:21:52.148: [pipewire] Stream 0x5590f8743400 state: "unconnected" (error: none)
+11:21:52.150: [pipewire] Stream 0x5590f9f531e0 state: "unconnected" (error: none)
+11:21:52.195: All scene data cleared
+11:21:52.196: ------------------------------------------------
+11:21:52.301: [obs-websocket] [obs_module_unload] Shutting down...
+11:21:52.302: [obs-websocket] [obs_module_unload] Finished shutting down.
+11:21:52.318: [Scripting] Total detached callbacks: 0
+11:21:52.318: Freeing OBS context data
+11:21:52.342: == Profiler Results =============================
+11:21:52.342: run_program_init: 2185.31 ms
+11:21:52.342:  ┣OBSApp::AppInit: 9.495 ms
+11:21:52.342:  ┃ ┗OBSApp::InitLocale: 4.647 ms
+11:21:52.342:  ┗OBSApp::OBSInit: 1706.03 ms
+11:21:52.342:    ┣obs_startup: 3.452 ms
+11:21:52.342:    ┗OBSBasic::OBSInit: 1670.78 ms
+11:21:52.342:      ┣OBSBasic::InitBasicConfig: 0.116 ms
+11:21:52.342:      ┣OBSBasic::ResetAudio: 0.275 ms
+11:21:52.342:      ┣OBSBasic::ResetVideo: 588.076 ms
+11:21:52.342:      ┣OBSBasic::InitOBSCallbacks: 0.006 ms
+11:21:52.342:      ┣OBSBasic::InitHotkeys: 0.031 ms
+11:21:52.342:      ┣obs_load_all_modules2: 932.983 ms
+11:21:52.342:      ┃ ┣obs_init_module(aja-output-ui.so): 0.127 ms
+11:21:52.342:      ┃ ┣obs_init_module(aja.so): 0.121 ms
+11:21:52.342:      ┃ ┣obs_init_module(decklink-captions.so): 0 ms
+11:21:52.342:      ┃ ┣obs_init_module(decklink-output-ui.so): 0 ms
+11:21:52.342:      ┃ ┣obs_init_module(decklink.so): 0.169 ms
+11:21:52.342:      ┃ ┣obs_init_module(frontend-tools.so): 117.5 ms
+11:21:52.342:      ┃ ┣obs_init_module(image-source.so): 0.008 ms
+11:21:52.342:      ┃ ┣obs_init_module(linux-capture.so): 0 ms
+11:21:52.342:      ┃ ┣obs_init_module(linux-jack.so): 0.005 ms
+11:21:52.342:      ┃ ┣obs_init_module(linux-pipewire.so): 1.702 ms
+11:21:52.342:      ┃ ┣obs_init_module(linux-pulseaudio.so): 0.004 ms
+11:21:52.342:      ┃ ┣obs_init_module(linux-v4l2.so): 23.266 ms
+11:21:52.342:      ┃ ┣obs_init_module(obs-browser.so): 0.119 ms
+11:21:52.342:      ┃ ┣obs_init_module(obs-ffmpeg.so): 80.084 ms
+11:21:52.342:      ┃ ┃ ┗nvenc_check: 1.151 ms
+11:21:52.342:      ┃ ┣obs_init_module(obs-filters.so): 0.031 ms
+11:21:52.342:      ┃ ┣obs_init_module(obs-libfdk.so): 0.002 ms
+11:21:52.342:      ┃ ┣obs_init_module(obs-outputs.so): 0.011 ms
+11:21:52.342:      ┃ ┣obs_init_module(obs-transitions.so): 0.011 ms
+11:21:52.342:      ┃ ┣obs_init_module(obs-vst.so): 0.005 ms
+11:21:52.342:      ┃ ┣obs_init_module(obs-websocket.so): 5.093 ms
+11:21:52.342:      ┃ ┣obs_init_module(obs-x264.so): 0.003 ms
+11:21:52.342:      ┃ ┣obs_init_module(rtmp-services.so): 1.193 ms
+11:21:52.342:      ┃ ┣obs_init_module(text-freetype2.so): 0.031 ms
+11:21:52.342:      ┃ ┗obs_init_module(linux-pipewire-audio.so): 0.027 ms
+11:21:52.342:      ┣OBSBasic::InitService: 1.767 ms
+11:21:52.342:      ┣OBSBasic::ResetOutputs: 9.303 ms
+11:21:52.342:      ┣OBSBasic::CreateHotkeys: 0.034 ms
+11:21:52.342:      ┣OBSBasic::InitPrimitives: 0.11 ms
+11:21:52.342:      ┗OBSBasic::Load: 68.097 ms
+11:21:52.342: obs_hotkey_thread(25 ms): min=0 ms, median=0.001 ms, max=0.082 ms, 99th percentile=0.002 ms, 100% below 25 ms
+11:21:52.342: audio_thread(Audio): min=0.006 ms, median=0.08 ms, max=38.22 ms, 99th percentile=1.544 ms
+11:21:52.342:  ┗receive_audio: min=0.002 ms, median=0.673 ms, max=38.043 ms, 99th percentile=1.831 ms, 0.100502 calls per parent call
+11:21:52.342:    ┣buffer_audio: min=0 ms, median=0.001 ms, max=0.037 ms, 99th percentile=0.002 ms
+11:21:52.342:    ┗do_encode: min=0.073 ms, median=0.67 ms, max=38.036 ms, 99th percentile=1.823 ms
+11:21:52.342:      ┣encode(Track1): min=0.07 ms, median=0.516 ms, max=1.923 ms, 99th percentile=1.275 ms
+11:21:52.342:      ┗send_packet: min=0.002 ms, median=0.12 ms, max=36.993 ms, 99th percentile=0.677 ms
+11:21:52.342: obs_graphics_thread(33.3333 ms): min=0.181 ms, median=0.897 ms, max=281.675 ms, 99th percentile=4.13 ms, 99.9745% below 33.333 ms
+11:21:52.342:  ┣tick_sources: min=0 ms, median=0.023 ms, max=8.101 ms, 99th percentile=0.041 ms
+11:21:52.342:  ┣output_frame: min=0.142 ms, median=0.497 ms, max=24.404 ms, 99th percentile=3.41 ms
+11:21:52.342:  ┃ ┣gs_context(video->graphics): min=0.142 ms, median=0.482 ms, max=24.403 ms, 99th percentile=3.264 ms
+11:21:52.342:  ┃ ┃ ┣render_video: min=0.034 ms, median=0.177 ms, max=23.941 ms, 99th percentile=2.866 ms
+11:21:52.342:  ┃ ┃ ┃ ┣render_main_texture: min=0.024 ms, median=0.164 ms, max=23.924 ms, 99th percentile=2.842 ms
+11:21:52.342:  ┃ ┃ ┃ ┣render_convert_texture: min=0.024 ms, median=0.092 ms, max=1.812 ms, 99th percentile=0.143 ms, 0.100481 calls per parent call
+11:21:52.342:  ┃ ┃ ┃ ┗stage_output_texture: min=0.013 ms, median=0.045 ms, max=0.927 ms, 99th percentile=0.062 ms, 0.100481 calls per parent call
+11:21:52.342:  ┃ ┃ ┣gs_flush: min=0.005 ms, median=0.26 ms, max=7.911 ms, 99th percentile=0.525 ms
+11:21:52.342:  ┃ ┃ ┗download_frame: min=0 ms, median=0.119 ms, max=10.678 ms, 99th percentile=0.172 ms, 0.100481 calls per parent call
+11:21:52.342:  ┃ ┗output_video_data: min=0.35 ms, median=0.56 ms, max=14.711 ms, 99th percentile=0.724 ms, 0.100442 calls per parent call
+11:21:52.342:  ┗render_displays: min=0.002 ms, median=0.3 ms, max=281.244 ms, 99th percentile=0.836 ms
+11:21:52.342: video_thread(video): min=0.001 ms, median=21.956 ms, max=90.623 ms, 99th percentile=30.278 ms
+11:21:52.342:  ┗receive_video: min=10.13 ms, median=21.952 ms, max=57.59 ms, 99th percentile=30.244 ms
+11:21:52.342:    ┗do_encode: min=10.129 ms, median=21.949 ms, max=57.586 ms, 99th percentile=30.242 ms
+11:21:52.342:      ┣encode(advanced_video_recording): min=10.108 ms, median=21.859 ms, max=55.455 ms, 99th percentile=29.111 ms
+11:21:52.342:      ┗send_packet: min=0.002 ms, median=0.019 ms, max=36.797 ms, 99th percentile=0.553 ms
+11:21:52.342: =================================================
+11:21:52.342: == Profiler Time Between Calls ==================
+11:21:52.343: obs_hotkey_thread(25 ms): min=17.294 ms, median=25.082 ms, max=28.214 ms, 99.9626% within ±2% of 25 ms (0.000959187% lower, 0.0364491% higher)
+11:21:52.343: obs_graphics_thread(33.3333 ms): min=2.233 ms, median=33.333 ms, max=281.703 ms, 99.9324% within ±2% of 33.333 ms (0.0356906% lower, 0.0318666% higher)
+11:21:52.343: =================================================
+11:21:52.399: Number of memory leaks: 2

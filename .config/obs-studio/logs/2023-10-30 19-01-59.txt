@@ -1,0 +1,675 @@
+19:01:59.641: Platform: Wayland
+19:01:59.642: CPU Name: AMD 4700S 8-Core Processor Desktop Kit
+19:01:59.642: CPU Speed: 3998.544MHz
+19:01:59.642: Physical Cores: 8, Logical Cores: 16
+19:01:59.642: Physical Memory: 15950MB Total, 11064MB Free
+19:01:59.642: Kernel Version: Linux 6.5.9-arch2-1
+19:01:59.642: Flatpak Branch: stable
+19:01:59.642: Flatpak Arch: x86_64
+19:01:59.642: Flatpak Runtime: runtime/org.kde.Platform/x86_64/6.4
+19:01:59.642: App Extensions:
+19:01:59.642:  - org.freedesktop.LinuxAudio.Plugins.TAP
+19:01:59.642:  - org.freedesktop.LinuxAudio.Plugins.swh
+19:01:59.642:  - com.obsproject.Studio.Locale
+19:01:59.642: Runtime Extensions:
+19:01:59.643:  - org.freedesktop.Platform.GL.default
+19:01:59.643:  - org.freedesktop.Platform.openh264
+19:01:59.643:  - org.kde.KStyle.Adwaita
+19:01:59.643:  - org.kde.PlatformTheme.QGnomePlatform
+19:01:59.643:  - org.kde.WaylandDecoration.QGnomePlatform-decoration
+19:01:59.643:  - org.kde.Platform.Locale
+19:01:59.643:  - org.freedesktop.Platform.GL.default
+19:01:59.643: Flatpak Framework Version: 1.15.4
+19:01:59.643: Desktop Environment: GNOME (gnome)
+19:01:59.643: Session Type: wayland
+19:01:59.645: Qt Version: 6.4.3 (runtime), 6.4.3 (compiled)
+19:01:59.645: Portable mode: false
+19:01:59.680: OBS 29.1.3 (linux)
+19:01:59.680: ---------------------------------
+19:01:59.681: ---------------------------------
+19:01:59.681: audio settings reset:
+19:01:59.681: 	samples per sec: 48000
+19:01:59.681: 	speakers:        2
+19:01:59.681: 	max buffering:   960 milliseconds
+19:01:59.681: 	buffering type:  dynamically increasing
+19:01:59.687: ---------------------------------
+19:01:59.687: Initializing OpenGL...
+19:01:59.687: Using EGL/Wayland
+19:01:59.726: Initialized EGL 1.5
+19:01:59.748: Loading up OpenGL on adapter AMD AMD Radeon RX 550 / 550 Series (polaris12, LLVM 15.0.7, DRM 3.54, 6.5.9-arch2-1)
+19:01:59.748: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 23.1.9 (git-acb5ee278a), shading language 4.60
+19:01:59.793: ---------------------------------
+19:01:59.794: video settings reset:
+19:01:59.794: 	base resolution:   1920x1080
+19:01:59.794: 	output resolution: 1920x1080
+19:01:59.794: 	downscale filter:  Bicubic
+19:01:59.794: 	fps:               30/1
+19:01:59.794: 	format:            NV12
+19:01:59.794: 	YUV mode:          Rec. 709/Full
+19:01:59.794: NV12 texture support not available
+19:01:59.794: P010 texture support not available
+19:01:59.797: Audio monitoring device:
+19:01:59.797: 	name: Echo Dot-3KU
+19:01:59.797: 	id: bluez_output.90_A8_22_FA_E8_BD.1
+19:01:59.797: ---------------------------------
+19:01:59.836: No AJA devices found, skipping loading AJA UI plugin
+19:01:59.836: Failed to initialize module 'aja-output-ui.so'
+19:01:59.867: No AJA devices found, skipping loading AJA plugin
+19:01:59.867: Failed to initialize module 'aja.so'
+19:01:59.877: Failed to load 'en-US' text for module: 'decklink-captions.so'
+19:01:59.888: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+19:01:59.899: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+19:01:59.899: Failed to initialize module 'decklink.so'
+19:02:00.358: [pipewire] Available captures:
+19:02:00.358: [pipewire]     - Desktop capture
+19:02:00.358: [pipewire]     - Window capture
+19:02:00.414: v4l2loopback not installed, virtual camera disabled
+19:02:00.434: [obs-browser]: Version 2.21.1
+19:02:00.434: [obs-browser]: CEF Version 103.0.5060.134 (runtime), 103.0.0-5060-shared-textures_143.2591+g4204d54+chromium-103.0.5060.134 (compiled)
+19:02:00.481: VAAPI: API version 1.18
+19:02:00.485: FFmpeg VAAPI H264 encoding supported
+19:02:00.498: FFmpeg VAAPI HEVC encoding supported
+19:02:00.629: [obs-websocket] [obs_module_load] you can haz websockets (Version: 5.2.3 | RPC Version: 1)
+19:02:00.629: [obs-websocket] [obs_module_load] Qt version (compile-time): 6.4.3 | Qt version (run-time): 6.4.3
+19:02:00.629: [obs-websocket] [obs_module_load] Linked ASIO Version: 101201
+19:02:00.637: [obs-websocket] [obs_module_load] Module loaded.
+19:02:00.702: Failed to load 'es-ES' text for module: 'linux-pipewire-audio.so'
+19:02:00.702: ---------------------------------
+19:02:00.702:   Loaded Modules:
+19:02:00.702:     linux-pipewire-audio.so
+19:02:00.702:     text-freetype2.so
+19:02:00.702:     rtmp-services.so
+19:02:00.702:     obs-x264.so
+19:02:00.702:     obs-websocket.so
+19:02:00.702:     obs-vst.so
+19:02:00.702:     obs-transitions.so
+19:02:00.702:     obs-outputs.so
+19:02:00.702:     obs-libfdk.so
+19:02:00.702:     obs-filters.so
+19:02:00.702:     obs-ffmpeg.so
+19:02:00.702:     obs-browser.so
+19:02:00.702:     linux-v4l2.so
+19:02:00.702:     linux-pulseaudio.so
+19:02:00.702:     linux-pipewire.so
+19:02:00.702:     linux-jack.so
+19:02:00.702:     linux-capture.so
+19:02:00.702:     image-source.so
+19:02:00.702:     frontend-tools.so
+19:02:00.702:     decklink-output-ui.so
+19:02:00.702:     decklink-captions.so
+19:02:00.702: ---------------------------------
+19:02:00.702: ==== Startup complete ===============================================
+19:02:00.773: All scene data cleared
+19:02:00.773: ------------------------------------------------
+19:02:00.781: pulse-input: Server name: 'PulseAudio (on PipeWire 0.3.83) 15.0.0'
+19:02:00.781: pulse-input: An error occurred while getting the source info!
+19:02:00.781: [Loaded global audio device]: 'Audio del escritorio'
+19:02:00.795: [pipewire] Created stream 0x555dee335ec0
+19:02:00.802: [pipewire] 0x555dee335ec0 streaming from 55
+19:02:00.802: [pipewire] Created stream 0x555deed55a60
+19:02:00.804: Source ID 'xcomposite_input' not found
+19:02:00.804: Failed to create source 'Virt Manager Ventana'!
+19:02:00.805: Source ID 'xcomposite_input' not found
+19:02:00.805: Failed to create source 'Term'!
+19:02:00.805: PipeWire initialized
+19:02:00.807: [pipewire] Created stream 0x555deee6efb0
+19:02:00.812: [pipewire] Created app capture sink 68 with 2 channels and position FL,FR
+19:02:00.816: v4l2-input: Start capture from /dev/video0
+19:02:00.818: v4l2-input: Input: 0
+19:02:00.821: v4l2-input: Resolution: 1920x1080
+19:02:00.821: v4l2-input: Pixelformat: MJPG
+19:02:00.821: v4l2-input: Linesize: 0 Bytes
+19:02:00.821: v4l2-input: Framerate: 60.00 fps
+19:02:00.825: v4l2-input: /dev/video0: select timeout set to 33333 (2x frame periods)
+19:02:00.826: [pipewire] Created app capture sink 77 with 2 channels and position FL,FR
+19:02:00.826: Switched to scene 'Server'
+19:02:00.826: ------------------------------------------------
+19:02:00.826: Loaded scenes:
+19:02:00.826: - scene 'Screen Share':
+19:02:00.826:     - source: 'Microfono USB' (pipewire_audio_input_capture)
+19:02:00.826:         - filter: 'Eliminación de ruido' (noise_suppress_filter_v2)
+19:02:00.826:         - filter: 'Puerta anti-ruidos' (noise_gate_filter)
+19:02:00.826:         - filter: 'Compresor' (compressor_filter)
+19:02:00.826:         - filter: 'Expansor' (expander_filter)
+19:02:00.826:         - filter: 'Ecualizador de 3 bandas' (basic_eq_filter)
+19:02:00.826:         - filter: 'Limitador' (limiter_filter)
+19:02:00.826:         - filter: 'Ganancia' (gain_filter)
+19:02:00.826:     - source: 'Audio de Ventana (PipeWire)' (pipewire_audio_application_capture)
+19:02:00.826:         - filter: 'Limitador' (limiter_filter)
+19:02:00.826:     - source: 'Captura de pantalla (PipeWire)' (pipewire-desktop-capture-source)
+19:02:00.826: - scene 'Virt Manager':
+19:02:00.826:     - source: 'Microfono USB' (pipewire_audio_input_capture)
+19:02:00.826:         - filter: 'Eliminación de ruido' (noise_suppress_filter_v2)
+19:02:00.826:         - filter: 'Puerta anti-ruidos' (noise_gate_filter)
+19:02:00.826:         - filter: 'Compresor' (compressor_filter)
+19:02:00.826:         - filter: 'Expansor' (expander_filter)
+19:02:00.826:         - filter: 'Ecualizador de 3 bandas' (basic_eq_filter)
+19:02:00.826:         - filter: 'Limitador' (limiter_filter)
+19:02:00.826:         - filter: 'Ganancia' (gain_filter)
+19:02:00.826:     - source: 'Virt Manager Ventana' (xcomposite_input)
+19:02:00.827:     - source: 'Virt Manager Audio' (pipewire_audio_application_capture)
+19:02:00.827:     - source: 'Audio de Ventana (PipeWire)' (pipewire_audio_application_capture)
+19:02:00.827:         - filter: 'Limitador' (limiter_filter)
+19:02:00.827: - scene 'Terminal':
+19:02:00.827:     - source: 'Microfono USB' (pipewire_audio_input_capture)
+19:02:00.827:         - filter: 'Eliminación de ruido' (noise_suppress_filter_v2)
+19:02:00.827:         - filter: 'Puerta anti-ruidos' (noise_gate_filter)
+19:02:00.827:         - filter: 'Compresor' (compressor_filter)
+19:02:00.827:         - filter: 'Expansor' (expander_filter)
+19:02:00.827:         - filter: 'Ecualizador de 3 bandas' (basic_eq_filter)
+19:02:00.827:         - filter: 'Limitador' (limiter_filter)
+19:02:00.827:         - filter: 'Ganancia' (gain_filter)
+19:02:00.827:     - source: 'Audio de Ventana (PipeWire)' (pipewire_audio_application_capture)
+19:02:00.827:         - filter: 'Limitador' (limiter_filter)
+19:02:00.827:     - source: 'Term' (xcomposite_input)
+19:02:00.827: - scene 'Server':
+19:02:00.827:     - source: 'Dispositivo de captura de video (V4L2) 2' (v4l2_input)
+19:02:00.827: ------------------------------------------------
+19:02:00.846: [pipewire] 0x555deed55a60 Got format: rate 48000 - channels 2 - format 8
+19:02:00.847: [pipewire] 0x555deee6efb0 Got format: rate 48000 - channels 2 - format 8
+19:02:00.854: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Virt Manager Audio)
+19:02:00.854: 
+19:02:00.868: v4l2-input: /dev/video0: select timed out
+19:02:00.868: v4l2-input: /dev/video0: failed to log status
+19:02:00.930: v4l2-input: /dev/video0: stream reset successful
+19:02:00.943: [pipewire] Screencast session created
+19:02:00.964: v4l2-input: /dev/video0: select timed out
+19:02:00.964: v4l2-input: /dev/video0: failed to log status
+19:02:00.967: [pipewire] Asking for desktop
+19:02:01.026: v4l2-input: /dev/video0: stream reset successful
+19:02:01.035: [pipewire] desktop selected, setting up screencast
+19:02:01.039: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+19:02:01.039: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+19:02:01.039: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+19:02:01.039: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+19:02:01.040: [pipewire] Server version: 0.3.83
+19:02:01.040: [pipewire] Library version: 0.3.65
+19:02:01.040: [pipewire] Header version: 0.3.65
+19:02:01.040: [pipewire] Created stream 0x555dee93be50
+19:02:01.040: [pipewire] Stream 0x555dee93be50 state: "connecting" (error: none)
+19:02:01.041: [pipewire] Playing stream 0x555dee93be50
+19:02:01.041: [pipewire] Stream 0x555dee93be50 state: "paused" (error: none)
+19:02:01.045: [pipewire] Negotiated format:
+19:02:01.045: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+19:02:01.045: [pipewire]     Modifier: 0xffffffffffffff
+19:02:01.045: [pipewire]     Size: 1920x1080
+19:02:01.045: [pipewire]     Framerate: 0/1
+19:02:01.060: v4l2-input: /dev/video0: select timed out
+19:02:01.060: v4l2-input: /dev/video0: failed to log status
+19:02:01.116: [pipewire] Stream 0x555dee93be50 state: "streaming" (error: none)
+19:02:01.122: v4l2-input: /dev/video0: stream reset successful
+19:02:01.156: v4l2-input: /dev/video0: select timed out
+19:02:01.156: v4l2-input: /dev/video0: failed to log status
+19:02:01.218: v4l2-input: /dev/video0: stream reset successful
+19:02:01.252: v4l2-input: /dev/video0: select timed out
+19:02:01.252: v4l2-input: /dev/video0: failed to log status
+19:02:01.314: v4l2-input: /dev/video0: stream reset successful
+19:02:01.348: v4l2-input: /dev/video0: select timed out
+19:02:01.348: v4l2-input: /dev/video0: failed to log status
+19:02:01.410: v4l2-input: /dev/video0: stream reset successful
+19:02:01.444: v4l2-input: /dev/video0: select timed out
+19:02:01.444: v4l2-input: /dev/video0: failed to log status
+19:02:01.506: v4l2-input: /dev/video0: stream reset successful
+19:02:01.540: v4l2-input: /dev/video0: select timed out
+19:02:01.540: v4l2-input: /dev/video0: failed to log status
+19:02:01.602: v4l2-input: /dev/video0: stream reset successful
+19:02:01.636: v4l2-input: /dev/video0: select timed out
+19:02:01.636: v4l2-input: /dev/video0: failed to log status
+19:02:01.698: v4l2-input: /dev/video0: stream reset successful
+19:02:01.732: v4l2-input: /dev/video0: select timed out
+19:02:01.732: v4l2-input: /dev/video0: failed to log status
+19:02:01.795: v4l2-input: /dev/video0: stream reset successful
+19:02:01.828: v4l2-input: /dev/video0: select timed out
+19:02:01.828: v4l2-input: /dev/video0: failed to log status
+19:02:01.890: v4l2-input: /dev/video0: stream reset successful
+19:02:01.924: v4l2-input: /dev/video0: select timed out
+19:02:01.924: v4l2-input: /dev/video0: failed to log status
+19:02:01.986: v4l2-input: /dev/video0: stream reset successful
+19:02:02.020: v4l2-input: /dev/video0: select timed out
+19:02:02.020: v4l2-input: /dev/video0: failed to log status
+19:02:02.082: v4l2-input: /dev/video0: stream reset successful
+19:02:02.116: v4l2-input: /dev/video0: select timed out
+19:02:02.116: v4l2-input: /dev/video0: failed to log status
+19:02:02.179: v4l2-input: /dev/video0: stream reset successful
+19:02:02.212: v4l2-input: /dev/video0: select timed out
+19:02:02.212: v4l2-input: /dev/video0: failed to log status
+19:02:02.274: v4l2-input: /dev/video0: stream reset successful
+19:02:02.308: v4l2-input: /dev/video0: select timed out
+19:02:02.308: v4l2-input: /dev/video0: failed to log status
+19:02:02.370: v4l2-input: /dev/video0: stream reset successful
+19:02:02.404: v4l2-input: /dev/video0: select timed out
+19:02:02.404: v4l2-input: /dev/video0: failed to log status
+19:02:02.466: v4l2-input: /dev/video0: stream reset successful
+19:02:02.500: v4l2-input: /dev/video0: select timed out
+19:02:02.500: v4l2-input: /dev/video0: failed to log status
+19:02:02.562: v4l2-input: /dev/video0: stream reset successful
+19:02:02.596: v4l2-input: /dev/video0: select timed out
+19:02:02.596: v4l2-input: /dev/video0: failed to log status
+19:02:02.658: v4l2-input: /dev/video0: stream reset successful
+19:02:02.692: v4l2-input: /dev/video0: select timed out
+19:02:02.692: v4l2-input: /dev/video0: failed to log status
+19:02:02.754: v4l2-input: /dev/video0: stream reset successful
+19:02:02.788: v4l2-input: /dev/video0: select timed out
+19:02:02.788: v4l2-input: /dev/video0: failed to log status
+19:02:02.850: v4l2-input: /dev/video0: stream reset successful
+19:02:02.884: v4l2-input: /dev/video0: select timed out
+19:02:02.884: v4l2-input: /dev/video0: failed to log status
+19:02:02.946: v4l2-input: /dev/video0: stream reset successful
+19:02:02.980: v4l2-input: /dev/video0: select timed out
+19:02:02.980: v4l2-input: /dev/video0: failed to log status
+19:02:03.042: v4l2-input: /dev/video0: stream reset successful
+19:02:03.076: v4l2-input: /dev/video0: select timed out
+19:02:03.076: v4l2-input: /dev/video0: failed to log status
+19:02:03.138: v4l2-input: /dev/video0: stream reset successful
+19:02:03.172: v4l2-input: /dev/video0: select timed out
+19:02:03.172: v4l2-input: /dev/video0: failed to log status
+19:02:03.234: v4l2-input: /dev/video0: stream reset successful
+19:02:03.268: v4l2-input: /dev/video0: select timed out
+19:02:03.268: v4l2-input: /dev/video0: failed to log status
+19:02:03.330: v4l2-input: /dev/video0: stream reset successful
+19:02:03.364: v4l2-input: /dev/video0: select timed out
+19:02:03.364: v4l2-input: /dev/video0: failed to log status
+19:02:03.426: v4l2-input: /dev/video0: stream reset successful
+19:02:03.460: v4l2-input: /dev/video0: select timed out
+19:02:03.460: v4l2-input: /dev/video0: failed to log status
+19:02:03.522: v4l2-input: /dev/video0: stream reset successful
+19:02:03.556: v4l2-input: /dev/video0: select timed out
+19:02:03.556: v4l2-input: /dev/video0: failed to log status
+19:02:03.618: v4l2-input: /dev/video0: stream reset successful
+19:02:03.652: v4l2-input: /dev/video0: select timed out
+19:02:03.652: v4l2-input: /dev/video0: failed to log status
+19:02:03.714: v4l2-input: /dev/video0: stream reset successful
+19:02:03.748: v4l2-input: /dev/video0: select timed out
+19:02:03.748: v4l2-input: /dev/video0: failed to log status
+19:02:03.810: v4l2-input: /dev/video0: stream reset successful
+19:02:03.844: v4l2-input: /dev/video0: select timed out
+19:02:03.844: v4l2-input: /dev/video0: failed to log status
+19:02:03.906: v4l2-input: /dev/video0: stream reset successful
+19:02:03.940: v4l2-input: /dev/video0: select timed out
+19:02:03.940: v4l2-input: /dev/video0: failed to log status
+19:02:04.002: v4l2-input: /dev/video0: stream reset successful
+19:02:04.036: v4l2-input: /dev/video0: select timed out
+19:02:04.036: v4l2-input: /dev/video0: failed to log status
+19:02:04.098: v4l2-input: /dev/video0: stream reset successful
+19:02:04.132: v4l2-input: /dev/video0: select timed out
+19:02:04.132: v4l2-input: /dev/video0: failed to log status
+19:02:04.194: v4l2-input: /dev/video0: stream reset successful
+19:02:04.228: v4l2-input: /dev/video0: select timed out
+19:02:04.228: v4l2-input: /dev/video0: failed to log status
+19:02:04.290: v4l2-input: /dev/video0: stream reset successful
+19:02:04.322: v4l2-input: /dev/video1 seems to not support video capture
+19:02:04.322: v4l2-input: Found device 'USB Video: USB Video' at /dev/video0
+19:02:04.323: v4l2-input: Found input 'Camera 1' (Index 0)
+19:02:04.323: v4l2-input: Pixelformat: Motion-JPEG (available)
+19:02:04.323: v4l2-input: Pixelformat: YUYV 4:2:2 (available)
+19:02:04.323: v4l2-input: Pixelformat: RGB3 (Emulated) (unavailable)
+19:02:04.323: v4l2-input: Pixelformat: BGR3 (Emulated) (available)
+19:02:04.323: v4l2-input: Pixelformat: YU12 (Emulated) (available)
+19:02:04.323: v4l2-input: Pixelformat: YV12 (Emulated) (available)
+19:02:04.324: v4l2-input: /dev/video0: select timed out
+19:02:04.324: v4l2-input: /dev/video0: failed to log status
+19:02:04.354: v4l2-input: Pixelformat: Motion-JPEG (available)
+19:02:04.354: v4l2-input: Pixelformat: YUYV 4:2:2 (available)
+19:02:04.354: v4l2-input: Pixelformat: RGB3 (Emulated) (unavailable)
+19:02:04.354: v4l2-input: Pixelformat: BGR3 (Emulated) (available)
+19:02:04.354: v4l2-input: Pixelformat: YU12 (Emulated) (available)
+19:02:04.354: v4l2-input: Pixelformat: YV12 (Emulated) (available)
+19:02:04.386: v4l2-input: /dev/video0: stream reset successful
+19:02:04.420: v4l2-input: /dev/video0: select timed out
+19:02:04.420: v4l2-input: /dev/video0: failed to log status
+19:02:04.482: v4l2-input: /dev/video0: stream reset successful
+19:02:04.516: v4l2-input: /dev/video0: select timed out
+19:02:04.516: v4l2-input: /dev/video0: failed to log status
+19:02:04.578: v4l2-input: /dev/video0: stream reset successful
+19:02:04.612: v4l2-input: /dev/video0: select timed out
+19:02:04.612: v4l2-input: /dev/video0: failed to log status
+19:02:04.674: v4l2-input: /dev/video0: stream reset successful
+19:02:04.708: v4l2-input: /dev/video0: select timed out
+19:02:04.708: v4l2-input: /dev/video0: failed to log status
+19:02:04.771: v4l2-input: /dev/video0: stream reset successful
+19:02:04.804: v4l2-input: /dev/video0: select timed out
+19:02:04.808: v4l2-input: /dev/video0: failed to log status
+19:02:04.866: v4l2-input: /dev/video0: stream reset successful
+19:02:04.900: v4l2-input: /dev/video0: select timed out
+19:02:04.900: v4l2-input: /dev/video0: failed to log status
+19:02:04.962: v4l2-input: /dev/video0: stream reset successful
+19:02:04.996: v4l2-input: /dev/video0: select timed out
+19:02:04.996: v4l2-input: /dev/video0: failed to log status
+19:02:05.058: v4l2-input: /dev/video0: stream reset successful
+19:02:05.092: v4l2-input: /dev/video0: select timed out
+19:02:05.092: v4l2-input: /dev/video0: failed to log status
+19:02:05.154: v4l2-input: /dev/video0: stream reset successful
+19:02:05.188: v4l2-input: /dev/video0: select timed out
+19:02:05.188: v4l2-input: /dev/video0: failed to log status
+19:02:05.250: v4l2-input: /dev/video0: stream reset successful
+19:02:05.284: v4l2-input: /dev/video0: select timed out
+19:02:05.284: v4l2-input: /dev/video0: failed to log status
+19:02:05.346: v4l2-input: /dev/video0: stream reset successful
+19:02:05.380: v4l2-input: /dev/video0: select timed out
+19:02:05.380: v4l2-input: /dev/video0: failed to log status
+19:02:05.442: v4l2-input: /dev/video0: stream reset successful
+19:02:05.476: v4l2-input: /dev/video0: select timed out
+19:02:05.476: v4l2-input: /dev/video0: failed to log status
+19:02:05.538: v4l2-input: /dev/video0: stream reset successful
+19:02:05.572: v4l2-input: /dev/video0: select timed out
+19:02:05.572: v4l2-input: /dev/video0: failed to log status
+19:02:05.634: v4l2-input: /dev/video0: stream reset successful
+19:02:05.668: v4l2-input: /dev/video0: select timed out
+19:02:05.668: v4l2-input: /dev/video0: failed to log status
+19:02:05.730: v4l2-input: /dev/video0: stream reset successful
+19:02:05.764: v4l2-input: /dev/video0: select timed out
+19:02:05.764: v4l2-input: /dev/video0: failed to log status
+19:02:05.826: v4l2-input: /dev/video0: stream reset successful
+19:02:05.860: v4l2-input: /dev/video0: select timed out
+19:02:05.860: v4l2-input: /dev/video0: failed to log status
+19:02:05.922: v4l2-input: /dev/video0: stream reset successful
+19:02:05.956: v4l2-input: /dev/video0: select timed out
+19:02:05.956: v4l2-input: /dev/video0: failed to log status
+19:02:06.018: v4l2-input: /dev/video0: stream reset successful
+19:02:06.052: v4l2-input: /dev/video0: select timed out
+19:02:06.052: v4l2-input: /dev/video0: failed to log status
+19:02:06.114: v4l2-input: /dev/video0: stream reset successful
+19:02:06.148: v4l2-input: /dev/video0: select timed out
+19:02:06.148: v4l2-input: /dev/video0: failed to log status
+19:02:06.210: v4l2-input: /dev/video0: stream reset successful
+19:02:06.244: v4l2-input: /dev/video0: select timed out
+19:02:06.244: v4l2-input: /dev/video0: failed to log status
+19:02:06.306: v4l2-input: /dev/video0: stream reset successful
+19:02:06.340: v4l2-input: /dev/video0: select timed out
+19:02:06.340: v4l2-input: /dev/video0: failed to log status
+19:02:06.402: v4l2-input: /dev/video0: stream reset successful
+19:02:06.436: v4l2-input: /dev/video0: select timed out
+19:02:06.436: v4l2-input: /dev/video0: failed to log status
+19:02:06.498: v4l2-input: /dev/video0: stream reset successful
+19:02:06.532: v4l2-input: /dev/video0: select timed out
+19:02:06.532: v4l2-input: /dev/video0: failed to log status
+19:02:06.594: v4l2-input: /dev/video0: stream reset successful
+19:02:06.628: v4l2-input: /dev/video0: select timed out
+19:02:06.628: v4l2-input: /dev/video0: failed to log status
+19:02:06.690: v4l2-input: /dev/video0: stream reset successful
+19:02:06.724: v4l2-input: /dev/video0: select timed out
+19:02:06.724: v4l2-input: /dev/video0: failed to log status
+19:02:06.786: v4l2-input: /dev/video0: stream reset successful
+19:02:06.820: v4l2-input: /dev/video0: select timed out
+19:02:06.820: v4l2-input: /dev/video0: failed to log status
+19:02:06.882: v4l2-input: /dev/video0: stream reset successful
+19:02:06.916: v4l2-input: /dev/video0: select timed out
+19:02:06.916: v4l2-input: /dev/video0: failed to log status
+19:02:06.978: v4l2-input: /dev/video0: stream reset successful
+19:02:07.012: v4l2-input: /dev/video0: select timed out
+19:02:07.012: v4l2-input: /dev/video0: failed to log status
+19:02:07.074: v4l2-input: /dev/video0: stream reset successful
+19:02:07.075: v4l2-input: /dev/video0: Stopped capture after 0 frames
+19:02:07.110: v4l2-input: Start capture from /dev/video0
+19:02:07.112: v4l2-input: Input: 0
+19:02:07.116: v4l2-input: Resolution: 1920x1080
+19:02:07.116: v4l2-input: Pixelformat: YUYV
+19:02:07.116: v4l2-input: Linesize: 3840 Bytes
+19:02:07.116: v4l2-input: Framerate: 5.00 fps
+19:02:07.124: v4l2-input: /dev/video0: select timeout set to 400000 (2x frame periods)
+19:02:07.539: v4l2-input: /dev/video0: select timed out
+19:02:07.539: v4l2-input: /dev/video0: failed to log status
+19:02:07.586: v4l2-input: /dev/video0: stream reset successful
+19:02:07.987: v4l2-input: /dev/video0: select timed out
+19:02:07.987: v4l2-input: /dev/video0: failed to log status
+19:02:08.034: v4l2-input: /dev/video0: stream reset successful
+19:02:08.435: v4l2-input: /dev/video0: select timed out
+19:02:08.435: v4l2-input: /dev/video0: failed to log status
+19:02:08.482: v4l2-input: /dev/video0: stream reset successful
+19:02:08.883: v4l2-input: /dev/video0: select timed out
+19:02:08.883: v4l2-input: /dev/video0: failed to log status
+19:02:08.930: v4l2-input: /dev/video0: stream reset successful
+19:02:09.331: v4l2-input: /dev/video0: select timed out
+19:02:09.331: v4l2-input: /dev/video0: failed to log status
+19:02:09.378: v4l2-input: /dev/video0: stream reset successful
+19:02:09.779: v4l2-input: /dev/video0: select timed out
+19:02:09.779: v4l2-input: /dev/video0: failed to log status
+19:02:09.826: v4l2-input: /dev/video0: stream reset successful
+19:02:10.227: v4l2-input: /dev/video0: select timed out
+19:02:10.227: v4l2-input: /dev/video0: failed to log status
+19:02:10.275: v4l2-input: /dev/video0: stream reset successful
+19:02:10.675: v4l2-input: /dev/video0: select timed out
+19:02:10.675: v4l2-input: /dev/video0: failed to log status
+19:02:10.722: v4l2-input: /dev/video0: stream reset successful
+19:02:11.123: v4l2-input: /dev/video0: select timed out
+19:02:11.123: v4l2-input: /dev/video0: failed to log status
+19:02:11.170: v4l2-input: /dev/video0: stream reset successful
+19:02:11.571: v4l2-input: /dev/video0: select timed out
+19:02:11.571: v4l2-input: /dev/video0: failed to log status
+19:02:11.618: v4l2-input: /dev/video0: stream reset successful
+19:02:12.019: v4l2-input: /dev/video0: select timed out
+19:02:12.019: v4l2-input: /dev/video0: failed to log status
+19:02:12.066: v4l2-input: /dev/video0: stream reset successful
+19:02:12.467: v4l2-input: /dev/video0: select timed out
+19:02:12.467: v4l2-input: /dev/video0: failed to log status
+19:02:12.514: v4l2-input: /dev/video0: stream reset successful
+19:02:12.915: v4l2-input: /dev/video0: select timed out
+19:02:12.915: v4l2-input: /dev/video0: failed to log status
+19:02:12.962: v4l2-input: /dev/video0: stream reset successful
+19:02:13.363: v4l2-input: /dev/video0: select timed out
+19:02:13.363: v4l2-input: /dev/video0: failed to log status
+19:02:13.410: v4l2-input: /dev/video0: stream reset successful
+19:02:13.811: v4l2-input: /dev/video0: select timed out
+19:02:13.811: v4l2-input: /dev/video0: failed to log status
+19:02:13.858: v4l2-input: /dev/video0: stream reset successful
+19:02:14.259: v4l2-input: /dev/video0: select timed out
+19:02:14.259: v4l2-input: /dev/video0: failed to log status
+19:02:14.306: v4l2-input: /dev/video0: stream reset successful
+19:02:14.707: v4l2-input: /dev/video0: select timed out
+19:02:14.707: v4l2-input: /dev/video0: failed to log status
+19:02:14.754: v4l2-input: /dev/video0: stream reset successful
+19:02:15.155: v4l2-input: /dev/video0: select timed out
+19:02:15.155: v4l2-input: /dev/video0: failed to log status
+19:02:15.202: v4l2-input: /dev/video0: stream reset successful
+19:02:15.603: v4l2-input: /dev/video0: select timed out
+19:02:15.603: v4l2-input: /dev/video0: failed to log status
+19:02:15.650: v4l2-input: /dev/video0: stream reset successful
+19:02:16.051: v4l2-input: /dev/video0: select timed out
+19:02:16.051: v4l2-input: /dev/video0: failed to log status
+19:02:16.099: v4l2-input: /dev/video0: stream reset successful
+19:02:16.499: v4l2-input: /dev/video0: select timed out
+19:02:16.499: v4l2-input: /dev/video0: failed to log status
+19:02:16.547: v4l2-input: /dev/video0: stream reset successful
+19:02:16.947: v4l2-input: /dev/video0: select timed out
+19:02:16.947: v4l2-input: /dev/video0: failed to log status
+19:02:16.995: v4l2-input: /dev/video0: stream reset successful
+19:02:17.395: v4l2-input: /dev/video0: select timed out
+19:02:17.395: v4l2-input: /dev/video0: failed to log status
+19:02:17.443: v4l2-input: /dev/video0: stream reset successful
+19:02:17.843: v4l2-input: /dev/video0: select timed out
+19:02:17.843: v4l2-input: /dev/video0: failed to log status
+19:02:17.890: v4l2-input: /dev/video0: stream reset successful
+19:02:18.291: v4l2-input: /dev/video0: select timed out
+19:02:18.291: v4l2-input: /dev/video0: failed to log status
+19:02:18.339: v4l2-input: /dev/video0: stream reset successful
+19:02:18.739: v4l2-input: /dev/video0: select timed out
+19:02:18.739: v4l2-input: /dev/video0: failed to log status
+19:02:18.787: v4l2-input: /dev/video0: stream reset successful
+19:02:19.187: v4l2-input: /dev/video0: select timed out
+19:02:19.187: v4l2-input: /dev/video0: failed to log status
+19:02:19.234: v4l2-input: /dev/video0: stream reset successful
+19:02:19.635: v4l2-input: /dev/video0: select timed out
+19:02:19.635: v4l2-input: /dev/video0: failed to log status
+19:02:19.683: v4l2-input: /dev/video0: stream reset successful
+19:02:20.083: v4l2-input: /dev/video0: select timed out
+19:02:20.083: v4l2-input: /dev/video0: failed to log status
+19:02:20.131: v4l2-input: /dev/video0: stream reset successful
+19:02:20.531: v4l2-input: /dev/video0: select timed out
+19:02:20.531: v4l2-input: /dev/video0: failed to log status
+19:02:20.579: v4l2-input: /dev/video0: stream reset successful
+19:10:02.783: Failed to create xdg-screensaver: 2
+19:10:32.784: Failed to create xdg-screensaver: 2
+19:11:02.785: Failed to create xdg-screensaver: 2
+19:11:32.786: Failed to create xdg-screensaver: 2
+19:12:02.788: Failed to create xdg-screensaver: 2
+19:12:32.789: Failed to create xdg-screensaver: 2
+19:13:02.789: Failed to create xdg-screensaver: 2
+19:13:32.791: Failed to create xdg-screensaver: 2
+19:14:02.792: Failed to create xdg-screensaver: 2
+19:14:32.793: Failed to create xdg-screensaver: 2
+19:15:02.795: Failed to create xdg-screensaver: 2
+19:15:32.796: Failed to create xdg-screensaver: 2
+19:16:02.797: Failed to create xdg-screensaver: 2
+19:16:32.799: Failed to create xdg-screensaver: 2
+19:17:02.800: Failed to create xdg-screensaver: 2
+19:17:32.801: Failed to create xdg-screensaver: 2
+19:18:02.802: Failed to create xdg-screensaver: 2
+19:18:32.804: Failed to create xdg-screensaver: 2
+19:19:02.805: Failed to create xdg-screensaver: 2
+19:19:32.807: Failed to create xdg-screensaver: 2
+19:20:02.808: Failed to create xdg-screensaver: 2
+19:20:32.809: Failed to create xdg-screensaver: 2
+19:21:02.811: Failed to create xdg-screensaver: 2
+19:21:32.812: Failed to create xdg-screensaver: 2
+19:22:02.813: Failed to create xdg-screensaver: 2
+19:22:32.815: Failed to create xdg-screensaver: 2
+19:23:02.816: Failed to create xdg-screensaver: 2
+19:23:32.817: Failed to create xdg-screensaver: 2
+19:24:02.819: Failed to create xdg-screensaver: 2
+19:24:32.820: Failed to create xdg-screensaver: 2
+19:25:02.821: Failed to create xdg-screensaver: 2
+22:04:51.596: Last log entry repeated for 319 more lines
+22:04:51.596: v4l2-input: /dev/video1 seems to not support video capture
+22:04:51.597: v4l2-input: Found device 'USB Video: USB Video' at /dev/video0
+22:04:51.598: v4l2-input: Found input 'Camera 1' (Index 0)
+22:04:51.598: v4l2-input: Pixelformat: Motion-JPEG (available)
+22:04:51.598: v4l2-input: Pixelformat: YUYV 4:2:2 (available)
+22:04:51.598: v4l2-input: Pixelformat: RGB3 (Emulated) (unavailable)
+22:04:51.598: v4l2-input: Pixelformat: BGR3 (Emulated) (available)
+22:04:51.598: v4l2-input: Pixelformat: YU12 (Emulated) (available)
+22:04:51.598: v4l2-input: Pixelformat: YV12 (Emulated) (available)
+22:04:51.600: v4l2-input: Pixelformat: Motion-JPEG (available)
+22:04:51.600: v4l2-input: Pixelformat: YUYV 4:2:2 (available)
+22:04:51.600: v4l2-input: Pixelformat: RGB3 (Emulated) (unavailable)
+22:04:51.600: v4l2-input: Pixelformat: BGR3 (Emulated) (available)
+22:04:51.600: v4l2-input: Pixelformat: YU12 (Emulated) (available)
+22:04:51.600: v4l2-input: Pixelformat: YV12 (Emulated) (available)
+22:05:03.191: Failed to create xdg-screensaver: 2
+22:05:33.192: Failed to create xdg-screensaver: 2
+22:06:03.194: Failed to create xdg-screensaver: 2
+22:06:33.195: Failed to create xdg-screensaver: 2
+22:07:03.196: Failed to create xdg-screensaver: 2
+22:07:33.198: Failed to create xdg-screensaver: 2
+22:08:03.205: Failed to create xdg-screensaver: 2
+22:08:33.206: Failed to create xdg-screensaver: 2
+22:09:03.208: Failed to create xdg-screensaver: 2
+22:09:33.209: Failed to create xdg-screensaver: 2
+22:10:03.210: Failed to create xdg-screensaver: 2
+22:10:33.211: Failed to create xdg-screensaver: 2
+22:11:03.213: Failed to create xdg-screensaver: 2
+22:11:33.214: Failed to create xdg-screensaver: 2
+22:12:03.215: Failed to create xdg-screensaver: 2
+22:12:33.217: Failed to create xdg-screensaver: 2
+22:13:03.218: Failed to create xdg-screensaver: 2
+22:13:33.220: Failed to create xdg-screensaver: 2
+22:14:03.221: Failed to create xdg-screensaver: 2
+22:14:33.222: Failed to create xdg-screensaver: 2
+22:15:03.223: Failed to create xdg-screensaver: 2
+22:15:33.224: Failed to create xdg-screensaver: 2
+22:16:03.226: Failed to create xdg-screensaver: 2
+22:16:33.228: Failed to create xdg-screensaver: 2
+22:17:03.229: Failed to create xdg-screensaver: 2
+22:17:33.230: Failed to create xdg-screensaver: 2
+22:18:03.233: Failed to create xdg-screensaver: 2
+22:18:33.234: Failed to create xdg-screensaver: 2
+22:19:03.235: Failed to create xdg-screensaver: 2
+22:19:33.237: Failed to create xdg-screensaver: 2
+22:20:03.238: Failed to create xdg-screensaver: 2
+23:03:38.379: Last log entry repeated for 87 more lines
+23:03:38.379: [pipewire] Stream 0x555dee93be50 state: "paused" (error: none)
+23:04:03.347: Failed to create xdg-screensaver: 2
+23:04:33.348: Failed to create xdg-screensaver: 2
+23:05:03.349: Failed to create xdg-screensaver: 2
+23:05:33.350: Failed to create xdg-screensaver: 2
+23:06:03.351: Failed to create xdg-screensaver: 2
+23:06:33.353: Failed to create xdg-screensaver: 2
+23:07:03.354: Failed to create xdg-screensaver: 2
+23:07:33.356: Failed to create xdg-screensaver: 2
+23:08:03.357: Failed to create xdg-screensaver: 2
+23:08:33.358: Failed to create xdg-screensaver: 2
+23:09:03.359: Failed to create xdg-screensaver: 2
+23:09:33.360: Failed to create xdg-screensaver: 2
+23:10:03.361: Failed to create xdg-screensaver: 2
+23:10:33.363: Failed to create xdg-screensaver: 2
+23:11:03.365: Failed to create xdg-screensaver: 2
+23:11:33.366: Failed to create xdg-screensaver: 2
+23:12:03.368: Failed to create xdg-screensaver: 2
+23:12:33.369: Failed to create xdg-screensaver: 2
+23:13:03.371: Failed to create xdg-screensaver: 2
+23:13:33.372: Failed to create xdg-screensaver: 2
+23:14:03.373: Failed to create xdg-screensaver: 2
+23:14:33.375: Failed to create xdg-screensaver: 2
+23:15:03.376: Failed to create xdg-screensaver: 2
+23:15:33.378: Failed to create xdg-screensaver: 2
+23:16:03.379: Failed to create xdg-screensaver: 2
+23:16:33.381: Failed to create xdg-screensaver: 2
+23:17:03.382: Failed to create xdg-screensaver: 2
+23:17:33.383: Failed to create xdg-screensaver: 2
+23:17:37.536: ==== Shutting down ==================================================
+23:17:37.544: [pipewire] Stream 0x555dee93be50 state: "unconnected" (error: none)
+23:17:37.579: v4l2-input: /dev/video0: Stopped capture after 76597 frames
+23:17:37.619: All scene data cleared
+23:17:37.619: ------------------------------------------------
+23:17:37.667: [obs-websocket] [obs_module_unload] Shutting down...
+23:17:37.667: [obs-websocket] [obs_module_unload] Finished shutting down.
+23:17:37.673: [Scripting] Total detached callbacks: 0
+23:17:37.673: Freeing OBS context data
+23:17:37.685: == Profiler Results =============================
+23:17:37.685: run_program_init: 1655.25 ms
+23:17:37.685:  ┣OBSApp::AppInit: 10.506 ms
+23:17:37.685:  ┃ ┗OBSApp::InitLocale: 4.963 ms
+23:17:37.685:  ┗OBSApp::OBSInit: 1260.87 ms
+23:17:37.685:    ┣obs_startup: 3.334 ms
+23:17:37.685:    ┗OBSBasic::OBSInit: 1221.68 ms
+23:17:37.685:      ┣OBSBasic::InitBasicConfig: 0.119 ms
+23:17:37.685:      ┣OBSBasic::ResetAudio: 0.292 ms
+23:17:37.685:      ┣OBSBasic::ResetVideo: 115.92 ms
+23:17:37.685:      ┣OBSBasic::InitOBSCallbacks: 0.005 ms
+23:17:37.685:      ┣OBSBasic::InitHotkeys: 0.032 ms
+23:17:37.685:      ┣obs_load_all_modules2: 904.653 ms
+23:17:37.685:      ┃ ┣obs_init_module(aja-output-ui.so): 0.121 ms
+23:17:37.685:      ┃ ┣obs_init_module(aja.so): 0.117 ms
+23:17:37.685:      ┃ ┣obs_init_module(decklink-captions.so): 0 ms
+23:17:37.685:      ┃ ┣obs_init_module(decklink-output-ui.so): 0 ms
+23:17:37.685:      ┃ ┣obs_init_module(decklink.so): 0.214 ms
+23:17:37.685:      ┃ ┣obs_init_module(frontend-tools.so): 118.597 ms
+23:17:37.685:      ┃ ┣obs_init_module(image-source.so): 0.009 ms
+23:17:37.685:      ┃ ┣obs_init_module(linux-capture.so): 0.001 ms
+23:17:37.685:      ┃ ┣obs_init_module(linux-jack.so): 0.007 ms
+23:17:37.685:      ┃ ┣obs_init_module(linux-pipewire.so): 1.619 ms
+23:17:37.685:      ┃ ┣obs_init_module(linux-pulseaudio.so): 0.005 ms
+23:17:37.685:      ┃ ┣obs_init_module(linux-v4l2.so): 16.882 ms
+23:17:37.685:      ┃ ┣obs_init_module(obs-browser.so): 0.142 ms
+23:17:37.685:      ┃ ┣obs_init_module(obs-ffmpeg.so): 43.426 ms
+23:17:37.685:      ┃ ┃ ┗nvenc_check: 1.83 ms
+23:17:37.685:      ┃ ┣obs_init_module(obs-filters.so): 0.056 ms
+23:17:37.685:      ┃ ┣obs_init_module(obs-libfdk.so): 0.003 ms
+23:17:37.685:      ┃ ┣obs_init_module(obs-outputs.so): 0.012 ms
+23:17:37.685:      ┃ ┣obs_init_module(obs-transitions.so): 0.02 ms
+23:17:37.685:      ┃ ┣obs_init_module(obs-vst.so): 0.009 ms
+23:17:37.685:      ┃ ┣obs_init_module(obs-websocket.so): 8.549 ms
+23:17:37.685:      ┃ ┣obs_init_module(obs-x264.so): 0.004 ms
+23:17:37.685:      ┃ ┣obs_init_module(rtmp-services.so): 1.603 ms
+23:17:37.685:      ┃ ┣obs_init_module(text-freetype2.so): 0.058 ms
+23:17:37.685:      ┃ ┗obs_init_module(linux-pipewire-audio.so): 0.034 ms
+23:17:37.685:      ┣OBSBasic::InitService: 2.65 ms
+23:17:37.685:      ┣OBSBasic::ResetOutputs: 9.77 ms
+23:17:37.685:      ┣OBSBasic::CreateHotkeys: 0.044 ms
+23:17:37.685:      ┣OBSBasic::InitPrimitives: 0.143 ms
+23:17:37.685:      ┗OBSBasic::Load: 109.672 ms
+23:17:37.685: obs_hotkey_thread(25 ms): min=0 ms, median=0.001 ms, max=0.15 ms, 99th percentile=0.002 ms, 100% below 25 ms
+23:17:37.685: audio_thread(Audio): min=0.012 ms, median=0.053 ms, max=42.56 ms, 99th percentile=0.175 ms
+23:17:37.685: obs_graphics_thread(33.3333 ms): min=0.221 ms, median=1.155 ms, max=128.092 ms, 99th percentile=2.307 ms, 99.9978% below 33.333 ms
+23:17:37.685:  ┣tick_sources: min=0 ms, median=0.023 ms, max=127.098 ms, 99th percentile=0.036 ms
+23:17:37.685:  ┣output_frame: min=0.095 ms, median=0.522 ms, max=44.999 ms, 99th percentile=1.473 ms
+23:17:37.685:  ┃ ┗gs_context(video->graphics): min=0.095 ms, median=0.521 ms, max=44.997 ms, 99th percentile=1.472 ms
+23:17:37.686:  ┃   ┣render_video: min=0.013 ms, median=0.178 ms, max=44.636 ms, 99th percentile=0.936 ms
+23:17:37.686:  ┃   ┃ ┗render_main_texture: min=0.011 ms, median=0.17 ms, max=44.626 ms, 99th percentile=0.924 ms
+23:17:37.686:  ┃   ┗gs_flush: min=0.005 ms, median=0.324 ms, max=1.921 ms, 99th percentile=0.529 ms
+23:17:37.686:  ┗render_displays: min=0.004 ms, median=0.547 ms, max=119.925 ms, 99th percentile=0.874 ms
+23:17:37.686: =================================================
+23:17:37.686: == Profiler Time Between Calls ==================
+23:17:37.686: obs_hotkey_thread(25 ms): min=25.015 ms, median=25.096 ms, max=28.765 ms, 99.9412% within ±2% of 25 ms (0% lower, 0.0587653% higher)
+23:17:37.686: obs_graphics_thread(33.3333 ms): min=5.202 ms, median=33.333 ms, max=128.104 ms, 99.9891% within ±2% of 33.333 ms (0.00543328% lower, 0.00543328% higher)
+23:17:37.686: =================================================
+23:17:37.701: Number of memory leaks: 0
